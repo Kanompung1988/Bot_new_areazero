@@ -1,0 +1,38 @@
+services:
+  - type: web
+    name: ai-research-bot
+    env: docker
+    plan: free
+    region: singapore
+    dockerfilePath: ./Dockerfile
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      - key: DISCORD_TOKEN
+        sync: false
+      - key: DISCORD_APPLICATION_ID
+        sync: false
+      - key: DISCORD_PUBLIC_KEY
+        sync: false
+      - key: DISCORD_CHANNEL_ID
+        sync: false
+      - key: DISCORD_COMMAND_CHANNEL_ID
+        sync: false
+      - key: DAILY_RUN_TIME
+        value: "08:00"
+      - key: TIMEZONE
+        value: Asia/Bangkok
+      - key: MAX_NEWS_ARTICLES
+        value: "10"
+      - key: MAX_PAPERS_TO_ANALYZE
+        value: "100"
+      - key: SELECTED_PAPERS_COUNT
+        value: "10"
+      - key: DEFAULT_DAYS_BACK
+        value: "7"
+      - key: AI_TOPICS
+        value: "LLM,Computer Vision,NLP,Machine Learning,Deep Learning,Reinforcement Learning,AI Safety"
+    healthCheckPath: /health
+    autoDeploy: true
