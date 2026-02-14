@@ -62,6 +62,7 @@ class StatusResponse(BaseModel):
 
 # API Endpoints
 @app.get("/")
+@app.head("/")
 async def root():
     """Root endpoint"""
     return {
@@ -78,12 +79,14 @@ async def root():
 
 
 @app.get("/ping")
+@app.head("/ping")
 async def ping():
     """Simple ping endpoint for keep-alive services"""
     return {"ping": "pong", "timestamp": datetime.now().isoformat()}
 
 
 @app.get("/health")
+@app.head("/health")
 async def health_check():
     """Health check endpoint"""
     bot = get_bot()
