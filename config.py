@@ -19,6 +19,8 @@ DISCORD_PUBLIC_KEY = os.getenv('DISCORD_PUBLIC_KEY')
 DISCORD_CHANNEL_ID = os.getenv('DISCORD_CHANNEL_ID')  # Auto-schedule channel
 DISCORD_COMMAND_CHANNEL_ID = os.getenv('DISCORD_COMMAND_CHANNEL_ID')  # Manual command channel
 DISCORD_COMMAND_PREFIX = '!'
+DISCORD_HEARTBEAT_TIMEOUT = float(os.getenv('DISCORD_HEARTBEAT_TIMEOUT', 60.0))  # WebSocket heartbeat timeout
+DISCORD_KEEPALIVE_INTERVAL = int(os.getenv('DISCORD_KEEPALIVE_INTERVAL', 300))  # Presence update interval (5 min)
 
 # Scheduling Configuration
 DAILY_RUN_TIME = os.getenv('DAILY_RUN_TIME', '08:00')

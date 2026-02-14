@@ -2,9 +2,10 @@
 Discord Bot Implementation
 """
 import discord
-from discord.ext import commands
+from discord.ext import commands, tasks
 from typing import Optional
 import asyncio
+from datetime import datetime
 import config
 from utils.logger import get_logger
 
@@ -19,17 +20,23 @@ class ResearchBot(commands.Bot):
         intents = discord.Intents.default()
         intents.message_content = True
         intents.guilds = True
+        intents.guild_messages = True  # Ensure we receive message events
+        intents.members = True  # For member presence tracking
         
         # Initialize bot
         super().__init__(
             command_prefix=config.DISCORD_COMMAND_PREFIX,
             intents=intents,
-            help_command=commands.DefaultHelpCommand()
+            help_command=commands.DefaultHelpCommand(),
+            heartbeat_timeout=config.DISCORD_HEARTBEAT_TIMEOUT  # Increase heartbeat timeout
         )
         
         self.name = "ResearchBot"
         self.reconnect_attempts = 0
         self.max_reconnect_attempts = 5
+        self._heartbeat_task = None
+        self._last_activity = datetime.now()
+        self._keepalive_interval = config.DISCORD_KEEPALIVE_INTERVAL
         logger.info(f"{self.name}: Initializing Discord bot")
     
     async def setup_hook(self):
@@ -51,6 +58,7 @@ class ResearchBot(commands.Bot):
         
         # Reset reconnection counter on successful connection
         self.reconnect_attempts = 0
+        self._last_activity = datetime.now()
         
         # Set bot status
         await self.change_presence(
@@ -59,6 +67,11 @@ class ResearchBot(commands.Bot):
                 name="AI Research | !help"
             )
         )
+        
+        # Start heartbeat task if not already running
+        if not self._heartbeat_task or self._heartbeat_task.done():
+            self._heartbeat_task = asyncio.create_task(self._keep_alive_loop())
+            logger.info(f"{self.name}: Keep-alive loop started")
     
     async def on_disconnect(self):
         """Called when bot disconnects from Discord"""
@@ -78,6 +91,9 @@ class ResearchBot(commands.Bot):
         # Ignore messages from the bot itself
         if message.author == self.user:
             return
+        
+        # Update last activity time
+        self._last_activity = datetime.now()
         
         # Process commands
         await self.process_commands(message)
@@ -177,6 +193,47 @@ class ResearchBot(commands.Bot):
             chunks.append(current_chunk)
         
         return chunks
+    
+    async def _keep_alive_loop(self):
+        """Keep bot connection alive by periodic activity updates"""
+        logger.info(f"{self.name}: Keep-alive loop started")
+        
+        while not self.is_closed():
+            try:
+                # Wait for configured interval (default 5 minutes)
+                await asyncio.sleep(self._keepalive_interval)
+                
+                if self.is_ready():
+                    # Update presence to show activity
+                    current_time = datetime.now()
+                    time_since_activity = (current_time - self._last_activity).total_seconds()
+                    
+                    # Log status
+                    logger.debug(f"{self.name}: Keep-alive ping - Latency: {self.latency*1000:.0f}ms, "
+                               f"Guilds: {len(self.guilds)}, Last activity: {time_since_activity:.0f}s ago")
+                    
+                    # Update presence to maintain connection
+                    await self.change_presence(
+                        activity=discord.Activity(
+                            type=discord.ActivityType.watching,
+                            name="AI Research | !help"
+                        )
+                    )
+                    
+                    # If no activity for 30 minutes, log warning
+                    if time_since_activity > 1800:
+                        logger.warning(f"{self.name}: No activity for {time_since_activity/60:.1f} minutes")
+                
+                else:
+                    logger.warning(f"{self.name}: Bot not ready in keep-alive loop")
+                    
+            except asyncio.CancelledError:
+                logger.info(f"{self.name}: Keep-alive loop cancelled")
+                break
+            except Exception as e:
+                logger.error(f"{self.name}: Keep-alive loop error: {e}", exc_info=True)
+                # Continue loop even on error
+                await asyncio.sleep(60)
 
 
 def create_bot() -> ResearchBot:
@@ -196,10 +253,13 @@ def run_bot():
     bot = create_bot()
     
     try:
-        bot.run(config.DISCORD_TOKEN)
+        # Run with reconnect=True to enable automatic reconnection
+        bot.run(config.DISCORD_TOKEN, reconnect=True)
     except discord.LoginFailure:
         logger.error("Invalid Discord token")
         print("❌ Error: Invalid Discord token")
+    except KeyboardInterrupt:
+        logger.info("Bot stopped by user (Ctrl+C)")
     except Exception as e:
         logger.error(f"Bot error: {e}", exc_info=True)
         print(f"❌ Error: {e}")

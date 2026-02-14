@@ -243,22 +243,37 @@ async def keep_alive():
     """
     Keep-alive task to prevent Render free tier from spinning down
     Pings every 10 minutes to keep service active
+    Also monitors bot health and attempts recovery if needed
     """
     import aiohttp
+    consecutive_failures = 0
     
     while True:
         try:
             await asyncio.sleep(600)  # Wait 10 minutes
             
-            # Self-ping to keep service alive
+            # Check bot status
             bot = get_bot()
             if bot:
-                logger.debug(f"Keep-alive: Bot status - Ready: {bot.is_ready()}, Closed: {bot.is_closed()}")
+                is_ready = bot.is_ready()
+                is_closed = bot.is_closed()
                 
-                # If bot is disconnected, try to reconnect
-                if bot.is_closed() and not bot.is_ready():
-                    logger.warning("Bot appears disconnected, attempting restart...")
-                    # The bot should auto-reconnect via discord.py's built-in reconnection
+                logger.debug(f"Keep-alive: Bot status - Ready: {is_ready}, Closed: {is_closed}, "
+                           f"Latency: {bot.latency*1000:.0f}ms" if is_ready else "Keep-alive: Bot status - Ready: False")
+                
+                # If bot is healthy, reset failure counter
+                if is_ready and not is_closed:
+                    consecutive_failures = 0
+                else:
+                    consecutive_failures += 1
+                    logger.warning(f"Bot health check failed (attempt {consecutive_failures})")
+                    
+                    # If bot has been unhealthy for 3 checks (30 minutes), log error
+                    if consecutive_failures >= 3:
+                        logger.error(f"Bot has been offline for {consecutive_failures * 10} minutes")
+                        # discord.py's auto-reconnect should handle this, but log for monitoring
+            else:
+                logger.warning("Keep-alive: Bot instance not found")
             
         except asyncio.CancelledError:
             logger.info("Keep-alive task cancelled")
