@@ -2,15 +2,88 @@
 
 Multi-agent AI research bot ที่ค้นหาข่าวและ papers เกี่ยวกับ AI ทุกวัน โดยใช้ Gemini AI และส่งผ่าน Discord
 
-## ✨ Features ใหม่
+## ✨ Features
 
 - 🤖 **Discord Bot**: Bot ที่มี commands ให้ใช้งานใน Discord
 - 🚀 **FastAPI**: REST API สำหรับ trigger research จาก web
 - ⚡ **Manual Commands**: รัน research ทันทีด้วย `!research`
 - 📊 **Real-time Status**: ตรวจสอบสถานะด้วย `!status`
 - 🔧 **System Tests**: ทดสอบระบบด้วย `!test`
-- 🔄 **PM2-like Auto-Restart**: รันแบบ PM2 - auto-restart เมื่อ crash (NEW!)
-- 🏢 **Windows Service**: ติดตั้งเป็น service - รันตลอดเวลา (NEW!)
+- 🔄 **24/7 Uptime**: รันแบบ PM2 / Windows Service - online ตลอด!
+- 💾 **Auto-Restart**: restart อัตโนมัติเมื่อ crash
+- 🌐 **Keep-Alive**: mechanism ป้องกัน offline
+
+## 🚀 Quick Start - รันบอทให้ Online ตลอด!
+
+### วิธีที่ 1: PM2 (แนะนำ - ใช้ได้ทุก OS)
+
+```powershell
+# ติดตั้ง Node.js จาก https://nodejs.org/
+# แล้วรัน:
+.\start_with_pm2.ps1
+```
+
+**หรือ manual:**
+```bash
+npm install -g pm2
+pm2 start ecosystem.config.js
+pm2 save
+pm2 startup
+```
+
+### วิธีที่ 2: Windows Service (Windows only)
+
+```powershell
+# Run as Administrator
+.\install_service_enhanced.ps1
+```
+
+### วิธีที่ 3: Docker
+
+```bash
+docker-compose up -d
+```
+
+### วิธีที่ 4: Deploy ไป Cloud (Render) ⭐
+
+```powershell
+# Quick deploy
+.\deploy_to_render.ps1
+```
+
+**Setup Render ครั้งแรก:** [RENDER_SETUP.md](RENDER_SETUP.md) 🚀
+
+**ดูรายละเอียดทุกวิธี:** [KEEP_ALIVE_SOLUTIONS.md](KEEP_ALIVE_SOLUTIONS.md)
+
+## 📖 เอกสารที่สำคัญ
+
+- 🚀 [RENDER_SETUP.md](RENDER_SETUP.md) - **Deploy ไป Render (Cloud ฟรี!)** ⭐
+- 🔥 [QUICK_REFERENCE.md](QUICK_REFERENCE.md) - **คำสั่งที่ใช้บ่อย** (PM2, Docker, Service)
+- 📘 [KEEP_ALIVE_SOLUTIONS.md](KEEP_ALIVE_SOLUTIONS.md) - **วิธีรันบอทให้ online 24/7**
+- 📗 [BOT_OFFLINE_FIX.md](BOT_OFFLINE_FIX.md) - แก้ปัญหาบอท offline
+- 📕 [DEPLOYMENT.md](DEPLOYMENT.md) - Deploy ไป production
+- 📙 [DISCORD_SETUP.md](DISCORD_SETUP.md) - Setup Discord bot
+
+## ⚡ คำสั่งด่วน
+
+```bash
+# ดู status
+pm2 status                    # PM2
+Get-Service AIResearchBot     # Windows Service
+docker-compose ps             # Docker
+
+# ดู logs
+pm2 logs bot                  # PM2
+Get-Content logs\service-out.log -Tail 50 -Wait  # Service
+docker-compose logs -f bot    # Docker
+
+# Restart
+pm2 restart bot               # PM2
+Restart-Service AIResearchBot # Windows Service  
+docker-compose restart        # Docker
+```
+
+**ดูเพิ่มเติม:** [QUICK_REFERENCE.md](QUICK_REFERENCE.md)
 
 ## 🏗️ สถาปัตยกรรม
 

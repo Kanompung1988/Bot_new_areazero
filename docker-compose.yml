@@ -1,0 +1,97 @@
+version: '3.8'
+
+services:
+  # Discord Bot Service
+  bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: ai-research-bot
+    
+    # Always restart policy - จะ restart ทุกครั้งที่หยุด
+    restart: always
+    
+    # Environment variables
+    env_file:
+      - .env
+    
+    environment:
+      - PYTHONUNBUFFERED=1
+      - TZ=Asia/Bangkok
+    
+    # Volumes for persistence
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./output:/app/output
+    
+    # Networking
+    networks:
+      - bot-network
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python", "-c", "import requests; requests.get('http://localhost:8000/health', timeout=5)"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+    
+    # Resource limits (optional)
+    deploy:
+      resources:
+        limits:
+          cpus: '1.0'
+          memory: 512M
+        reservations:
+          cpus: '0.5'
+          memory: 256M
+    
+    # Logging
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+  # Optional: API Server (if running separately)
+  # api:
+  #   build:
+  #     context: .
+  #     dockerfile: Dockerfile
+  #   container_name: ai-research-api
+  #   restart: always
+  #   
+  #   env_file:
+  #     - .env
+  #   
+  #   environment:
+  #     - PYTHONUNBUFFERED=1
+  #     - TZ=Asia/Bangkok
+  #   
+  #   volumes:
+  #     - ./data:/app/data
+  #     - ./logs:/app/logs
+  #     - ./output:/app/output
+  #   
+  #   ports:
+  #     - "8000:8000"
+  #   
+  #   networks:
+  #     - bot-network
+  #   
+  #   healthcheck:
+  #     test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+  #     interval: 30s
+  #     timeout: 5s
+  #     retries: 3
+  #   
+  #   logging:
+  #     driver: "json-file"
+  #     options:
+  #       max-size: "10m"
+  #       max-file: "3"
+
+networks:
+  bot-network:
+    driver: bridge

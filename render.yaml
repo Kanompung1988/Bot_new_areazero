@@ -3,15 +3,14 @@ services:
     name: ai-research-bot
     env: docker
     plan: free
-    region: singapore
+    region: singapore  # ใกล้ Thailand ที่สุด
     dockerfilePath: ./Dockerfile
+    
+    # Environment Variables
     envVars:
-      - key: GEMINI_API_KEY
-        sync: false
-      - key: GEMINI_MODEL
-        value: gemini-2.5-flash
+      # Discord Configuration (⚠️ ต้องตั้งค่าใน Render Dashboard)
       - key: DISCORD_TOKEN
-        sync: false
+        sync: false  # ไม่ sync จาก .env (ตั้งใน dashboard)
       - key: DISCORD_APPLICATION_ID
         sync: false
       - key: DISCORD_PUBLIC_KEY
@@ -20,10 +19,20 @@ services:
         sync: false
       - key: DISCORD_COMMAND_CHANNEL_ID
         sync: false
+      
+      # Gemini API (⚠️ ต้องตั้งค่าใน Render Dashboard)
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: GEMINI_MODEL
+        value: gemini-2.5-flash
+      
+      # Schedule Configuration
       - key: DAILY_RUN_TIME
         value: "08:00"
       - key: TIMEZONE
         value: Asia/Bangkok
+      
+      # Research Configuration
       - key: MAX_NEWS_ARTICLES
         value: "10"
       - key: MAX_PAPERS_TO_ANALYZE
@@ -34,5 +43,19 @@ services:
         value: "7"
       - key: AI_TOPICS
         value: "LLM,Computer Vision,NLP,Machine Learning,Deep Learning,Reinforcement Learning,AI Safety"
+      
+      # Keep-Alive Configuration (สำคัญ!)
+      - key: DISCORD_HEARTBEAT_TIMEOUT
+        value: "60.0"
+      - key: DISCORD_KEEPALIVE_INTERVAL
+        value: "300"  # 5 minutes
+      
+      # Python Configuration
+      - key: PYTHONUNBUFFERED
+        value: "1"
+    
+    # Health Check
     healthCheckPath: /health
-    autoDeploy: true
+    
+    # Auto Deploy
+    autoDeploy: true  # Deploy อัตโนมัติเมื่อ push ไป GitHub
