@@ -28,6 +28,8 @@ class ResearchBot(commands.Bot):
         )
         
         self.name = "ResearchBot"
+        self.reconnect_attempts = 0
+        self.max_reconnect_attempts = 5
         logger.info(f"{self.name}: Initializing Discord bot")
     
     async def setup_hook(self):
@@ -47,6 +49,9 @@ class ResearchBot(commands.Bot):
         logger.info(f"Connected to {len(self.guilds)} guild(s)")
         logger.info("="*70)
         
+        # Reset reconnection counter on successful connection
+        self.reconnect_attempts = 0
+        
         # Set bot status
         await self.change_presence(
             activity=discord.Activity(
@@ -54,6 +59,19 @@ class ResearchBot(commands.Bot):
                 name="AI Research | !help"
             )
         )
+    
+    async def on_disconnect(self):
+        """Called when bot disconnects from Discord"""
+        logger.warning(f"{self.name}: Disconnected from Discord")
+        self.reconnect_attempts += 1
+        
+        if self.reconnect_attempts >= self.max_reconnect_attempts:
+            logger.error(f"{self.name}: Max reconnection attempts reached")
+    
+    async def on_resumed(self):
+        """Called when bot reconnects"""
+        logger.info(f"{self.name}: Successfully reconnected to Discord")
+        self.reconnect_attempts = 0
     
     async def on_message(self, message):
         """Called when a message is received"""

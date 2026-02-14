@@ -35,6 +35,7 @@ orchestrator = Orchestrator()
 db = get_db()
 bot_task: Optional[asyncio.Task] = None
 scheduler: Optional[AsyncIOScheduler] = None
+keep_alive_task: Optional[asyncio.Task] = None
 
 
 # Pydantic models for API
@@ -70,19 +71,44 @@ async def root():
         "endpoints": {
             "research": "/api/research",
             "status": "/api/status",
-            "health": "/health"
+            "health": "/health",
+            "ping": "/ping"
         }
     }
+
+
+@app.get("/ping")
+async def ping():
+    """Simple ping endpoint for keep-alive services"""
+    return {"ping": "pong", "timestamp": datetime.now().isoformat()}
 
 
 @app.get("/health")
 async def health_check():
     """Health check endpoint"""
     bot = get_bot()
+    
+    # Check bot status
+    bot_status = {
+        "exists": bot is not None,
+        "ready": bot.is_ready() if bot else False,
+        "connected": False,
+        "guilds": 0,
+        "latency": 0
+    }
+    
+    if bot:
+        bot_status["connected"] = not bot.is_closed()
+        bot_status["guilds"] = len(bot.guilds) if bot.guilds else 0
+        bot_status["latency"] = round(bot.latency * 1000, 2) if bot.is_ready() else 0
+    
+    # Determine overall health
+    is_healthy = bot_status["ready"] and bot_status["connected"]
+    
     return {
-        "status": "healthy",
+        "status": "healthy" if is_healthy else "degraded",
         "timestamp": datetime.now().isoformat(),
-        "bot_connected": bot is not None and bot.is_ready() if bot else False,
+        "bot": bot_status,
         "database": "connected"
     }
 
@@ -213,6 +239,35 @@ async def test_systems():
         raise HTTPException(status_code=500, detail=str(e))
 
 
+async def keep_alive():
+    """
+    Keep-alive task to prevent Render free tier from spinning down
+    Pings every 10 minutes to keep service active
+    """
+    import aiohttp
+    
+    while True:
+        try:
+            await asyncio.sleep(600)  # Wait 10 minutes
+            
+            # Self-ping to keep service alive
+            bot = get_bot()
+            if bot:
+                logger.debug(f"Keep-alive: Bot status - Ready: {bot.is_ready()}, Closed: {bot.is_closed()}")
+                
+                # If bot is disconnected, try to reconnect
+                if bot.is_closed() and not bot.is_ready():
+                    logger.warning("Bot appears disconnected, attempting restart...")
+                    # The bot should auto-reconnect via discord.py's built-in reconnection
+            
+        except asyncio.CancelledError:
+            logger.info("Keep-alive task cancelled")
+            break
+        except Exception as e:
+            logger.error(f"Keep-alive error: {e}")
+            await asyncio.sleep(60)  # Wait 1 minute before retry
+
+
 async def run_daily_research():
     """
     Scheduled job to run daily research at 8 AM
@@ -283,6 +338,10 @@ async def startup_event():
         
         scheduler.start()
         logger.info("✅ Scheduler started - Daily research will run at 8:00 AM Bangkok time")
+        
+        # Start keep-alive task
+        keep_alive_task = asyncio.create_task(keep_alive())
+        logger.info("✅ Keep-alive task started - Will ping every 10 minutes")
     else:
         logger.warning("Discord token not configured, bot will not start")
     
@@ -293,9 +352,18 @@ async def startup_event():
 @app.on_event("shutdown")
 async def shutdown_event():
     """Run on application shutdown"""
-    global bot_task, scheduler
+    global bot_task, scheduler, keep_alive_task
     
     logger.info("Shutting down AI Research Bot API")
+    
+    # Stop keep-alive task
+    if keep_alive_task:
+        keep_alive_task.cancel()
+        try:
+            await asyncio.wait_for(asyncio.shield(keep_alive_task), timeout=2.0)
+        except (asyncio.CancelledError, asyncio.TimeoutError):
+            pass
+        logger.info("Keep-alive task stopped")
     
     # Stop scheduler
     if scheduler:

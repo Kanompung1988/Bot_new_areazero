@@ -9,6 +9,8 @@ Multi-agent AI research bot ที่ค้นหาข่าวและ papers
 - ⚡ **Manual Commands**: รัน research ทันทีด้วย `!research`
 - 📊 **Real-time Status**: ตรวจสอบสถานะด้วย `!status`
 - 🔧 **System Tests**: ทดสอบระบบด้วย `!test`
+- 🔄 **PM2-like Auto-Restart**: รันแบบ PM2 - auto-restart เมื่อ crash (NEW!)
+- 🏢 **Windows Service**: ติดตั้งเป็น service - รันตลอดเวลา (NEW!)
 
 ## 🏗️ สถาปัตยกรรม
 
@@ -78,7 +80,49 @@ DISCORD_CHANNEL_ID=your_channel_id
 
 ## 💻 การใช้งาน
 
-### แสดงสถานะและ configuration
+### วิธีที่ 1: รันแบบ PM2 (แนะนำ - Auto-Restart) 🌟
+
+#### รันเบื้องหลัง (ง่ายที่สุด)
+```powershell
+# Double-click file นี้
+start_bot_background.vbs
+```
+- ✅ Auto-restart เมื่อ crash
+- ✅ รันเบื้องหลังไม่มี window
+- ✅ เหมาะสำหรับใช้งานประจำวัน
+
+#### จัดการ Bot
+```powershell
+status_bot.bat    # ดูสถานะ
+stop_bot.bat      # หยุด Bot
+```
+
+#### ติดตั้งเป็น Windows Service (Production)
+```powershell
+# Right-click PowerShell → Run as Administrator
+.\install_service.ps1
+```
+- ✅ รันตลอดเวลา + Auto-start เมื่อ boot
+- ✅ รันแม้ไม่ login Windows
+
+**ดู:** [PM2_QUICKSTART.md](PM2_QUICKSTART.md) สำหรับคำแนะนำโดยละเอียด
+
+---
+
+### วิธีที่ 2: รันด้วย API Server (พร้อม Discord Bot)
+
+```powershell
+python run_api.py
+```
+- เปิด API: http://localhost:8000
+- Discord bot จะ start อัตโนมัติ
+- Scheduled research: 8:00 AM ทุกวัน
+
+---
+
+### วิธีที่ 3: รัน Manual (Development)
+
+#### แสดงสถานะและ configuration
 ```powershell
 python main.py --status
 ```

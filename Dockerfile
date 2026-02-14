@@ -31,9 +31,9 @@ RUN mkdir -p data logs output
 # Expose port
 EXPOSE 8000
 
-# Health check
-HEALTHCHECK --interval=30s --timeout=10s --start-period=60s --retries=3 \
-    CMD python -c "import requests; requests.get('http://localhost:8000/health')"
+# Health check - more lenient for Discord bot startup
+HEALTHCHECK --interval=45s --timeout=15s --start-period=90s --retries=5 \
+    CMD python -c "import requests; r = requests.get('http://localhost:8000/health', timeout=10); exit(0 if r.status_code == 200 else 1)"
 
 # Run the application
-CMD ["python", "run_api.py"]
+CMD ["python", "-u", "run_api.py"]
