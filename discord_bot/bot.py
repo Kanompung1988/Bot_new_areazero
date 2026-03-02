@@ -21,7 +21,7 @@ class ResearchBot(commands.Bot):
         intents.message_content = True
         intents.guilds = True
         intents.guild_messages = True  # Ensure we receive message events
-        intents.members = True  # For member presence tracking
+        # intents.members = True  # Disabled - requires privileged intent
         
         # Initialize bot
         super().__init__(
