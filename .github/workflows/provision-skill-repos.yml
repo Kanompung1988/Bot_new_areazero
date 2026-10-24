@@ -42,7 +42,11 @@ jobs:
               assert isinstance(slug, str) and re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*', slug), 'invalid repository slug'
               assert len(slug) <= 64 and slug != 'agent-skills', 'unsupported repository name'
               assert item.get('source_path') == f'skills/{slug}', 'skill source path mismatch'
-              assert set(item) == {'slug', 'source_path'}, 'unexpected manifest field'
+              assert set(item) in ({'slug', 'source_path'}, {'slug', 'source_path', 'source_ref'}), 'unexpected manifest field'
+              ref = item.get('source_ref', 'main')
+              assert isinstance(ref, str) and re.fullmatch(r'[A-Za-z0-9_.-]+(?:/[A-Za-z0-9_.-]+)*', ref), 'invalid staging ref'
+              assert all(part not in ('.', '..') and '..' not in part for part in ref.split('/')), 'unsafe staging ref'
+              assert len(ref) <= 120, 'staging ref too long'
               names.append(slug)
           assert len(names) == len(set(names)), 'duplicate repository request'
           print('Validated %d repository requests: %s' % (len(names), ', '.join(names)))
@@ -63,7 +67,51 @@ jobs:
             echo '::error::Secret identifies a different GitHub account; refusing to create repositories'
             exit 1
           fi
-          while IFS= read -r slug; do
+          while IFS=
+            echo "Checking $owner/$slug"
+            status="$(curl -sS -o /tmp/areazero-repo-lookup.json -w '%{http_code}' \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H 'Accept: application/vnd.github+json' \
+              "https://api.github.com/repos/$owner/$slug")"
+            case "$status" in
+              200)
+                echo "EXISTS: $owner/$slug"
+                ;;
+              404)
+                src_status="$(curl -sS -o /tmp/areazero-source-check.json -w '%{http_code}' \
+                  -H 'Accept: application/vnd.github+json' \
+                  "https://api.github.com/repos/$owner/agent-skills/contents/skills/$slug/SKILL.md?ref=$source_ref")"
+                if [[ "$src_status" != 200 ]]; then
+                  echo "::error::Refusing empty repository: verified SKILL.md source unavailable for $slug (HTTP $src_status)"
+                  exit 1
+                fi
+                payload="$(jq -nc --arg name "$slug" '{name:$name,description:("AREAZERO Skill Lab | " + $name + " — portable Agent Skill for Claude Code and Codex"),private:false,auto_init:true,has_issues:true,has_wiki:false}')"
+                created="$(curl -sS -o /tmp/areazero-repo-create.json -w '%{http_code}' -X POST \
+                  -H "Authorization: Bearer $GH_TOKEN" \
+                  -H 'Accept: application/vnd.github+json' \
+                  -H 'Content-Type: application/json' \
+                  -d "$payload" https://api.github.com/user/repos)"
+                if [[ "$created" != 201 ]]; then
+                  echo "::error::Could not create $owner/$slug (HTTP $created). Check repository-creation permission, token expiry, and existing name."
+                  jq -r '.message // "unknown error"' /tmp/areazero-repo-create.json
+                  exit 1
+                fi
+                echo "CREATED: $owner/$slug"
+                ;;
+              *)
+                echo "::error::Repository lookup failed for $owner/$slug (HTTP $status); refusing to create"
+                exit 1
+                ;;
+            esac
+            identity="$(gh api "repos/$owner/$slug" --jq '.full_name + " " + .visibility + " " + .default_branch')"
+            if [[ "$identity" != "$owner/$slug public main" ]]; then
+              echo "::error::Wrong repository owner, visibility, or default branch for $slug: $identity"
+              exit 1
+            fi
+            echo "VERIFIED PUBLIC: https://github.com/$owner/$slug"
+          done < <(jq -r '.repositories[] | [.slug, (.source_ref // "main")] | @tsv' .github/skill-lab/repository-requests.json)
+          echo 'Provisioning complete. Separate publishing/CI verification is required before announcing a skill release.'
+\t' read -r slug source_ref; do
             echo "Checking $owner/$slug"
             status="$(curl -sS -o /tmp/areazero-repo-lookup.json -w '%{http_code}' \
               -H "Authorization: Bearer $GH_TOKEN" \
