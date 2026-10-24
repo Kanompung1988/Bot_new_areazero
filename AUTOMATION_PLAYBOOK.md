@@ -42,3 +42,21 @@ This playbook documents a tested social publishing path. It is stored **only on 
 ## Proven pilot
 
 On 2026-10-24, OpenAI Decisions API news was successfully published to **both** channels through GitHub public image URL to Metricool. The confirmed links and post IDs are recorded in `posts/2026-10-24/publication.json`.
+
+
+## Observed cross-run artifact transport limitation (2026-10-24)
+
+The AI Scout pilot **did** publish successfully. That does **not** prove arbitrary files from an earlier automation session can always be passed to a new connector run. During the first Open Source Lab automation:
+- The social image file already existed as a valid PNG and was visually checked.
+- `Canva.upload_asset_from_url` with a prior ChatGPT file ID returned `BLOCKED_FILE_REFERENCE`.
+- Library uploads of raw PNG/JPEG rendered by the model container returned `403: Library LPE indexing requires a trusted producer`. UTF-8 status JSON and ZIP file uploads succeeded.
+- The Google Drive workaround is not desired.
+- The requested GitHub skill repo `Kanompung1988/agent-skills` returned 404, and the available GitHub connector did not expose repo creation.
+
+**Preflight gate for every agent**: prove (1) the correct GitHub destination repository exists and is writable, if code release is claimed; (2) the *exact new* final image bytes can reach GitHub `create_blob` as base64; (3) the committed image's immutable public URL resolves as image/jpeg or image/png; (4) current-day queue/log has no agent-specific duplicate; and (5) Metricool accepts this image **before** considering the post scheduled. When any gate is unproven, save a DRAFT and precisely report which connector/filesystem bridge failed. Never send a wrong-topic photo or substitute yesterday's media simply to make a social post succeed.
+
+Do not infer that a file path visible to a container is automatically visible to the `functions.exec` JavaScript isolate or any connected app. `files__read(mode="image_file")` may return an image-asset pointer, *not raw binary/base64*. Do not send that pointer to `create_blob` as if it were image contents. If the connected Work runtime later exposes a safe byte bridge, use it to Base64-encode the actual image locally, send it directly to `create_blob`, and retain an image SHA256 plus commit SHA in the log.
+
+A draft status in `posts/YYYY-MM-DD/open-source-lab-draft.json` is **not** an idempotency barrier. Only an existing SCHEDULED/PUBLISHING/PUBLISHED matching agent+date+platform key blocks a new send. The AI Scout's already-published post is a **different** agent key, not permission to reuse content.
+
+Do not claim test totals in image/caption unless verified locally, and do not call a public skills launch until its code is accessible from the target public repo's default branch.
