@@ -1,0 +1,109 @@
+name: Provision independent AREAZERO Skill repositories
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.github/skill-lab/repository-requests.json'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: skill-repo-provisioning
+  cancel-in-progress: false
+
+jobs:
+  create-public-repositories:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout trusted automation manifest
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+      - name: Validate requests (strict slugs and source path)
+        shell: bash
+        run: |
+          set -euo pipefail
+          python3 - <<'PY'
+          import json, re
+          from pathlib import Path
+          path = Path('.github/skill-lab/repository-requests.json')
+          data = json.loads(path.read_text(encoding='utf-8'))
+          assert data.get('owner') == 'Kanompung1988', 'owner must be Kanompung1988'
+          entries = data.get('repositories')
+          assert isinstance(entries, list) and 1 <= len(entries) <= 15, 'expected 1-15 repository requests'
+          names = []
+          for item in entries:
+              assert isinstance(item, dict), 'entry must be an object'
+              slug = item.get('slug', '')
+              assert isinstance(slug, str) and re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*', slug), 'invalid repository slug'
+              assert len(slug) <= 64 and slug != 'agent-skills', 'unsupported repository name'
+              assert item.get('source_path') == f'skills/{slug}', 'skill source path mismatch'
+              assert set(item) == {'slug', 'source_path'}, 'unexpected manifest field'
+              names.append(slug)
+          assert len(names) == len(set(names)), 'duplicate repository request'
+          print('Validated %d repository requests: %s' % (len(names), ', '.join(names)))
+          PY
+      - name: Verify and create public repositories (idempotent)
+        env:
+          GH_TOKEN: ${{ secrets.AREAZERO_GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${GH_TOKEN:-}" ]]; then
+            echo '::error::AREAZERO_GITHUB_TOKEN is missing from Actions Secrets'
+            exit 1
+          fi
+          owner="Kanompung1988"
+          actor="$(gh api user --jq .login)"
+          if [[ "$actor" != "$owner" ]]; then
+            echo '::error::Secret identifies a different GitHub account; refusing to create repositories'
+            exit 1
+          fi
+          while IFS= read -r slug; do
+            echo "Checking $owner/$slug"
+            status="$(curl -sS -o /tmp/areazero-repo-lookup.json -w '%{http_code}' \
+              -H "Authorization: Bearer $GH_TOKEN" \
+              -H 'Accept: application/vnd.github+json' \
+              "https://api.github.com/repos/$owner/$slug")"
+            case "$status" in
+              200)
+                echo "EXISTS: $owner/$slug"
+                ;;
+              404)
+                src_status="$(curl -sS -o /tmp/areazero-source-check.json -w '%{http_code}' \
+                  -H 'Accept: application/vnd.github+json' \
+                  "https://api.github.com/repos/$owner/agent-skills/contents/skills/$slug/SKILL.md?ref=main")"
+                if [[ "$src_status" != 200 ]]; then
+                  echo "::error::Refusing empty repository: verified SKILL.md source unavailable for $slug (HTTP $src_status)"
+                  exit 1
+                fi
+                payload="$(jq -nc --arg name "$slug" '{name:$name,description:("AREAZERO Skill Lab | " + $name + " — portable Agent Skill for Claude Code and Codex"),private:false,auto_init:true,has_issues:true,has_wiki:false}')"
+                created="$(curl -sS -o /tmp/areazero-repo-create.json -w '%{http_code}' -X POST \
+                  -H "Authorization: Bearer $GH_TOKEN" \
+                  -H 'Accept: application/vnd.github+json' \
+                  -H 'Content-Type: application/json' \
+                  -d "$payload" https://api.github.com/user/repos)"
+                if [[ "$created" != 201 ]]; then
+                  echo "::error::Could not create $owner/$slug (HTTP $created). Check repository-creation permission, token expiry, and existing name."
+                  jq -r '.message // "unknown error"' /tmp/areazero-repo-create.json
+                  exit 1
+                fi
+                echo "CREATED: $owner/$slug"
+                ;;
+              *)
+                echo "::error::Repository lookup failed for $owner/$slug (HTTP $status); refusing to create"
+                exit 1
+                ;;
+            esac
+            identity="$(gh api "repos/$owner/$slug" --jq '.full_name + " " + .visibility + " " + .default_branch')"
+            if [[ "$identity" != "$owner/$slug public main" ]]; then
+              echo "::error::Wrong repository owner, visibility, or default branch for $slug: $identity"
+              exit 1
+            fi
+            echo "VERIFIED PUBLIC: https://github.com/$owner/$slug"
+          done < <(jq -r '.repositories[].slug' .github/skill-lab/repository-requests.json)
+          echo 'Provisioning complete. Separate publishing/CI verification is required before announcing a skill release.'
