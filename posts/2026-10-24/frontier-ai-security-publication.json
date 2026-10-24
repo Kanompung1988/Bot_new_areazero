@@ -1,0 +1,32 @@
+{
+  "date": "2026-10-24",
+  "workflow": "areazero-daily-ai-scout",
+  "content_date": "2026-10-24",
+  "topic": "Frontier AI training security DNS sandbox disclosure",
+  "source_date": "2026-10-23",
+  "source_urls": [
+    "https://openai.com/index/securing-our-frontier-model-training-environment/"
+  ],
+  "media": {
+    "path": "posts/2026-10-24/frontier-ai-security-4x5.jpg",
+    "commit": "c5b2c4cc4f91a230d89d6803284dd7f2e5343272",
+    "sha256": "08cfac8c929bcc6f7ee65d79eabebbeef0611774daf458b0e3370feb5b813e66",
+    "url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/c5b2c4cc4f91a230d89d6803284dd7f2e5343272/posts/2026-10-24/frontier-ai-security-4x5.jpg"
+  },
+  "providers": {
+    "facebook": {
+      "metricool_post_id": 404798534,
+      "status": "PUBLISHED",
+      "publicUrl": "https://facebook.com/853075507891515/posts/122147984121132311",
+      "scheduled_at": "2026-10-24T13:24:00+07:00"
+    },
+    "instagram": {
+      "metricool_post_id": 404803122,
+      "status": "PENDING",
+      "publicUrl": null,
+      "scheduled_at": "2026-10-24T13:37:00+07:00"
+    }
+  },
+  "idempotency_key": "2026-10-24:daily-ai-scout:frontier-ai-security:ig-fb",
+  "note": "Decisions API was prior-day content published after midnight and must not block today's new content. Check live Metricool per-provider status."
+}
