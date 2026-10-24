@@ -8,40 +8,38 @@
   "status": "SCHEDULED",
   "repo": {
     "url": "https://github.com/Kanompung1988/agent-skills",
+    "role": "PORTFOLIO_ONLY",
     "public": true,
     "defaultBranch": "main",
-    "mergeCommit": "e7ef34bbce28263f843d3d6895b1edac86163304",
-    "pullRequest": "https://github.com/Kanompung1988/agent-skills/pull/1",
+    "portfolioMergeCommit": "d709e93ed44336492a7bf578b6d95a5adaa48acd",
+    "portfolioPR": "https://github.com/Kanompung1988/agent-skills/pull/3",
     "skills": [
       {
-        "path": "skills/openapi-compat-audit",
-        "unitTests": 11,
-        "status": "PUBLIC"
+        "name": "openapi-compat-audit",
+        "url": "https://github.com/Kanompung1988/openapi-compat-audit",
+        "status": "PUBLIC_MAIN",
+        "mergeSha": "1b80837d7cffb13f27b116a8ee1e8731777ba59a",
+        "ci": "https://github.com/Kanompung1988/openapi-compat-audit/actions/runs/40093092063",
+        "tests_per_python": 16,
+        "smoke_per_python": 1
       },
       {
-        "path": "skills/ci-log-triage",
-        "unitTests": 11,
-        "status": "PUBLIC"
+        "name": "ci-log-triage",
+        "url": "https://github.com/Kanompung1988/ci-log-triage",
+        "status": "PUBLIC_MAIN",
+        "mergeSha": "58f233b29352bf2e88f1661d578a0b9ba25ccc14",
+        "ci": "https://github.com/Kanompung1988/ci-log-triage/actions/runs/40093094810",
+        "tests_per_python": 16,
+        "smoke_per_python": 1
       }
-    ],
-    "quality": {
-      "tests_per_python": 32,
-      "pythonVersions": [
-        "3.10",
-        "3.12"
-      ],
-      "smokeTests_per_python": 2,
-      "ciRun": "https://github.com/Kanompung1988/agent-skills/actions/runs/40090285727",
-      "officialValidator": "NOT_RUN",
-      "independentReview": "NOT_RUN"
-    }
+    ]
   },
   "social": {
     "brandId": 7611512,
     "timezone": "Asia/Bangkok",
     "scheduledAtLocal": "2026-10-25T12:00:00+07:00",
     "autoPublish": true,
-    "metricoolId": 404941924,
+    "metricoolId": 404960988,
     "metricoolUuid": "2137186428519728769",
     "providers": [
       {
@@ -55,7 +53,7 @@
         "publicUrl": null
       }
     ],
-    "captionThai": "🧠 ทำให้ AI เก่งขึ้นทุกวันกับ AREAZERO Skill Lab | EP.01\n\nเราไม่ได้อยากแค่เล่าข่าว AI — แต่อยากสร้างเครื่องมือที่ทำให้ Claude Code, Codex และ Developer ทำงานได้เก่งขึ้นจริง แล้วเปิดโค้ดให้ทุกคนเอาไปใช้และต่อยอดได้\n\n🎯 เปิดตัว 2 Open-source Agent Skills\n\n🔍 OpenAPI Compat Audit — ตรวจความเปลี่ยนแปลงของ API และชี้จุดที่ *อาจ* ทำให้ Client พัง ก่อน Release\n\n🛠 CI Log Triage — แยกสัญญาณ Error จาก CI Logs พร้อมบรรทัดหลักฐานและแนวทางตรวจสอบต่อ ไม่เดาสาเหตุ\n\n✅ เปิด Public Repository แล้ว\n✅ มี SKILL.md, README และตัวอย่าง CLI ที่ทดลองซ้ำได้\n✅ GitHub Actions ผ่าน 32 Unit Tests บน Python 3.10 และ 3.12 (พร้อมตัวอย่าง Smoke Tests)\n✅ โค้ด MIT License · รัน Offline ได้\n\nนี่คือชิ้นแรกของซีรีส์ AREAZERO Skill Lab: เราจะคัดปัญหาจริง สร้าง Skill ทดสอบ แล้วค่อยแจก — **ถ้ายังไม่ผ่าน QA เราจะไม่เรียกว่าพร้อมใช้**\n\n⭐ ดูโค้ด วิธีติดตั้ง และรายงานการทดสอบ:\nhttps://github.com/Kanompung1988/agent-skills\n\nฝาก Star หรือเปิด Issue ถ้าอยากให้เราทำ Skill แก้ปัญหาอะไรต่อ 👨‍💻\n\n#AreazeroSkillLab #ทำให้AIเก่งขึ้นทุกวัน #Areazero #AgentSkills #OpenSource #ClaudeCode #Codex #DeveloperTools",
+    "captionThai": "🧠 ทำให้ AI เก่งขึ้นทุกวันกับ AREAZERO Skill Lab | EP.01\n\nเราไม่ได้แค่เล่าเรื่อง AI — เราสร้างเครื่องมือเล็ก ๆ ที่ทดสอบได้จริง เปิด Source Code ให้ Developer ใช้กับ Claude Code / Codex และร่วมกันพัฒนาต่อได้\n\n🚀 เปิดตัว 2 Agent Skills — แยกเป็น 2 Public GitHub Repositories!\n\n🔍 OpenAPI Compatibility Audit\nตรวจจุดเปลี่ยนใน OpenAPI 3.x ที่ *อาจ* ทำให้ API client พัง เช่น required field, enum และ response ที่หายไป\ngithub.com/Kanompung1988/openapi-compat-audit\n\n🛠 CI Log Triage\nวิเคราะห์ CI/Build Logs พร้อมหลักฐานเลขบรรทัดและขั้นตอนตรวจสอบต่อ ไม่ด่วนฟันธง Root Cause\ngithub.com/Kanompung1988/ci-log-triage\n\n✅ แต่ละ Repo มี README, SKILL.md, โค้ด, ตัวอย่าง CLI และ CI ของตัวเอง\n✅ GitHub Actions ผ่าน 16 unit tests + 1 smoke test ต่อ Repo บน Python 3.10 และ 3.12\n✅ ใช้งาน Offline ได้ · โค้ด MIT License\n✅ ตัวอย่างเป็นข้อมูลจำลอง ไม่ใช่ผลทดสอบจาก Production\n\n📚 รวมผลงานและ Episode ถัดไป:\ngithub.com/Kanompung1988/agent-skills\n\n⭐ ถ้าเป็นประโยชน์ ฝาก Star ที่ Repo ของ Skill ที่คุณชอบ หรือเปิด Issue บอกปัญหาที่อยากให้ Skill Lab แก้ต่อครับ!\n\n#AreazeroSkillLab #ทำให้AIเก่งขึ้นทุกวัน #OpenSource #AgentSkills #ClaudeCode #Codex #DeveloperTools #Areazero",
     "media": {
       "sourcePath": "posts/2026-10-25/agent-skills-launch-4x5.jpg",
       "sourceCommit": "564496ae1e5cd45ddf116b622986ad1fb9085a98",
@@ -68,7 +66,7 @@
     "assetsPolicy": "Exact official Area Zero SVG logo composite; preserved proportions, palette #00D9FF #00FFA3 #0A1929",
     "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=2137186428519728769"
   },
-  "notes": "Updated existing scheduled item in place (stable Metricool UUID), not a new post. Posting remains pending for 2026-10-25 12:00 Asia/Bangkok; do not republish or claim public URLs early.",
+  "notes": "Existing EP.01 scheduled post updated in place to point at two independently published public repos; stable UUID preserved and image/media unchanged. Still PENDING for both providers at next-day 12:00 Asia/Bangkok; do not create duplicate or claim PUBLISHED before public URLs.",
   "series": {
     "name": "AREAZERO Skill Lab",
     "tagline_th": "ทำให้ AI เก่งขึ้นทุกวัน",
