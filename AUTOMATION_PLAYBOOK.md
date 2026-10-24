@@ -1,5 +1,16 @@
 # Areazero Automatic Publishing Playbook
 
+## Verified ChatGPT daily automation configuration — 2026-10-24
+
+- **AREAZERO Daily AI Scout**: the one active news/trend automation is scheduled to START daily at **08:00 Asia/Bangkok** (exact schedule), beginning 2026-10-25. The older Scout task remains disabled to avoid duplicate news runs. Publishing still uses Metricool at **12:00 Asia/Bangkok**, NOT at 08:00.
+- **AREAZERO Skill Lab**: the existing daily Skill Lab automation runs at **09:00 Asia/Bangkok** (exact schedule), beginning 2026-10-25. Each new qualifying standalone skill gets its own public repository; `agent-skills` on `main` remains portfolio-only. Publishing is scheduled at exactly **12:00 Asia/Bangkok** once source/CI/artwork are verified. A given day may safely have one Scout and one Skill Lab post per provider, with separate idempotency keys.
+- **AREAZERO Daily Health Watch**: one enabled daily condition watch runs **after noon (approx. 13:00 Asia/Bangkok)** with notifications configured ON, checking per-agent GitHub/Metricool publishing evidence, duplicate guards, failures and token renewal risk. It is read-only, does NOT republish or declare PUBLISHED based on an absent scheduled item. Older duplicate QA automation remains disabled.
+- **Current Metricool launch queued**: Skill Lab EP.01 is already scheduled for 2026-10-25 at 12:00 ICT, UUID `2137186428519728769`, last recorded post ID `404960988`; one existing social entry and both providers PENDING as last verified on 2026-10-24. Do not create another EP.01 post.
+- **GitHub code/CI verified**: target standalone `Kanompung1988/openapi-compat-audit` and `Kanompung1988/ci-log-triage` are PUBLIC with GitHub Actions passing Python 3.10 and 3.12. Repo provisioning workflow last successful run is [#40093917087](https://github.com/Kanompung1988/Bot_new_areazero/actions/runs/40093917087), proving **creation and idempotent rerun**, not yet proving unattended daily creation of a brand-new third repo.
+- **Credential longevity risk**: owner's fine-grained PAT screenshot showed expiry **2027-01-22** (90 days). Its exact secret is not exposed to automation, cannot be automatically renewed via the current connector; automatic repo creation can stop at expiration. The enabled Health Watch should alert from 2027-01-08 if renewal/GitHub App cannot be verified. For uninterrupted operation beyond expiry, switch to a GitHub App installation token or securely rotate this GitHub Actions secret. NEVER leak PAT into public code, logs or chat.
+- **Production confidence boundary**: initial standalone repo deployment and one social queue write were verified in real connected tools, but the first complete scheduled **unattended recurring** run after these changes has NOT yet happened. If tools/permissions/time window fail, return DRAFT/BLOCKED and preserve artifacts, never fake success or create duplicates.
+
+
 ## FINAL repository split — verified 2026-10-24 (overrides earlier monorepo wording)
 
 **One Skill = One independent PUBLIC repository.** The previous monorepo setup has now been migrated and reviewed:
