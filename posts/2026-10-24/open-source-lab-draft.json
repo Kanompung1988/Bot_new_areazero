@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-24",
+  "workflow": "areazero-open-source-lab",
+  "status": "DRAFT",
+  "idempotency_key": "2026-10-24:areazero-open-source-lab:instagram-facebook",
+  "skills": [
+    {
+      "name": "openapi-compat-audit",
+      "status": "LOCAL_RELEASE_CANDIDATE",
+      "quality_score_editorial": 94,
+      "core_tests_passed": 11
+    },
+    {
+      "name": "ci-log-triage",
+      "status": "LOCAL_RELEASE_CANDIDATE",
+      "quality_score_editorial": 92,
+      "core_tests_passed": 11
+    }
+  ],
+  "qa": {
+    "tests_passed": 28,
+    "core_tests_passed": 22,
+    "distribution_tests_passed": 6,
+    "official_validator": "NOT_RUN",
+    "external_review": "NOT_RUN"
+  },
+  "github": {
+    "target": "Kanompung1988/agent-skills",
+    "status": "BLOCKED_REPOSITORY_NOT_FOUND",
+    "published": false,
+    "reason": "GitHub connector has no create-repository action; target get_repo returned 404."
+  },
+  "media": {
+    "status": "LOCAL_ONLY",
+    "name": "areazero_skills_preview_2026-10-24_4x5.png",
+    "public_url": null,
+    "reason": "Previous-run generated-image file is unavailable for connector egress; Library image upload 403 LPE."
+  },
+  "metricool": {
+    "brand_id": "7611512",
+    "instagram_target": "areazero.ai",
+    "facebook_target": "AreaZero",
+    "publication_date_local": "2026-10-24T12:00:00",
+    "timezone": "Asia/Bangkok",
+    "attempted_create": false,
+    "instagram_status": "DRAFT",
+    "facebook_status": "DRAFT"
+  },
+  "not_same_as_daily_scout_post": true,
+  "scout_post_record": "posts/2026-10-24/publication.json",
+  "qa_artifact_library_path": "/Areazero/Open Source Lab/2026-10-24/agent-skills-2026-10-24-QA.zip",
+  "social_artifact_library_path": "/Areazero/Open Source Lab/2026-10-24/social-kit-2026-10-24.zip",
+  "note": "Do not announce public GitHub availability or mark a social post as scheduled or published until corresponding verified URLs exist."
+}
