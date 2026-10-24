@@ -41,7 +41,7 @@
     "timezone": "Asia/Bangkok",
     "scheduledAtLocal": "2026-10-25T12:00:00+07:00",
     "autoPublish": true,
-    "metricoolId": 404937482,
+    "metricoolId": 404941924,
     "metricoolUuid": "2137186428519728769",
     "providers": [
       {
@@ -55,7 +55,7 @@
         "publicUrl": null
       }
     ],
-    "captionThai": "🚀 แจกฟรี 2 Agent Skills สำหรับ Developer จาก Areazero Open Source Lab\n\nเขียนโค้ดเร็วขึ้นอย่างเดียวไม่พอ — ต้องจับความเสี่ยงให้ได้ก่อน Release ด้วย\n\n🔍 1) OpenAPI Compat Audit\nเปรียบเทียบ OpenAPI 3.x ก่อนและหลังแก้ไข เพื่อชี้จุดที่ *อาจ* ทำให้ API clients พัง เช่น endpoint ที่หายไป หรือ field ที่กลายเป็น required\n\n🧩 2) CI Log Triage\nแยกสัญญาณ Error จาก CI logs พร้อมบรรทัดอ้างอิงและขั้นตอนตรวจสอบต่อ โดยไม่เดา Root Cause\n\n✅ โค้ด Python รันแบบ Offline\n✅ มี SKILL.md สำหรับ Claude Code / Codex\n✅ 32 unit tests ผ่านบน Python 3.10 และ 3.12 ใน GitHub Actions\n✅ MIT License สำหรับโค้ด\n\nภาพแสดงผลลัพธ์จากข้อมูลทดสอบจำลอง ไม่ใช่เคส Production\n\nดู Source Code, README, วิธีติดตั้งและตัวอย่างจริง:\nhttps://github.com/Kanompung1988/agent-skills\n\nถ้าเป็นประโยชน์ ฝาก ⭐ GitHub และส่ง Issue/PR เพื่อช่วยกันพัฒนาด้วยครับ\n\n#Areazero #AgentSkills #OpenSource #ClaudeCode #Codex #DeveloperTools",
+    "captionThai": "🧠 ทำให้ AI เก่งขึ้นทุกวันกับ AREAZERO Skill Lab | EP.01\n\nเราไม่ได้อยากแค่เล่าข่าว AI — แต่อยากสร้างเครื่องมือที่ทำให้ Claude Code, Codex และ Developer ทำงานได้เก่งขึ้นจริง แล้วเปิดโค้ดให้ทุกคนเอาไปใช้และต่อยอดได้\n\n🎯 เปิดตัว 2 Open-source Agent Skills\n\n🔍 OpenAPI Compat Audit — ตรวจความเปลี่ยนแปลงของ API และชี้จุดที่ *อาจ* ทำให้ Client พัง ก่อน Release\n\n🛠 CI Log Triage — แยกสัญญาณ Error จาก CI Logs พร้อมบรรทัดหลักฐานและแนวทางตรวจสอบต่อ ไม่เดาสาเหตุ\n\n✅ เปิด Public Repository แล้ว\n✅ มี SKILL.md, README และตัวอย่าง CLI ที่ทดลองซ้ำได้\n✅ GitHub Actions ผ่าน 32 Unit Tests บน Python 3.10 และ 3.12 (พร้อมตัวอย่าง Smoke Tests)\n✅ โค้ด MIT License · รัน Offline ได้\n\nนี่คือชิ้นแรกของซีรีส์ AREAZERO Skill Lab: เราจะคัดปัญหาจริง สร้าง Skill ทดสอบ แล้วค่อยแจก — **ถ้ายังไม่ผ่าน QA เราจะไม่เรียกว่าพร้อมใช้**\n\n⭐ ดูโค้ด วิธีติดตั้ง และรายงานการทดสอบ:\nhttps://github.com/Kanompung1988/agent-skills\n\nฝาก Star หรือเปิด Issue ถ้าอยากให้เราทำ Skill แก้ปัญหาอะไรต่อ 👨‍💻\n\n#AreazeroSkillLab #ทำให้AIเก่งขึ้นทุกวัน #Areazero #AgentSkills #OpenSource #ClaudeCode #Codex #DeveloperTools",
     "media": {
       "sourcePath": "posts/2026-10-25/agent-skills-launch-4x5.jpg",
       "sourceCommit": "564496ae1e5cd45ddf116b622986ad1fb9085a98",
@@ -65,7 +65,15 @@
       "dimensions": "1080x1350",
       "format": "JPEG"
     },
-    "assetsPolicy": "Exact official Area Zero SVG logo composite; preserved proportions, palette #00D9FF #00FFA3 #0A1929"
+    "assetsPolicy": "Exact official Area Zero SVG logo composite; preserved proportions, palette #00D9FF #00FFA3 #0A1929",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=2137186428519728769"
   },
-  "notes": "SCHEDULED is not PUBLISHED. Recheck per-provider Metricool statuses and publicUrls after scheduled date; never reissue a duplicate while status pending."
+  "notes": "Updated existing scheduled item in place (stable Metricool UUID), not a new post. Posting remains pending for 2026-10-25 12:00 Asia/Bangkok; do not republish or claim public URLs early.",
+  "series": {
+    "name": "AREAZERO Skill Lab",
+    "tagline_th": "ทำให้ AI เก่งขึ้นทุกวัน",
+    "episode": "EP.01",
+    "siblingSeries": "Daily AI Scout",
+    "editorialPillar": "Built and tested open-source agent skills"
+  }
 }
