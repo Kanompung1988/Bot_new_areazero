@@ -11,5 +11,6 @@
       "source_path": "skills/ci-log-triage",
       "source_ref": "main"
     }
-  ]
+  ],
+  "purpose": "Idempotency verification and baseline for independent AREAZERO Skill repositories"
 }
