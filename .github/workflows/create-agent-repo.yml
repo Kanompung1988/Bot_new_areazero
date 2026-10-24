@@ -1,0 +1,70 @@
+name: Create Areazero Public Skill Repo
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  create-repository:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify or create Kanompung1988/agent-skills
+        env:
+          GH_TOKEN: ${{ secrets.AREAZERO_GITHUB_TOKEN }}
+        shell: bash
+        run: |
+          set -euo pipefail
+          if [[ -z "${GH_TOKEN:-}" ]]; then
+            echo "::error::AREAZERO_GITHUB_TOKEN repository secret is not configured."
+            exit 1
+          fi
+
+          owner="Kanompung1988"
+          repo="agent-skills"
+          endpoint="https://api.github.com/repos/$owner/$repo"
+          code="$(curl --silent --show-error --output /tmp/repo-check.json \
+            --write-out '%{http_code}' \
+            --header "Authorization: Bearer $GH_TOKEN" \
+            --header "Accept: application/vnd.github+json" \
+            "$endpoint")"
+
+          case "$code" in
+            200)
+              echo "Repository already exists; no creation attempted."
+              ;;
+            404)
+              echo "Repository not found with this credential. Attempting creation."
+              create_code="$(curl --silent --show-error --output /tmp/repo-create.json \
+                --write-out '%{http_code}' \
+                --request POST \
+                --header "Authorization: Bearer $GH_TOKEN" \
+                --header "Accept: application/vnd.github+json" \
+                --header "Content-Type: application/json" \
+                --data '{"name":"agent-skills","description":"Reusable AI Agent Skills for Claude Code and Codex","private":false,"auto_init":true}' \
+                "https://api.github.com/user/repos")"
+              if [[ "$create_code" != 201 ]]; then
+                echo "::error::Repository creation failed (HTTP $create_code). Check account, token permissions, ownership, and whether the name is already taken."
+                python3 -c 'import json; d=json.load(open("/tmp/repo-create.json")); print(d.get("message","Unknown GitHub API error"))'
+                exit 1
+              fi
+              echo "Repository created."
+              ;;
+            401|403)
+              echo "::error::GitHub API denied repository lookup (HTTP $code). Verify token credentials and permissions."
+              exit 1
+              ;;
+            *)
+              echo "::error::GitHub lookup failed (HTTP $code); refusing to create."
+              exit 1
+              ;;
+          esac
+
+          gh_repo="$(gh api "repos/$owner/$repo" --jq '.full_name')"
+          visibility="$(gh api "repos/$owner/$repo" --jq '.visibility')"
+          if [[ "$gh_repo" != "$owner/$repo" || "$visibility" != "public" ]]; then
+            echo "::error::Repository identity or visibility does not match the intended public target."
+            exit 1
+          fi
+          echo "VERIFIED PUBLIC: https://github.com/$owner/$repo"
