@@ -1,5 +1,17 @@
 # Areazero Automatic Publishing Playbook
 
+## FINAL repository split — verified 2026-10-24 (overrides earlier monorepo wording)
+
+**One Skill = One independent PUBLIC repository.** The previous monorepo setup has now been migrated and reviewed:
+- [AREAZERO Skill Lab portfolio](https://github.com/Kanompung1988/agent-skills): public default-branch `main` is now a **directory and episode catalogue only**; old skill implementation folders were removed after confirming independent releases. [Portfolio PR #3](https://github.com/Kanompung1988/agent-skills/pull/3) passed five index/brand QA checks and was merged.
+- [OpenAPI Compatibility Audit](https://github.com/Kanompung1988/openapi-compat-audit): independent README, root SKILL.md, source, references, examples, license, its own GitHub Actions; [CI](https://github.com/Kanompung1988/openapi-compat-audit/actions/runs/40093092063) passed Python 3.10 and 3.12 with 16 unit tests + 1 fixture smoke each.
+- [CI Log Triage](https://github.com/Kanompung1988/ci-log-triage): same standalone standard; [CI](https://github.com/Kanompung1988/ci-log-triage/actions/runs/40093094810) passed Python 3.10 and 3.12 with 16 unit tests + 1 fixture smoke each.
+- **New repo provisioner**: `Bot_new_areazero/main` [workflow](https://github.com/Kanompung1988/Bot_new_areazero/blob/main/.github/workflows/provision-skill-repos.yml) watches [.github/skill-lab/repository-requests.json](https://github.com/Kanompung1988/Bot_new_areazero/blob/main/.github/skill-lab/repository-requests.json) and uses the existing GitHub Actions secret (never expose it) to create **exactly** `Kanompung1988/<validated-skill-slug>` PUBLIC idempotently. A new Skill is staged on a **non-default** `agent-skills` branch under `skills/<slug>/SKILL.md`; pass the optional `source_ref` branch name in the manifest. A provisioned empty repo is **not** a released Skill: the agent must upload full files, pass its own CI on PR, merge, and verify public default-branch content.
+- **Canonical runbook**: [docs/SKILL_LAB_OPERATIONS.md](https://github.com/Kanompung1988/agent-skills/blob/main/docs/SKILL_LAB_OPERATIONS.md). Future agent runs MUST load and follow its standalone architecture, not the historical `agent-skills/skills/<slug>` release paths below.
+- **EP.01 social idempotency**: the already-scheduled 2026-10-25 12:00 Asia/Bangkok combined Instagram/Facebook post has stable Metricool UUID `2137186428519728769` (last confirmed updated ID `404960988`). Its caption links to **both standalone public repos** and the portfolio; check actual provider statuses/URLs before PUBLISHED and DO NOT create another post for this agent/date.
+- GitHub Action success is **creation only**, not evidence of Source/CI/Metricool publication. Each Skill needs its own premium README, original unmodified Area Zero logo, quality proof and issue/contributor history. Keep one combined Thai social card for both newly published skills.
+
+
 ## Live production baseline — verified 2026-10-24 (latest overrides historical blockers below)
 
 - **Two distinct series:** `Daily AI Scout` = AI/technology news and trend briefs; `AREAZERO Skill Lab — ทำให้ AI เก่งขึ้นทุกวัน` = actual tested open-source Agent Skills. Do not cross-post the same story or borrow the other agent's idempotency key.
