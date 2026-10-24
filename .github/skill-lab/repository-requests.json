@@ -1,0 +1,13 @@
+{
+  "owner": "Kanompung1988",
+  "repositories": [
+    {
+      "slug": "openapi-compat-audit",
+      "source_path": "skills/openapi-compat-audit"
+    },
+    {
+      "slug": "ci-log-triage",
+      "source_path": "skills/ci-log-triage"
+    }
+  ]
+}
