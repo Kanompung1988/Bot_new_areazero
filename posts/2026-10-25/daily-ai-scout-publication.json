@@ -6,7 +6,7 @@
     "2026-10-25:areazero-daily-ai-scout:instagram",
     "2026-10-25:areazero-daily-ai-scout:facebook"
   ],
-  "status": "SCHEDULED",
+  "status": "PUBLISHED",
   "content_date": "2026-10-25",
   "event_date": "2026-10-23",
   "source_published_date": "2026-10-23",
@@ -46,16 +46,28 @@
     "providers": [
       {
         "network": "facebook",
-        "status": "PENDING",
-        "publicUrl": null
+        "status": "PUBLISHED",
+        "publicUrl": "https://facebook.com/122147933883132311/posts/122148069789132311",
+        "platformPostId": "122148069789132311"
       },
       {
         "network": "instagram",
-        "status": "PENDING",
-        "publicUrl": null
+        "status": "PUBLISHED",
+        "publicUrl": "https://www.instagram.com/p/De56NL3CIh0/",
+        "platformPostId": "https://www.instagram.com/p/De56NL3CIh0/"
       }
     ]
   },
-  "last_confirmation": "2026-10-25T08:11:51+07:00",
-  "notes": "One combined Scout post scheduled for exactly noon on both networks; PENDING means scheduled only, not published. Noon QA must verify each publicUrl and update record. Sibling Skill Lab is a different series and remains untouched."
+  "last_confirmation": "2026-10-25T12:23:27+07:00",
+  "notes": "One combined Scout post scheduled for exactly noon on both networks; PENDING means scheduled only, not published. Noon QA must verify each publicUrl and update record. Sibling Skill Lab is a different series and remains untouched.",
+  "qa": {
+    "checked_at": "2026-10-25T12:23:27+07:00",
+    "check": "Metricool brand + same day queue + repo state + image hash + Zoom primary source",
+    "schedule_local": "2026-10-25T12:00:00+07:00",
+    "actual_publish_timestamp": "not exposed by current Metricool connector",
+    "unique_matching_scout_posts": 1,
+    "skill_lab_distinct_series": true,
+    "skill_lab_status_at_check": "DRAFT PENDING with autoPublish=false",
+    "post_published_both": true
+  }
 }
