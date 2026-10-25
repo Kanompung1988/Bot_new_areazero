@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-25",
+  "agent": "areazero-daily-ai-scout",
+  "series": "Daily AI Scout / NEWS AND TRENDS",
+  "idempotency_keys": [
+    "2026-10-25:areazero-daily-ai-scout:instagram",
+    "2026-10-25:areazero-daily-ai-scout:facebook"
+  ],
+  "status": "SCHEDULED",
+  "content_date": "2026-10-25",
+  "event_date": "2026-10-23",
+  "source_published_date": "2026-10-23",
+  "selected_story": "Zoom acquires Onyx, adding open-source enterprise knowledge search to Zoom AI Services",
+  "source_url": "https://news.zoom.com/zoom-acquires-onyx-adding-open-source-enterprise-knowledge-search-to-zoom-ai-services/",
+  "editorial_record": "posts/2026-10-25/daily-ai-scout-editorial.json",
+  "asset": {
+    "git_repo": "Kanompung1988/Bot_new_areazero",
+    "branch": "areazero-social-assets",
+    "path": "posts/2026-10-25/daily-ai-scout-zoom-onyx-4x5.jpg",
+    "commit_sha": "7254c8cf6bc99fe96336043dda588baf7e1a07ce",
+    "url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/7254c8cf6bc99fe96336043dda588baf7e1a07ce/posts/2026-10-25/daily-ai-scout-zoom-onyx-4x5.jpg",
+    "blob_sha1": "2bce246c69859f4d94ecd44d6e53e5facbe1cb21",
+    "sha256": "8b47c49eab436820d1912ab790f64ab0f265bd6ee9dfec5ec757239de469cf35",
+    "width": 1080,
+    "height": 1350,
+    "format": "JPEG",
+    "verified_via": "Canva.upload_asset_from_url success; original GitHub blob SHA matched local binary bytes",
+    "metricool_media": "https://static.metricool.com/planner/202610/7611512-file-11316653056932226349.jpeg",
+    "logo_original_blob_sha1": "e1d2a0686010b251a530f9ad7eaf9afddf6a706b",
+    "source_artwork_sha256": "3c831bf6481f9817d67e3909403d55ab672bd3cdba69315b13ef9f1a8577a810",
+    "source_archive_library_path": "/Areazero/Publishing/areazero-daily-ai-scout-2026-10-25-source-package.zip",
+    "source_archive_sha256": "9137b750e568057dd3c49654a5dbb50e9b3516e322abd3303156b0a225bfb169"
+  },
+  "metricool": {
+    "brandId": 7611512,
+    "brand": "AreaZero",
+    "instagram_account": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "timezone": "Asia/Bangkok",
+    "scheduled_at": "2026-10-25T12:00:00+07:00",
+    "autoPublish": true,
+    "draft": false,
+    "post_id": 405377433,
+    "stable_uuid": "-6214456962647440732",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=-6214456962647440732",
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING",
+        "publicUrl": null
+      },
+      {
+        "network": "instagram",
+        "status": "PENDING",
+        "publicUrl": null
+      }
+    ]
+  },
+  "last_confirmation": "2026-10-25T08:11:51+07:00",
+  "notes": "One combined Scout post scheduled for exactly noon on both networks; PENDING means scheduled only, not published. Noon QA must verify each publicUrl and update record. Sibling Skill Lab is a different series and remains untouched."
+}
