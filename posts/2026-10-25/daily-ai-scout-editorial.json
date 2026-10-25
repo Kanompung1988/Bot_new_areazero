@@ -1,0 +1,112 @@
+{
+  "content_date": "2026-10-25",
+  "agent": "areazero-daily-ai-scout",
+  "series": "Daily AI Scout / NEWS AND TRENDS",
+  "idempotency_keys": [
+    "2026-10-25:areazero-daily-ai-scout:instagram",
+    "2026-10-25:areazero-daily-ai-scout:facebook"
+  ],
+  "selected_slug": "zoom-acquires-onyx-enterprise-agent-context",
+  "event_date": "2026-10-23",
+  "primary_publication_date": "2026-10-23",
+  "source_url": "https://news.zoom.com/zoom-acquires-onyx-adding-open-source-enterprise-knowledge-search-to-zoom-ai-services/",
+  "headline_th": "ZOOM ซื้อ ONYX เติมความรู้บริษัทให้ AI Agent",
+  "takeaways_th": [
+    "Onyx เชื่อมความรู้จากแอปองค์กรกว่า 50 แห่ง ตามที่ Zoom ระบุ",
+    "Zoom ยืนยันว่า Onyx จะยัง open-source, model-agnostic, app-agnostic และ self-hostable",
+    "AI Agent ต้องมีข้อมูลบริบทและสิทธิ์เข้าถึงที่เหมาะสมก่อนทำงาน"
+  ],
+  "caption_th": "🧠 Zoom ซื้อ Onyx — ทำไมเรื่องนี้สำคัญกับคนสร้าง AI Agent?\n\nเมื่อ 23 ต.ค. 2026 Zoom ประกาศเข้าซื้อ Onyx แพลตฟอร์มค้นหาความรู้ภายในองค์กรแบบโอเพนซอร์ส เพื่อเพิ่ม “บริบทของบริษัท” ให้ Zoom AI Services และ AI Agent ไม่ต้องอาศัยแค่ข้อมูลจากบทสนทนา\n\n3 เรื่องที่ควรรู้ 👇\n\n🔹 Onyx เชื่อมข้อมูลจากแอปองค์กรกว่า 50 แห่ง เช่น เอกสาร วิกิ ทิกเก็ต และระบบลูกค้า (ตามข้อมูลที่ Zoom ระบุ)\n🔹 Zoom ระบุว่า Onyx จะยังเป็นแพลตฟอร์มแยกต่างหาก เป็นโอเพนซอร์ส ไม่ผูกกับโมเดลหรือแอปใดแอปหนึ่ง และ Self-host ได้\n🔹 ทิศทาง AI Agent ชัดขึ้น: ก่อนให้ AI ลงมือทำ ต้องดึงความรู้ที่ถูกต้องจากระบบงาน ไม่ใช่แค่สรุปประชุมเก่ง\n\n💡 ถ้าทีมไทยกำลังทำ Enterprise AI: เริ่มจากสิทธิ์เข้าถึงข้อมูล ความสดของเอกสาร และการตรวจสอบการใช้งานก่อนเปิดให้ Agent ทำงานจริง เพราะ “ค้นเจอ” ไม่ได้แปลว่า “มีสิทธิ์ใช้”\n\n📅 ประกาศและเหตุการณ์: 23 ต.ค. 2026 | สรุปประจำวันที่ 25 ต.ค. 2026\n🔗 แหล่งข่าวต้นทาง: https://news.zoom.com/zoom-acquires-onyx-adding-open-source-enterprise-knowledge-search-to-zoom-ai-services/\n\nคุณคิดว่า Agent ในองค์กรไทยติดปัญหา “ไม่มี Context” มากกว่า “โมเดลไม่เก่งพอ” ไหม?\n\n#AreaZero #DailyAIScout #AINews #Zoom #Onyx #EnterpriseAI #AIAgent #RAG #AIThailand",
+  "alt_text_th": "ภาพข่าว AI ของ Area Zero ขนาด 4:5 สีกรมท่า #0A1929 ฟ้าไซแอน #00D9FF และเขียวมิ้นต์ #00FFA3 มีโลโก้ SVG ต้นฉบับและพาดหัว “ZOOM ซื้อ ONYX เติมความรู้บริษัทให้ AI AGENT” ภาพสมอง AI แบบโฮโลแกรมเชื่อมบทสนทนากับเอกสารและความรู้บริษัท สรุป 3 ประเด็น: เชื่อมกว่า 50 แอป, Onyx ยัง Open Source และ Self-host ได้, AI Agent ใช้บริบทจริงก่อนลงมือทำ",
+  "hashtags": [
+    "#AreaZero",
+    "#DailyAIScout",
+    "#AINews",
+    "#Zoom",
+    "#Onyx",
+    "#EnterpriseAI",
+    "#AIAgent",
+    "#RAG",
+    "#AIThailand"
+  ],
+  "research": {
+    "rank_method": "Subjective editorial score /100 based on freshness, practical utility, Thai audience relevance, primary evidence, and non-repetition",
+    "candidates": [
+      {
+        "topic": "Zoom acquires Onyx for enterprise knowledge search",
+        "event_date": "2026-10-23",
+        "published_date": "2026-10-23",
+        "primary": "https://news.zoom.com/zoom-acquires-onyx-adding-open-source-enterprise-knowledge-search-to-zoom-ai-services/",
+        "score": 95,
+        "reason": "Major AI acquisition; RAG/enterprise-agent context; broad Thai developer/business relevance",
+        "selected": true
+      },
+      {
+        "topic": "GitHub Copilot turns Teams notifications into PRs",
+        "event_date": "2026-10-23",
+        "published_date": "2026-10-23",
+        "primary": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/",
+        "score": 91,
+        "reason": "Real workflow improvement; Microsoft Teams audience somewhat narrower"
+      },
+      {
+        "topic": "GitHub Copilot usage metrics adds OpenCode client breakdown",
+        "event_date": "2026-10-23",
+        "published_date": "2026-10-23",
+        "primary": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/",
+        "score": 87,
+        "reason": "Strong dev value; enterprise reporting niche"
+      },
+      {
+        "topic": "Enterprise installations for GitHub Apps GA",
+        "event_date": "2026-10-23",
+        "published_date": "2026-10-23",
+        "primary": "https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available/",
+        "score": 86,
+        "reason": "Relevant to automation security; mostly enterprise administration"
+      },
+      {
+        "topic": "GitHub public monitoring: triage, validity, API, webhooks",
+        "event_date": "2026-10-23",
+        "published_date": "2026-10-23",
+        "primary": "https://github.blog/changelog/2026-10-23-public-monitoring-adds-triage-validity-api-and-webhooks/",
+        "score": 84,
+        "reason": "Security value; preview limited to enterprises"
+      },
+      {
+        "topic": "Google Gemini 4 Argon community creations",
+        "event_date": "2026-10-23",
+        "published_date": "2026-10-23",
+        "primary": "https://blog.google/products-and-platforms/products/gemini/gemini-4-argon-builders/",
+        "score": 78,
+        "reason": "Examples, not a new model launch; weaker news"
+      }
+    ],
+    "rejected_repeat_topics": [
+      "OpenAI Decisions API, previously published as Oct 23 content",
+      "OpenAI frontier training security, already published Oct 24"
+    ],
+    "selection_note": "Zoom's press release was published October 23 and says acquisition has occurred; no claim that all integration features are live."
+  },
+  "art": {
+    "final_path": "posts/2026-10-25/daily-ai-scout-zoom-onyx-4x5.jpg",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "format": "JPEG",
+    "size_bytes": 433272,
+    "sha256": "8b47c49eab436820d1912ab790f64ab0f265bd6ee9dfec5ec757239de469cf35",
+    "git_blob_sha": "2bce246c69859f4d94ecd44d6e53e5facbe1cb21",
+    "original_logo_source": "https://github.com/Kanompung1988/Areazerowebsite/blob/master/public/logo-full.svg",
+    "original_logo_git_blob_sha1": "e1d2a0686010b251a530f9ad7eaf9afddf6a706b",
+    "palette": {
+      "navy": "#0A1929",
+      "cyan": "#00D9FF",
+      "mint": "#00FFA3"
+    },
+    "thai_typesetting": "RAQM: Inter for Latin, Noto Sans Thai for Thai; visually checked no tofu",
+    "hero": "Original generated neon knowledge-graph illustration"
+  },
+  "status": "ASSET_PREPARED"
+}
