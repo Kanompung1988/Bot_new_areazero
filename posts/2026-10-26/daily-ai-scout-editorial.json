@@ -1,0 +1,155 @@
+{
+  "date": "2026-10-26",
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
+  "status": "ASSET_PREPARED_NOT_SCHEDULED",
+  "created_for_local_publish": "2026-10-26T12:00:00+07:00",
+  "timezone": "Asia/Bangkok",
+  "selection_policy": {
+    "required_primary_sources": 5,
+    "verified_sources": 7,
+    "sources": [
+      {
+        "title": "GitHub Copilot in Microsoft Teams: turn notifications into code",
+        "url": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/",
+        "publication_date": "2026-10-23",
+        "event_date": "2026-10-23",
+        "scores": {
+          "usefulness": 35,
+          "freshness": 30,
+          "thai_relevance": 28
+        },
+        "total": 93,
+        "selected": true
+      },
+      {
+        "title": "Copilot usage metrics now include OpenCode and more clients",
+        "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/",
+        "publication_date": "2026-10-23",
+        "event_date": "2026-10-23",
+        "scores": {
+          "usefulness": 33,
+          "freshness": 30,
+          "thai_relevance": 24
+        },
+        "total": 87
+      },
+      {
+        "title": "GitHub public monitoring adds validity checks, API and webhooks",
+        "url": "https://github.blog/changelog/2026-10-23-public-monitoring-adds-triage-validity-api-and-webhooks/",
+        "publication_date": "2026-10-23",
+        "event_date": "2026-10-23",
+        "scores": {
+          "usefulness": 32,
+          "freshness": 30,
+          "thai_relevance": 23
+        },
+        "total": 85
+      },
+      {
+        "title": "GitHub Apps enterprise installations generally available",
+        "url": "https://github.blog/changelog/2026-10-23-enterprise-installations-for-github-apps-generally-available/",
+        "publication_date": "2026-10-23",
+        "event_date": "2026-10-23",
+        "scores": {
+          "usefulness": 29,
+          "freshness": 30,
+          "thai_relevance": 22
+        },
+        "total": 81
+      },
+      {
+        "title": "Claude on Google Cloud: Anthropic-managed deployments GA",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-claude-availability-on-google-cloud",
+        "publication_date": "2026-10-22",
+        "event_date": "2026-10-22",
+        "scores": {
+          "usefulness": 34,
+          "freshness": 27,
+          "thai_relevance": 25
+        },
+        "total": 86
+      },
+      {
+        "title": "Google Cloud begins private-preview rollout of OpenAI models",
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-brings-openai-models-to-customers",
+        "publication_date": "2026-10-21",
+        "event_date": "2026-10-21",
+        "scores": {
+          "usefulness": 34,
+          "freshness": 24,
+          "thai_relevance": 26
+        },
+        "total": 84
+      },
+      {
+        "title": "Named skills, agents and MCP servers appear in GitHub usage metrics",
+        "url": "https://github.blog/changelog/2026-10-22-custom-skills-agents-and-mcp-servers-in-usage-metrics-api/",
+        "publication_date": "2026-10-22",
+        "event_date": "2026-10-22",
+        "scores": {
+          "usefulness": 29,
+          "freshness": 27,
+          "thai_relevance": 23
+        },
+        "total": 79
+      },
+      {
+        "title": "Zoom acquires Onyx",
+        "url": "https://news.zoom.com/zoom-acquires-onyx-adding-open-source-enterprise-knowledge-search-to-zoom-ai-services/",
+        "publication_date": "2026-10-23",
+        "event_date": "2026-10-23",
+        "rejected_reason": "Duplicate of AREAZERO Daily AI Scout 2026-10-25"
+      }
+    ],
+    "scored_on": "usefulness(35), freshness(30), Thai developer audience relevance(35)",
+    "no_repeated_story": true
+  },
+  "headline": "GitHub Copilot ใน Teams: แจ้งบั๊กในแชต ให้ AI ช่วยแก้และเปิด PR",
+  "takeaways": [
+    "พิมพ์ @GitHub ตอบกลับการแจ้งเตือน Issue หรือ PR ใน Microsoft Teams",
+    "GitHub app ใช้บริบทจากแชตช่วยตรวจปัญหา แก้โค้ด รันทดสอบ และเปิด Pull Request",
+    "ทีมยังต้องตรวจทาน ทดสอบ และ Merge เอง; แอป GitHub รุ่นเก่าเตรียมเลิกใช้ 16 พ.ย. 2026"
+  ],
+  "caption": "🧩 GitHub Copilot สั่งงานจาก Microsoft Teams ได้แล้ว — จากแชตแจ้งบั๊ก ไปสู่ Pull Request ที่ทีมตรวจต่อได้\n\nGitHub ประกาศเมื่อ 23 ต.ค. 2026 ว่า GitHub app ตัวใหม่ใน Teams เชื่อมการแจ้งเตือนกับ Copilot: เมื่อมี Issue หรือ PR เข้ามาในห้องแชต สามารถ @GitHub ให้ช่วยตรวจปัญหา แก้โค้ด รันทดสอบ และเตรียม Pull Request ได้ โดยใช้บริบทจากงานและบทสนทนาที่เกี่ยวข้อง\n\n3 เรื่องที่ทีม Developer ควรรู้ 👇\n\n01 — ทีมเรียก @GitHub จากข้อความแจ้งเตือนใน Teams ได้ ทั้งแชตกลุ่มและช่องทีม\n02 — ไม่ต้องสลับไปมาหลายหน้าต่างเพื่อเริ่มงานแก้บั๊ก แต่ผลลัพธ์ยังต้องตรวจสอบก่อน Merge\n03 — ผู้ใช้ GitHub notifications เดิมอัปเดตเป็นเวอร์ชันใหม่ได้ ส่วน GitHub app รุ่นเก่าที่แยกต่างหากมีกำหนดยุติ 16 พ.ย. 2026\n\n💡 สำหรับทีมไทย: ลองเริ่มกับ Issue ที่มีขั้นตอน reproduce ชัด และเปิด branch protection + CI เป็นด่านตรวจ PR ก่อน merge ไม่ควรถือว่า AI แก้ถูกทันที\n\n📅 วันที่ประกาศ: 23 ต.ค. 2026 | สรุป AREAZERO Daily AI Scout: 26 ต.ค. 2026\n🔗 GitHub Changelog (ต้นทาง): https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/\n\nทีมคุณใช้ Teams กับ GitHub อยู่แล้วไหม? อยากให้ AI ช่วยขั้นตอนไหนที่สุด?\n\n#DailyAIScout #GitHubCopilot #MicrosoftTeams #AICoding #DeveloperTools #AIAgents #GitHub #TechNews #AIThailand",
+  "alt_text": "โปสเตอร์ข่าวเทคโทนกรมท่า-ไซแอนแบบมินิมอล ไม่มีโลโก้ Area Zero: GitHub Copilot ทำงานจาก Microsoft Teams ภาพการแจ้งเตือนบั๊กในแชตสั่ง @GitHub เชื่อมไปยัง Pull Request พร้อมขั้นตอนรีวิวก่อน Merge และระบุวันที่ประกาศ GitHub 23 ต.ค. 2026",
+  "hashtags": [
+    "#DailyAIScout",
+    "#GitHubCopilot",
+    "#MicrosoftTeams",
+    "#AICoding",
+    "#DeveloperTools",
+    "#AIAgents",
+    "#GitHub",
+    "#TechNews",
+    "#AIThailand"
+  ],
+  "image": {
+    "path": "posts/2026-10-26/daily-ai-scout-copilot-teams-4x5.jpg",
+    "original_generated_local": "/mnt/data/a_clean_modern_tech_news_style_poster_graphic._ov.png",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "format": "image/jpeg",
+    "size_bytes": 266077,
+    "sha256": "33461e8f7c9d4441a71761bf31e5b8cedff3d0d568a3496d565bae63352c6a1a",
+    "git_blob_sha": "6339ff4b6cc183daf275bc85a1be3b746846b14a",
+    "generation": "ONE_PASS_FINAL_ARTWORK_then_lossless_visual_resize_JPEG_export",
+    "area_zero_logo_present": false,
+    "visual_quality_check": "PASS: no Area Zero logo, Thai headline/takeaways legible, correct topic illustration, clean hierarchy, no unrelated media"
+  },
+  "identity": {
+    "metricool_blog_id": "7611512",
+    "instagram": "areazero.ai",
+    "facebook": "AreaZero",
+    "timezone": "Asia/Bangkok"
+  },
+  "idempotency_keys": [
+    "2026-10-26:areazero-daily-ai-scout:instagram",
+    "2026-10-26:areazero-daily-ai-scout:facebook"
+  ],
+  "queue_check": "No Scout 2026-10-26 scheduled/pending/publishing/published entries at 2026-10-26 morning preflight. Previous 2026-10-25 Zoom Onyx publication excluded.",
+  "posting_state": "NOT_YET_SUBMITTED",
+  "no_late_posts": true
+}

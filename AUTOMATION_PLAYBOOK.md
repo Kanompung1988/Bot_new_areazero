@@ -1,3 +1,9 @@
+# CURRENT OVERRIDE — Daily AI Scout visual identity (2026-10-26)
+
+**Later user direction OVERRIDES old logo rules BELOW for AI Scout social posts:** Do **NOT** put Area Zero/AREAZERO logos, wordmarks, or fake substitute logos on new Daily AI Scout images. Produce one complete **single-pass** final image: 1080x1350 portrait, minimal premium tech-editorial feel (clean, calm, generous whitespace, nuanced navy/cyan/mint, restrained glass or illustrative focal point, strong Thai typography), no generic AI slop. No separate generation of hero/background then compositing later. Resizing/format conversion of the finished original is allowed. **Do not use Apple logos or directly copy Apple trade dress.** Include true headline and three short takeaways with a source/date line; perform visual legibility/fact check and block publication on corruption or unattractive output. Continue all unchanged source verification, idempotency, byte/hash, GitHub immutable URL, Metricool identity and exact noon Asia/Bangkok gates. Skill Lab has distinct rules and must not be silently altered by this Scout-specific override. When a newer human direction conflicts with this document, prioritize the newer human direction and record it. This replaces earlier instructions below to composite the original Area Zero logo in Scout imagery.
+
+---
+
 # Areazero Automatic Publishing Playbook
 
 ## Verified ChatGPT daily automation configuration — 2026-10-24
