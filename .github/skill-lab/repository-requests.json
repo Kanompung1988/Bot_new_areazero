@@ -10,6 +10,16 @@
       "slug": "ci-log-triage",
       "source_path": "skills/ci-log-triage",
       "source_ref": "main"
+    },
+    {
+      "slug": "gha-trust-boundary-audit",
+      "source_path": "skills/gha-trust-boundary-audit",
+      "source_ref": "skill-lab/ep02-2026-10-26-staging"
+    },
+    {
+      "slug": "env-contract-audit",
+      "source_path": "skills/env-contract-audit",
+      "source_ref": "skill-lab/ep02-2026-10-26-staging"
     }
   ],
   "purpose": "Idempotency verification and baseline for independent AREAZERO Skill repositories"
