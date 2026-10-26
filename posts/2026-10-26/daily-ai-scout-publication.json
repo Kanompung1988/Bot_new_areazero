@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-26",
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "article_title": "Turn notifications into code with GitHub Copilot in Teams",
+  "primary_source": "https://github.blog/changelog/2026-10-23-turn-notifications-into-code-with-github-copilot-in-teams/",
+  "source_event_date": "2026-10-23",
+  "source_publication_date": "2026-10-23",
+  "editorial_record": "posts/2026-10-26/daily-ai-scout-editorial.json",
+  "publication_date_local": "2026-10-26T12:00:00",
+  "publication_timezone": "Asia/Bangkok",
+  "outer_schedule": "2026-10-26T12:00:00+07:00",
+  "scheduled_when_metricool_created_local": "2026-10-26T08:17:00",
+  "verified_brand": {
+    "blog_id": "7611512",
+    "brand_name": "AreaZero",
+    "instagram": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "facebook_page_id": "853075507891515",
+    "timezone": "Asia/Bangkok"
+  },
+  "metricool": {
+    "post_id": 406138408,
+    "stable_uuid": "2934617415397428067",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=2934617415397428067",
+    "autoPublish": true,
+    "draft": false,
+    "media_ingest_url": "https://static.metricool.com/planner/202610/7611512-file-17946884319713215690.jpeg",
+    "instagram_data": {
+      "type": "POST",
+      "isAiGenerated": true
+    },
+    "facebook_data": {
+      "type": "POST"
+    },
+    "per_provider": [
+      {
+        "network": "instagram",
+        "idempotency_key": "2026-10-26:areazero-daily-ai-scout:instagram",
+        "status": "PENDING",
+        "publicUrl": null
+      },
+      {
+        "network": "facebook",
+        "idempotency_key": "2026-10-26:areazero-daily-ai-scout:facebook",
+        "status": "PENDING",
+        "publicUrl": null
+      }
+    ],
+    "last_verify": "After createScheduledPost, read-back via getScheduledPosts on 2026-10-26 morning; both networks pending."
+  },
+  "artwork": {
+    "mode": "ONE_PASS_FINAL_IMAGE_NO_LOGO",
+    "final_dimensions": "1080x1350",
+    "image_path": "posts/2026-10-26/daily-ai-scout-copilot-teams-4x5.jpg",
+    "image_bytes": 266077,
+    "sha256": "33461e8f7c9d4441a71761bf31e5b8cedff3d0d568a3496d565bae63352c6a1a",
+    "github_blob_sha": "6339ff4b6cc183daf275bc85a1be3b746846b14a",
+    "image_pinned_commit": "84178ac89363ce032f74ba51f4282700974b5815",
+    "image_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/84178ac89363ce032f74ba51f4282700974b5815/posts/2026-10-26/daily-ai-scout-copilot-teams-4x5.jpg",
+    "original_png_sha256": "0ab288076bfe32a342eb8a929a3e0c4627007dd8948030990d75c55cc8e5012f",
+    "original_png_bytes": 1653309,
+    "original_generated_id": "e6ab9a6a-176c-4d2c-aa93-6c25fb5828ef",
+    "original_artwork_archive_library": "/Areazero/Production-Artwork/2026-10-26/source-artwork.zip",
+    "source_zip_contains": [
+      "original-single-pass-generated.png",
+      "final-post-ready-1080x1350.jpg",
+      "provenance.json"
+    ]
+  },
+  "audit": {
+    "playbook_updated_commit": "84178ac89363ce032f74ba51f4282700974b5815",
+    "no_duplicate_today_before_write": true,
+    "visual_qa": "PASS: minimal, no Area Zero logo, readable Thai text, topic-specific hero, verified date and claim",
+    "post_qa": "PASSED: read-back exact 12:00 Asia/Bangkok; autoPublish true; draft false; hosted media; both providers PENDING",
+    "publisher_mode": "scheduled_only",
+    "published_public_urls_confirmed": false,
+    "post_publication_qa_agent": "AREAZERO Daily Health Watch",
+    "do_not_duplicate": true
+  }
+}
