@@ -1,0 +1,125 @@
+{
+  "content_date": "2026-10-27",
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "status": "ASSET_PREPARED_NOT_SCHEDULED",
+  "created_for_local_publish": "2026-10-27T12:00:00+07:00",
+  "timezone": "Asia/Bangkok",
+  "selection_policy": {
+    "minimum_primary_sources": 5,
+    "primary_sources_reviewed": 6,
+    "scoring": "Freshness, verified facts, practical value and Thai developer relevance; editor judgment /100",
+    "candidates": [
+      {
+        "topic": "Google Docs native Markdown editing and Drive preview",
+        "url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
+        "event_date": "2026-10-26",
+        "publication_date": "2026-10-26",
+        "score": 96,
+        "selected": true,
+        "reason": "New 26 Oct concrete release, directly useful to developer teams and agent-document review; available to Google/Workspace users"
+      },
+      {
+        "topic": "Microsoft AIEI Learning Curves research and new book",
+        "url": "https://blogs.microsoft.com/on-the-issues/2026/10/26/learning-curves-the-future-of-education-from-classrooms-to-careers-in-an-ai-driven-world/",
+        "event_date": "2026-10-26",
+        "publication_date": "2026-10-26",
+        "score": 75,
+        "selected": false,
+        "reason": "Fresh but less practical for Thai developer audience; research essay not a workflow launch"
+      },
+      {
+        "topic": "Google Cloud Project Chrysalis governed self-evolving agents reference architecture",
+        "url": "https://developers.googleblog.com/architecting-governed-self-evolving-ai-agents-on-gemini-agent-platform/",
+        "event_date": "2026-10-22",
+        "publication_date": "2026-10-22",
+        "score": 77,
+        "selected": false,
+        "reason": "Technically useful simulated architecture; published 5 days ago, not product GA announcement"
+      },
+      {
+        "topic": "Amazon SageMaker multi-turn RL hands-on agentic guide",
+        "url": "https://aws.amazon.com/blogs/machine-learning/multi-turn-reinforcement-learning-on-amazon-sagemaker-ai-a-hands-on-guide/",
+        "event_date": "2026-10-23",
+        "publication_date": "2026-10-23",
+        "score": 79,
+        "selected": false,
+        "reason": "Advanced relevant ML implementation but more niche and less timely"
+      },
+      {
+        "topic": "Google Cloud Agent Compute Engine deep dive",
+        "url": "https://cloud.google.com/blog/topics/ai-infrastructure/agent-compute-engine-deep-dive",
+        "event_date": "2026-10-22",
+        "publication_date": "2026-10-22",
+        "score": 78,
+        "selected": false,
+        "reason": "Interesting microVM per-agent foundation, but older engineering explainer with narrower audience"
+      },
+      {
+        "topic": "NVIDIA Run:ai becomes open source",
+        "url": "https://developer.nvidia.com/blog/nvidia-runai-is-now-open-source-as-part-of-nvidia-dsx-ai-factory-platform/",
+        "event_date": "2026-10-13",
+        "publication_date": "2026-10-13",
+        "score": 61,
+        "selected": false,
+        "reason": "Older than 1 week (14 days), reject as stale for daily news"
+      }
+    ],
+    "rejected_duplicates": [
+      "Zoom acquires Onyx (Scout 2026-10-25)",
+      "GitHub Copilot in Microsoft Teams (Scout 2026-10-26)",
+      "OpenAI Decisions API (Scout 2026-10-24)"
+    ]
+  },
+  "story_slug": "google-docs-native-markdown-collaboration",
+  "headline_th": "Google Docs แก้ไฟล์ Markdown ได้โดยตรง",
+  "takeaways_th": [
+    "เปิดและแก้ไฟล์ .md ใน Docs โดยไม่แปลงชนิดไฟล์",
+    "คอมเมนต์และทำงานร่วมกันแบบเรียลไทม์พร้อมประวัติแก้ไข",
+    "ดูพรีวิว Markdown ใน Drive หรือดู raw text ได้"
+  ],
+  "event_date": "2026-10-26",
+  "primary_publication_date": "2026-10-26",
+  "source_url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
+  "caption_th": "📝 Google Docs เปิดให้แก้ไฟล์ Markdown (.md) ได้โดยตรง — คนทำงานกับ AI Agent ใช้เอกสารเดียวกันได้สะดวกขึ้น\n\nGoogle Developers Blog ประกาศวันที่ 26 ต.ค. 2026 ว่า Google Docs สามารถเปิดและแก้ไขไฟล์ .md แบบ native ได้แล้ว โดยไม่ต้องแปลงเป็นไฟล์ชนิดอื่น และ Google Drive มีพรีวิว Markdown ที่อ่านง่าย\n\n3 เรื่องที่สาย Developer และทีม AI ควรรู้ 👇\n\n01 — เปิดไฟล์ .md ใน Docs แล้วแก้เนื้อหาได้โดยยังคงเป็น Markdown\n02 — คอมเมนต์ เสนอแก้ไข ทำงานร่วมกันแบบเรียลไทม์ และย้อนดูประวัติการเปลี่ยนแปลงได้\n03 — ดูพรีวิวที่จัดรูปแบบแล้วใน Drive รวมตารางและลิงก์ หรือสลับไปดูข้อความดิบได้\n\n💡 ลองใช้กับ README, คู่มือระบบ หรือเอกสารที่ AI Agent ช่วยร่าง โดยให้คนตรวจงานและรีวิวการเปลี่ยนแปลงก่อนนำไปใช้จริง\n\n📅 วันที่ประกาศ: 26 ต.ค. 2026 | สรุปประจำวัน: 27 ต.ค. 2026\n🔗 แหล่งข่าว: https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/\n\nทีมคุณจัดเก็บเอกสาร .md ไว้ใน GitHub หรือ Drive มากกว่ากัน?\n\n#DailyAIScout #GoogleDocs #Markdown #AIWorkflow #AIAgents #GoogleWorkspace #DeveloperTools #TechNews #AIThailand",
+  "hashtags": [
+    "#DailyAIScout",
+    "#GoogleDocs",
+    "#Markdown",
+    "#AIWorkflow",
+    "#AIAgents",
+    "#GoogleWorkspace",
+    "#DeveloperTools",
+    "#TechNews",
+    "#AIThailand"
+  ],
+  "alt_text_th": "โปสเตอร์ข่าวเทคโทนกรมท่าขนาด 4:5 ไม่มีโลโก้: Google Docs แก้ไฟล์ Markdown ได้โดยตรง ภาพไฟล์ .md เชื่อมการทำงานร่วมกับเอกสาร 3 ประเด็นคือ เปิดและแก้ .md ใน Docs, คอมเมนต์ทำงานร่วมกัน, และดูพรีวิวใน Drive พร้อมแหล่งข่าว Google Developers Blog วันที่ 26 ต.ค. 2026",
+  "image": {
+    "path": "posts/2026-10-27/daily-ai-scout-google-docs-markdown-4x5.jpg",
+    "local_final": "/mnt/data/areazero-daily-ai-scout-2026-10-27-google-docs-markdown-4x5.jpg",
+    "format": "image/jpeg",
+    "dimensions": [
+      1080,
+      1350
+    ],
+    "size_bytes": 255037,
+    "sha256": "32d9e7dac90214399c22c284d5dd2092b87e07fcba022fc00cff8eea816c596e",
+    "git_blob_sha": "878599474857f7287d7882b1966a3702b4092858",
+    "source_archive": "areazero-daily-ai-scout-2026-10-27-source-artwork.zip",
+    "generation": "one-pass final artwork with resize/JPEG export only",
+    "area_zero_logo_present": false,
+    "qa": "PASS visually: Thai/Latin legible, exactly three takeaways, source/date correct, single connected-doc hero, no logo, no fake screenshot"
+  },
+  "identity": {
+    "metricool_blog_id": "7611512",
+    "instagram": "areazero.ai",
+    "facebook": "AreaZero",
+    "timezone": "Asia/Bangkok"
+  },
+  "idempotency_keys": [
+    "2026-10-27:areazero-daily-ai-scout:instagram",
+    "2026-10-27:areazero-daily-ai-scout:facebook"
+  ],
+  "queue_preflight": "No 2026-10-27 dated Scout records; Metricool scheduled listing returned only prior 2026-10-26 published item during preflight. Do not infer absence alone proves no already-published post. No evidence of duplicate in existing records/queue.",
+  "no_late_posts": true
+}
