@@ -20,6 +20,16 @@
       "slug": "env-contract-audit",
       "source_path": "skills/env-contract-audit",
       "source_ref": "skill-lab/ep02-2026-10-26-staging"
+    },
+    {
+      "slug": "pg-migration-risk-audit",
+      "source_path": "skills/pg-migration-risk-audit",
+      "source_ref": "skill-lab/ep03-2026-10-27-staging"
+    },
+    {
+      "slug": "docker-context-guard",
+      "source_path": "skills/docker-context-guard",
+      "source_ref": "skill-lab/ep03-2026-10-27-staging"
     }
   ],
   "purpose": "Idempotency verification and baseline for independent AREAZERO Skill repositories"
