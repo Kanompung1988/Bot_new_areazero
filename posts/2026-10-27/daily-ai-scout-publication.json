@@ -1,0 +1,80 @@
+{
+  "content_date": "2026-10-27",
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "selected_story": "Google Docs native Markdown (.md) edit/collaboration and Drive preview",
+  "headline_th": "Google Docs แก้ไฟล์ Markdown ได้โดยตรง",
+  "event_date": "2026-10-26",
+  "source_publication_date": "2026-10-26",
+  "source_url": "https://developers.googleblog.com/preview-edit-and-collaborate-on-markdown-md-files-natively-in-google-docs-and-drive/",
+  "editorial_record": "posts/2026-10-27/daily-ai-scout-editorial.json",
+  "publication_date_local": "2026-10-27T12:00:00",
+  "publication_timezone": "Asia/Bangkok",
+  "outer_schedule": "2026-10-27T12:00:00+07:00",
+  "verified_brand": {
+    "blog_id": "7611512",
+    "instagram": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "facebook_page_id": "853075507891515",
+    "timezone": "Asia/Bangkok"
+  },
+  "metricool": {
+    "post_id": 407336065,
+    "stable_uuid": "4950438711229169782",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=4950438711229169782",
+    "autoPublish": true,
+    "draft": false,
+    "media_ingest_url": "https://static.metricool.com/planner/202610/7611512-file-10072802986730012452.jpeg",
+    "instagram_data": {
+      "type": "POST",
+      "isAiGenerated": true
+    },
+    "facebook_data": {
+      "type": "POST"
+    },
+    "per_provider": [
+      {
+        "network": "instagram",
+        "idempotency_key": "2026-10-27:areazero-daily-ai-scout:instagram",
+        "status": "PENDING",
+        "publicUrl": null
+      },
+      {
+        "network": "facebook",
+        "idempotency_key": "2026-10-27:areazero-daily-ai-scout:facebook",
+        "status": "PENDING",
+        "publicUrl": null
+      }
+    ],
+    "last_verify": "2026-10-27 08:20 Asia/Bangkok after scheduling; getScheduledPosts read-back confirmed both PENDING"
+  },
+  "artwork": {
+    "mode": "ONE_PASS_FINAL_IMAGE_NO_LOGO",
+    "size_px": [
+      1080,
+      1350
+    ],
+    "format": "image/jpeg",
+    "image_path": "posts/2026-10-27/daily-ai-scout-google-docs-markdown-4x5.jpg",
+    "image_bytes": 255037,
+    "sha256": "32d9e7dac90214399c22c284d5dd2092b87e07fcba022fc00cff8eea816c596e",
+    "github_blob_sha": "878599474857f7287d7882b1966a3702b4092858",
+    "image_pinned_commit": "4148823d431e048ae94300ea121bfee92ca8d4db",
+    "image_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/4148823d431e048ae94300ea121bfee92ca8d4db/posts/2026-10-27/daily-ai-scout-google-docs-markdown-4x5.jpg",
+    "original_png_sha256": "58b5c27941b54dc732421e59f4e29c8b29c05c3837a2aa86d578c599fe4dd1ad",
+    "original_png_bytes": 1832166,
+    "original_artwork_archive_library": "/Areazero/Daily AI Scout/2026-10-27/source-artwork.zip"
+  },
+  "qa": {
+    "primary_sources_considered": 6,
+    "source_date_and_claims_verified": true,
+    "visual_qa": "PASS no logo, professional single-pass image, Thai legible, exactly 3 takeaways, fact/date correct",
+    "queue_preflight": "No same-agent/date/platform item on Metricool listing, no publication record; account confirmed.",
+    "post_qa": "PENDING on Instagram and Facebook, exact noon local time, media ingested, autoPublish true, draft false",
+    "do_not_duplicate": true,
+    "published_public_urls_confirmed": false,
+    "no_google_drive": true
+  },
+  "note": "This record is a reservation/idempotency barrier; scheduled PENDING is NOT actual publication. A separate noon QA/health watch must confirm provider publicUrl."
+}
