@@ -1,0 +1,86 @@
+{
+  "content_date": "2026-10-28",
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "selected_story": "OpenAI GPT-6.1 Terra: fast visual reasoning and computer use",
+  "headline_th": "GPT-6.1 Terra — AI ที่มองหน้าจอและลงมือทำ",
+  "event_date": "2026-10-26",
+  "source_publication_date": "2026-10-26",
+  "source_url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+  "source_model_reference": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+  "editorial_record": "posts/2026-10-28/daily-ai-scout-editorial.json",
+  "publication_date_local": "2026-10-28T12:00:00",
+  "publication_timezone": "Asia/Bangkok",
+  "outer_schedule": "2026-10-28T12:00:00+07:00",
+  "creation_date_local": "2026-10-28T08:08:00",
+  "verified_brand": {
+    "blog_id": "7611512",
+    "instagram": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "facebook_page_id": "853075507891515",
+    "timezone": "Asia/Bangkok"
+  },
+  "metricool": {
+    "post_id": 408460144,
+    "stable_uuid": "-2233023606389127935",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=-2233023606389127935",
+    "autoPublish": true,
+    "draft": false,
+    "media_ingest_url": "https://static.metricool.com/planner/202610/7611512-file-9648819432266449178.jpeg",
+    "instagram_data": {
+      "type": "POST",
+      "isAiGenerated": true
+    },
+    "facebook_data": {
+      "type": "POST"
+    },
+    "per_provider": [
+      {
+        "network": "instagram",
+        "idempotency_key": "2026-10-28:areazero-daily-ai-scout:instagram",
+        "status": "PENDING",
+        "publicUrl": null
+      },
+      {
+        "network": "facebook",
+        "idempotency_key": "2026-10-28:areazero-daily-ai-scout:facebook",
+        "status": "PENDING",
+        "publicUrl": null
+      }
+    ],
+    "last_verify": "2026-10-28 08:08 Asia/Bangkok: Metricool read-back one queued post; both networks Pending"
+  },
+  "artwork": {
+    "mode": "ONE_PASS_FINAL_IMAGE_NO_LOGO",
+    "size_px": [
+      1080,
+      1350
+    ],
+    "format": "image/jpeg",
+    "image_path": "posts/2026-10-28/daily-ai-scout-gpt-6-1-terra-4x5.jpg",
+    "image_bytes": 250354,
+    "sha256": "08a5b56cb00dbd8b33c86bece6d317007655c97b2c7c47b0dd22ac7ac56ab0e5",
+    "github_blob_sha": "28273bf37746822d7d35d64e0691302f70900443",
+    "image_pinned_commit": "fb136c290e11ba1324097684cf02ded53e9afc1d",
+    "image_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/fb136c290e11ba1324097684cf02ded53e9afc1d/posts/2026-10-28/daily-ai-scout-gpt-6-1-terra-4x5.jpg",
+    "original_png_sha256": "61f5a03f904abb6e8fb8feae80f84780c87e55983053b5fe38b8b18e13a4a9b3",
+    "original_png_bytes": 1656953,
+    "source_archive_library": "/Areazero/Daily AI Scout/2026-10-28/source-artwork.zip",
+    "source_archive_zip_bytes": 1721330,
+    "source_archive_zip_sha256": "e5515a4dd0aad6a411f62670c199aaa592f1daf9e954d1cba1e9ef97614e7873"
+  },
+  "qa": {
+    "primary_sources_considered": 7,
+    "source_date_and_claims_verified": true,
+    "visual_qa": "PASS: no logo, premium one-pass final artwork, Thai readable, exactly three takeaways, source/event date distinct from content date",
+    "transfer": "Original JPEG encoded in seven complete Base64 UTF-8 Library chunks; GitHub create_blob SHA exactly matched locally computed Git blob SHA. Git tree verified image path/size.",
+    "account_identity": "Metricool confirmed brand 7611512, IG areazero.ai, FB AreaZero, timezone Asia/Bangkok",
+    "queue_preflight": "Metricool reported 0 scheduled posts for date and GitHub posts/2026-10-28 absent before creation. No published/pending key known.",
+    "post_qa": "After one createScheduledPost, getScheduledPosts read back one post, exact 12:00 Asia/Bangkok, IG/FB PENDING, autoPublish true, draft false, Metricool real media ingest URL.",
+    "do_not_duplicate": true,
+    "published_public_urls_confirmed": false,
+    "no_google_drive": true
+  },
+  "note": "This record is a SAME-AGENT/DATE/PROVIDER idempotency barrier. PENDING means scheduled, not published. Noon QA/Health Watch should verify actual provider status/publicUrl and may update audit without resending."
+}
