@@ -30,6 +30,16 @@
       "slug": "docker-context-guard",
       "source_path": "skills/docker-context-guard",
       "source_ref": "skill-lab/ep03-2026-10-27-staging"
+    },
+    {
+      "slug": "python-artifact-audit",
+      "source_path": "skills/python-artifact-audit",
+      "source_ref": "skill-lab/ep04-2026-10-28-staging"
+    },
+    {
+      "slug": "k8s-rbac-rights-audit",
+      "source_path": "skills/k8s-rbac-rights-audit",
+      "source_ref": "skill-lab/ep04-2026-10-28-staging"
     }
   ],
   "purpose": "Idempotency verification and baseline for independent AREAZERO Skill repositories"
