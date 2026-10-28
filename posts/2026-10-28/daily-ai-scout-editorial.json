@@ -1,0 +1,168 @@
+{
+  "content_date": "2026-10-28",
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "status": "EDITORIAL_AND_IMAGE_READY_NOT_SCHEDULED",
+  "selected_story": "OpenAI launches GPT-6.1 Terra with visual reasoning and computer-use capabilities",
+  "headline_th": "GPT-6.1 Terra — AI ที่มองหน้าจอและลงมือทำ",
+  "event_date": "2026-10-26",
+  "source_publication_date": "2026-10-26",
+  "preparation_date_local": "2026-10-28",
+  "publication_date_local": "2026-10-28T12:00:00",
+  "publication_timezone": "Asia/Bangkok",
+  "sources": [
+    {
+      "type": "official_primary",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "role": "Main launch, functionality, OpenAI standard pricing and channels",
+      "event_date": "2026-10-26"
+    },
+    {
+      "type": "official_primary",
+      "url": "https://developers.openai.com/api/docs/models/gpt-6.1-terra",
+      "role": "API model id, context and current standard short-context token pricing",
+      "event_date": "2026-10-26"
+    },
+    {
+      "type": "official_primary",
+      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
+      "role": "Independent first-party GitHub rollout corroboration and secondary application",
+      "event_date": "2026-10-26"
+    }
+  ],
+  "selected_claims": [
+    "OpenAI introduced GPT-6.1 Terra with visual reasoning and computer-use capabilities, announced 2026-10-26.",
+    "OpenAI API model identifier is gpt-6.1-terra.",
+    "As of verification, standard short-context API prices are USD 1 per 1 million input tokens and USD 5 per 1 million output tokens; cached pricing/tools/long contexts differ.",
+    "OpenAI lists availability for eligible Plus/Pro/Enterprise/Edu users via ChatGPT Work and Codex and to developers via API; rollout may vary by account.",
+    "No claim of autonomous safety or guaranteed performance: human approval/scope guardrails remain necessary."
+  ],
+  "primary_sources_considered": [
+    {
+      "rank": 1,
+      "score": 94,
+      "story": "OpenAI GPT-6.1 Terra launch",
+      "publication_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/",
+      "decision": "SELECTED: product release for Thai developers, real API, clear practical value"
+    },
+    {
+      "rank": 2,
+      "score": 85,
+      "story": "Anthropic reports six drug-development research partnerships",
+      "publication_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "decision": "REJECTED: timely but specialized medicine research; avoid conflating lab work with approved drugs"
+    },
+    {
+      "rank": 3,
+      "score": 83,
+      "story": "GitHub Copilot adds GPT-6.1 Terra model",
+      "publication_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "url": "https://github.blog/changelog/2026-10-26-gpt-6-1-terra-in-github-copilot/",
+      "decision": "REJECTED AS SEPARATE STORY: same release as selected model; cite as corroboration"
+    },
+    {
+      "rank": 4,
+      "score": 81,
+      "story": "Google Developers publishes working multi-agent commerce prototype",
+      "publication_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "url": "https://developers.googleblog.com/building-conversational-commerce-with-multi-agent-swarms-on-gcp-a-working-prototype/",
+      "decision": "REJECTED: valuable tutorial/prototype but narrower than general model launch, not evidence of shipping platform product"
+    },
+    {
+      "rank": 5,
+      "score": 77,
+      "story": "OpenAI releases AI-assisted math and computer science research outputs",
+      "publication_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities/",
+      "decision": "REJECTED: bold research claims require independent field review; less actionable for broad developers"
+    },
+    {
+      "rank": 6,
+      "score": 74,
+      "story": "CodeRabbit uses GPT-6.1 Sol for cross-repository security review",
+      "publication_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "url": "https://openai.com/index/gpt-6-1-sol-coderabbit-code-security/",
+      "decision": "REJECTED: customer implementation case study rather than new generally available capability"
+    },
+    {
+      "rank": 7,
+      "score": 67,
+      "story": "AWS explains prompt caching for OpenAI-model agents in Bedrock",
+      "publication_date": "2026-10-26",
+      "event_date": "2026-10-26",
+      "url": "https://aws.amazon.com/blogs/machine-learning/groundhog-day-for-ai-agents-prompt-caching-patterns-for-using-openai-models-on-amazon-bedrock/",
+      "decision": "REJECTED: good evergreen how-to, not breaking announcement"
+    }
+  ],
+  "recent_topic_duplicate_check": [
+    {
+      "content_date": "2026-10-27",
+      "topic": "Google Docs native Markdown edit/collaboration",
+      "result": "distinct"
+    },
+    {
+      "content_date": "2026-10-26",
+      "topic": "GitHub Copilot in Teams",
+      "result": "distinct"
+    },
+    {
+      "content_date": "2026-10-25",
+      "topic": "Zoom Onyx AI agents",
+      "result": "distinct"
+    },
+    {
+      "content_date": "2026-10-24",
+      "topic": "OpenAI Decisions API",
+      "result": "distinct"
+    }
+  ],
+  "takeaways_th": [
+    "วิเคราะห์ภาพและใช้งานหน้าจอคอม",
+    "API $1 อินพุต / $5 เอาต์พุต ต่อ 1M โทเคน",
+    "ใช้ผ่าน API, ChatGPT Work และ Codex"
+  ],
+  "caption_th": "AI ที่ไม่ได้แค่อ่านหน้าจอ แต่ช่วยลงมือทำงานบนคอมพิวเตอร์ได้ 💻\n\nOpenAI เปิดตัว GPT-6.1 Terra เมื่อ 26 ตุลาคม 2026 เน้นความสามารถด้านการเข้าใจภาพ การใช้คอมพิวเตอร์ และงานเขียนที่ต้องทั้งเร็วและคุมต้นทุน\n\n🔹 อ่านภาพหรือหน้าจอเพื่อช่วยทำงานในแอป\n🔹 ราคา API แบบ Standard (short context) เริ่ม $1 / 1 ล้าน input tokens และ $5 / 1 ล้าน output tokens — ยังไม่รวมค่าเครื่องมือหรือโหมดพิเศษ\n🔹 นักพัฒนาเรียกใช้ผ่าน API (`gpt-6.1-terra`) ได้ และมีใน ChatGPT Work / Codex สำหรับแผนที่รองรับ\n\nสำหรับงาน Agent จริง ควรทดสอบความแม่นยำและกำหนดสิทธิ์ก่อนให้ AI ทำรายการสำคัญ\n\nคุณอยากลองใช้ AI แบบนี้ทำงานอะไร?\n\nอ้างอิง OpenAI (26 ต.ค. 2026): https://openai.com/index/introducing-gpt-6-1-terra/\nรายละเอียด API: https://developers.openai.com/api/docs/models/gpt-6.1-terra\n\n#AREAZERO #DailyAIScout #AINews #GPT61Terra #OpenAI #AIAgents #ComputerUse #DeveloperTools",
+  "alt_text_th": "ภาพข่าวเทคโนโลยีโทนกรมท่า-ฟ้า ไม่มีโลโก้ แสดงหัวข้อ GPT-6.1 Terra: AI ที่มองหน้าจอและลงมือทำ พร้อมภาพคอมพิวเตอร์ที่มีหน้าต่างซอฟต์แวร์และลูกศรการทำงาน ประเด็น 3 ข้อคือ วิเคราะห์ภาพและใช้งานหน้าจอคอม, ราคา API 1 ดอลลาร์ต่อ 1 ล้าน input tokens และ 5 ดอลลาร์ต่อ 1 ล้าน output tokens, และเข้าถึงผ่าน API, ChatGPT Work, Codex โดยมีแหล่งข่าว OpenAI วันที่ 26 ตุลาคม 2026",
+  "hashtags": [
+    "#AREAZERO",
+    "#DailyAIScout",
+    "#AINews",
+    "#GPT61Terra",
+    "#OpenAI",
+    "#AIAgents",
+    "#ComputerUse",
+    "#DeveloperTools"
+  ],
+  "visual": {
+    "style": "ONE_PASS_FINAL_IMAGE_NO_LOGO",
+    "size_px": [
+      1080,
+      1350
+    ],
+    "format": "image/jpeg",
+    "image_path": "posts/2026-10-28/daily-ai-scout-gpt-6-1-terra-4x5.jpg",
+    "image_bytes": 250354,
+    "sha256": "08a5b56cb00dbd8b33c86bece6d317007655c97b2c7c47b0dd22ac7ac56ab0e5",
+    "github_blob_sha": "28273bf37746822d7d35d64e0691302f70900443",
+    "original_png_sha256": "61f5a03f904abb6e8fb8feae80f84780c87e55983053b5fe38b8b18e13a4a9b3",
+    "original_png_bytes": 1656953,
+    "source_archive_library": "/Areazero/Daily AI Scout/2026-10-28/source-artwork.zip",
+    "source_archive_zip_bytes": 1721330,
+    "qa": "PASS: visually checked Thai display, 3 takeaways, source/event date, no logo, premium topic-specific computer-use visual",
+    "attribution": "GENERATED_ILLUSTRATION_NOT_REAL_SOFTWARE_SCREENSHOT"
+  },
+  "idempotency_keys": [
+    "2026-10-28:areazero-daily-ai-scout:instagram",
+    "2026-10-28:areazero-daily-ai-scout:facebook"
+  ],
+  "skill_lab_social_publishing": "DISABLED_SEPARATE_SERIES",
+  "note": "This is an editorial/image preparation record; does not count as Metricool scheduling or publication."
+}
