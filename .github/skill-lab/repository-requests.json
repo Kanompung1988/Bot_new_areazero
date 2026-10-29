@@ -40,6 +40,16 @@
       "slug": "k8s-rbac-rights-audit",
       "source_path": "skills/k8s-rbac-rights-audit",
       "source_ref": "skill-lab/ep04-2026-10-28-staging"
+    },
+    {
+      "slug": "terraform-plan-impact-audit",
+      "source_path": "skills/terraform-plan-impact-audit",
+      "source_ref": "skill-lab/ep05-2026-10-29-staging"
+    },
+    {
+      "slug": "k8s-netpol-scope-audit",
+      "source_path": "skills/k8s-netpol-scope-audit",
+      "source_ref": "skill-lab/ep05-2026-10-29-staging"
     }
   ],
   "purpose": "Idempotency verification and baseline for independent AREAZERO Skill repositories"
