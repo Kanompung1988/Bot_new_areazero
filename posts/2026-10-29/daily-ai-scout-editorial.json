@@ -1,0 +1,101 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-10-29",
+  "timezone": "Asia/Bangkok",
+  "selection_criteria": "Primary official announcements; event and publication dates verified; zero duplicates versus 2026-10-25 through 2026-10-28 Scout posts; one story selected based on usefulness, freshness and Thai-developer relevance.",
+  "candidates": [
+    {
+      "headline": "GitHub Agentic Workflows generally available",
+      "event_date": "2026-10-28",
+      "publication_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/",
+      "score": 95,
+      "selected": true,
+      "reason": "Practical automation for developers; GA with open source, safeguards, markdown-to-actions compilation."
+    },
+    {
+      "headline": "Route and orchestrate models with GitHub Copilot Fusion",
+      "event_date": "2026-10-28",
+      "publication_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/",
+      "score": 92,
+      "selected": false,
+      "reason": "GA, but model selection and tiered billing are a narrower value proposition."
+    },
+    {
+      "headline": "Build shared workflows for your team with Copilot Automations",
+      "event_date": "2026-10-28",
+      "publication_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-build-shared-workflows-for-your-team-with-copilot-automations/",
+      "score": 89,
+      "selected": false,
+      "reason": "Useful but rolling out progressively and separate from GitHub Agentic Workflows."
+    },
+    {
+      "headline": "AI Scan for repositories in public preview",
+      "event_date": "2026-10-28",
+      "publication_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-ai-scan-for-repositories-in-public-preview/",
+      "score": 88,
+      "selected": false,
+      "reason": "Security tool in public preview; billing/enablement caveats."
+    },
+    {
+      "headline": "Prioritize Dependabot alerts with reachability analysis",
+      "event_date": "2026-10-28",
+      "publication_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-prioritize-dependabot-alerts-with-reachability-analysis/",
+      "score": 84,
+      "selected": false,
+      "reason": "Preview restricted to enterprise JS/TS."
+    },
+    {
+      "headline": "Generate and edit images directly in Copilot",
+      "event_date": "2026-10-28",
+      "publication_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-generate-and-edit-images-directly-in-copilot/",
+      "score": 82,
+      "selected": false,
+      "reason": "Useful to design/dev but limited preview and separate image billing."
+    }
+  ],
+  "selected_story": {
+    "title_en": "GitHub Agentic Workflows generally available",
+    "headline_th": "GitHub Agentic Workflows — เขียน Markdown ให้ AI ทำงานใน Actions",
+    "event_date": "2026-10-28",
+    "source_publication_date": "2026-10-28",
+    "content_date": "2026-10-29",
+    "source_url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/",
+    "claim_notes": [
+      "GitHub Agentic Workflows is GA for GitHub Free, Team and Enterprise on github.com.",
+      "Natural-language Markdown workflow compiles to standard GitHub Actions YAML.",
+      "Examples: issue triage, CI failure analysis, documentation maintenance and test writing.",
+      "Default read-only permissions, sandbox, firewall, safe outputs and threat detection are built in.",
+      "GitHub Copilot CLI engine requires a Copilot license; other supported coding agents possible."
+    ],
+    "takeaways_th": [
+      "สั่งงาน AI ด้วย Markdown",
+      "แปลงเป็น GitHub Actions YAML",
+      "รันใน Sandbox พร้อมระบบตรวจความปลอดภัย"
+    ]
+  },
+  "caption_th": "GitHub Agentic Workflows เปิดให้ใช้งานทั่วไปแล้ว! 🚀\n\nแทนที่จะเขียนทุกขั้นตอนเป็น YAML เอง เราสามารถอธิบายงานให้ AI ในไฟล์ Markdown แล้วใช้ GitHub Agentic Workflows แปลงเป็น workflow มาตรฐานที่รันผ่าน GitHub Actions ได้\n\nใช้กับงานอย่างคัดแยก Issues, วิเคราะห์ CI ที่ล้มเหลว, อัปเดตเอกสาร หรือช่วยเขียนเทสต์ โดยมี sandbox, สิทธิ์อ่านอย่างเดียวเป็นค่าเริ่มต้น และขั้นตอนตรวจผลลัพธ์เพื่อช่วยลดความเสี่ยง\n\nGitHub ประกาศเปิดใช้ทั่วไปเมื่อ 28 ต.ค. 2026 สำหรับ GitHub Free, Team และ Enterprise บน github.com โดยหากใช้ Copilot CLI เป็น engine จะต้องมี Copilot license และทีมยังควรตรวจทานผลลัพธ์ก่อนนำไปใช้จริง\n\nอ่านรายละเอียดจาก GitHub: https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/\n\n#AreaZero #AINews #GitHub #GitHubActions #AgenticAI #DeveloperTools #SoftwareEngineering #Automation",
+  "alt_text_th": "ภาพข่าววันที่ 29 ต.ค. 2026 เรื่อง GitHub Agentic Workflows เปิดใช้งานทั่วไป ภาพแสดงไฟล์ Markdown เปลี่ยนเป็น GitHub Actions workflow พร้อมสัญลักษณ์ผ่านการตรวจสอบ สรุป 3 จุดสำคัญ คือ สั่งงาน AI ด้วย Markdown, แปลงเป็น GitHub Actions YAML และทำงานใน Sandbox พร้อมระบบตรวจความปลอดภัย โดยอ้างอิงประกาศ GitHub วันที่ 28 ต.ค. 2026",
+  "artwork": {
+    "single_pass": true,
+    "no_area_zero_logo": true,
+    "original_archive_library": "/Areazero/Daily AI Scout/2026-10-29/source-artwork.zip",
+    "original_png_sha256": "8cf60d5d30193d0e689be3a1eeaabba8f308a67af586983035bf7ade52609a99",
+    "final_image_path": "posts/2026-10-29/daily-ai-scout-github-agentic-workflows-4x5.jpg",
+    "final_bytes": 294477,
+    "dimensions_px": [
+      1080,
+      1350
+    ],
+    "final_sha256": "d0c5cfc079a3958293e229d67f388dd2dcf1a50d210afc4f95edcde3b75fed93",
+    "final_git_blob_sha1": "6937fe911ff08af4a2f3d0bf612a4137bd0e9aea",
+    "visual_qa": "PASS: Thai legible, exactly three takeaways, source/date correct, no logo, single-pass original with only export padding/resizing."
+  },
+  "release_notes": "Do not interpret event_date Oct 28 as news event Oct 29. Content digest on Oct 29 only. Skill Lab publishing remains disabled."
+}
