@@ -1,0 +1,143 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-10-30",
+  "timezone": "Asia/Bangkok",
+  "preparation_only": true,
+  "selection_criteria": "Read and date-check at least five primary-source announcements; score freshness, usefulness, relevance to Thai software/AI audience; reject recycled Scout subjects, old launches, weak filler, and Skill Lab content.",
+  "candidates": [
+    {
+      "rank": 1,
+      "headline": "Create, preview, and edit files directly in Gemini",
+      "event_date": "2026-10-29",
+      "source_publication_date": "2026-10-29",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+      "score": 95,
+      "selected": true,
+      "decision": "SELECTED: new broadly relevant Gemini editing experience, practical for Thai users and developers; key web/mobile caveat verified."
+    },
+    {
+      "rank": 2,
+      "headline": "OpenAI updates the Model Spec around five core values",
+      "event_date": "2026-10-29",
+      "source_publication_date": "2026-10-29",
+      "url": "https://openai.com/index/updated-model-spec/",
+      "score": 88,
+      "selected": false,
+      "decision": "Important AI behavior/oversight policy, but less immediately actionable for day-to-day Thai software workflows."
+    },
+    {
+      "rank": 3,
+      "headline": "AWS Batch adds GPU quota lending and priority scheduling for SageMaker",
+      "event_date": "2026-10-29",
+      "source_publication_date": "2026-10-29",
+      "url": "https://aws.amazon.com/blogs/machine-learning/lend-and-borrow-resources-across-teams-with-aws-batchs-quota-management-for-sagemaker-training-jobs/",
+      "score": 84,
+      "selected": false,
+      "decision": "Useful confirmed new scheduling capability but specialized AWS infrastructure story."
+    },
+    {
+      "rank": 4,
+      "headline": "Gemini Notebook adds hundreds of textbooks",
+      "event_date": "2026-10-29",
+      "source_publication_date": "2026-10-29",
+      "url": "https://blog.google/innovation-and-ai/products/gemini-notebook/new-access-textbooks/",
+      "score": 78,
+      "selected": false,
+      "decision": "Education-focused and availability of providers US/India, not broad Thailand-specific dev feature."
+    },
+    {
+      "rank": 5,
+      "headline": "GitHub Copilot Fusion becomes generally available",
+      "event_date": "2026-10-28",
+      "source_publication_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/",
+      "score": 76,
+      "selected": false,
+      "decision": "Real release, but prior Scout on 2026-10-29 covered GitHub agentic automation, reduce same-source/adjacent repetition."
+    },
+    {
+      "rank": 6,
+      "headline": "Mistral Large 4 open weights published on Hugging Face",
+      "event_date": "2026-10-29",
+      "original_model_launch_date": "2026-10-06",
+      "source_publication_date": "2026-10-29",
+      "url": "https://huggingface.co/blog/mistral-large4",
+      "score": 73,
+      "selected": false,
+      "decision": "New weights availability, but model itself announced 2026-10-06. Do not falsely claim a new model launch on Oct29."
+    },
+    {
+      "rank": 7,
+      "headline": "NVIDIA Nemotron 3.5 Super VL deployment tutorial on AWS",
+      "event_date": "2026-10-15",
+      "source_publication_date": "2026-10-29",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/",
+      "score": 61,
+      "selected": false,
+      "decision": "Tutorial published Oct29, underlying model released Oct15; not new model today."
+    }
+  ],
+  "selected_story": {
+    "title_en": "Edit and preview documents directly in Gemini",
+    "headline_th": "Gemini แก้ไฟล์ในแชตได้แล้ว",
+    "event_date": "2026-10-29",
+    "source_publication_date": "2026-10-29",
+    "content_date": "2026-10-30",
+    "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+    "claim_notes": [
+      "Google says Gemini app can generate, preview, edit documents, PDFs, slide decks, spreadsheets, Markdown, TXT, code within chat.",
+      "Users can expand previews and edit directly or highlight selections for AI changes.",
+      "PDF preview/editing available on web and mobile; other formats only on web.",
+      "Feature available where Gemini app supports relevant languages/availability; not claimed as API release."
+    ],
+    "takeaways_th": [
+      "สร้างและแก้ไฟล์ PDF เอกสาร และสไลด์",
+      "ไฮไลต์ข้อความ แล้วให้ AI แก้เฉพาะจุด",
+      "PDF ใช้บนมือถือได้ • ไฟล์อื่นรองรับบนเว็บ"
+    ]
+  },
+  "caption_th": "Gemini แก้ไฟล์ในแชตได้แล้ว 📄✨\n\nGoogle ประกาศฟีเจอร์ใหม่ของแอป Gemini เมื่อวันที่ 29 ตุลาคม 2026 ให้สร้าง พรีวิว และแก้เอกสาร PDF สไลด์ สเปรดชีต Markdown และโค้ดได้ในแชตเดียว\n\n🔹 เปิดไฟล์แบบเต็มหน้าจอแล้วพิมพ์แก้ได้โดยตรง\n🔹 ไฮไลต์ข้อความเฉพาะส่วน แล้วให้ Gemini ช่วยปรับเนื้อหา\n🔹 PDF พรีวิวและแก้ได้ทั้งบนเว็บและมือถือ ส่วน Docs, Sheets, สไลด์, Markdown และโค้ดรองรับบนเว็บเท่านั้นในขณะนี้\n\nGoogle ระบุว่าเปิดให้ใช้แล้วในทุกภาษาที่แอป Gemini รองรับ โดยฟีเจอร์นี้เป็นการแก้ไขไฟล์ภายในแอป Gemini ไม่ใช่การเปิดใช้งาน API สำหรับทุกฟอร์แมต\n\nอ่านประกาศ Google (29 ต.ค. 2026): https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/\n\n#AreaZero #DailyAIScout #AINews #Gemini #GoogleAI #PDF #Productivity #DeveloperTools",
+  "alt_text_th": "ภาพข่าว AI วันที่ 30 ตุลาคม 2026 โทนกรมท่าฟ้าและเขียวมิ้นต์ ไม่มีโลโก้ แสดงการแก้ไขไฟล์ใน Gemini ผ่านภาพประกอบไฟล์ PDF เอกสาร สไลด์ สเปรดชีตและโค้ด (ไม่ใช่ภาพหน้าจอผลิตภัณฑ์จริง) สรุป 3 ประเด็น: สร้างและแก้ PDF เอกสารและสไลด์; ไฮไลต์ข้อความให้ AI แก้เฉพาะจุด; PDF รองรับเว็บและมือถือ ส่วนไฟล์อื่นรองรับบนเว็บ พร้อมที่มา Google วันที่ 29 ตุลาคม 2026",
+  "hashtags": [
+    "#AreaZero",
+    "#DailyAIScout",
+    "#AINews",
+    "#Gemini",
+    "#GoogleAI",
+    "#PDF",
+    "#Productivity",
+    "#DeveloperTools"
+  ],
+  "recent_topic_duplicate_check": {
+    "2026-10-27": "Google Docs native Markdown (different product/workflow, not Gemini in-app edits)",
+    "2026-10-28": "OpenAI GPT-6.1 Terra (distinct)",
+    "2026-10-29": "GitHub Agentic Workflows (distinct)"
+  },
+  "artwork": {
+    "single_pass": true,
+    "no_area_zero_logo": true,
+    "hero": "Topic-specific original 3D file previews representing PDF, code, doc, slides and sheet; conceptual art only, not a product screenshot.",
+    "original_file": "original-single-pass-2026-10-30.png",
+    "original_png_sha256": "0e5f26a5b62d40fbeff5833fe03bb914aa6ee8b241034f669faeeecdb7e8f88a",
+    "original_png_bytes": 1572078,
+    "original_archive_library": "/Areazero/Daily AI Scout/2026-10-30/source-artwork.zip",
+    "source_archive_zip_sha256": "c50f1bc35235da07038c459a83cf1579c167f97fe2ee9289be07ba290be5bc68",
+    "source_archive_zip_bytes": 1659129,
+    "final_image_path": "posts/2026-10-30/daily-ai-scout-gemini-files-4x5.jpg",
+    "final_bytes": 276164,
+    "dimensions_px": [
+      1080,
+      1350
+    ],
+    "final_sha256": "7a36f51384854f6c0e57b23f921a8913b04cafcde2197d75eaf53941c542ae55",
+    "final_git_blob_sha1": "2069f61158b2b3e42585ef4fac36eb46eb1d6b1f",
+    "visual_qa": "PASS: inspected displayed pixels; Thai legible and date/terms correct; exactly 3 short takeaways; no AreaZero brand logo/wordmark; one image-generation pass; only resized to final 4:5 JPEG."
+  },
+  "idempotency_keys": [
+    "2026-10-30:areazero-daily-ai-scout:instagram",
+    "2026-10-30:areazero-daily-ai-scout:facebook"
+  ],
+  "skill_lab_social_publishing": "DISABLED_SEPARATE_SERIES",
+  "note": "content_date Oct30 is digest day, whereas official source announcement Oct29. Do not relabel the original event date. This editorial/artwork record alone is not scheduled/published."
+}
