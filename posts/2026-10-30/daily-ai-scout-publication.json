@@ -1,0 +1,90 @@
+{
+  "content_date": "2026-10-30",
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "selected_story": "Edit and preview documents directly in Gemini",
+  "headline_th": "Gemini แก้ไฟล์ในแชตได้แล้ว",
+  "event_date": "2026-10-29",
+  "source_publication_date": "2026-10-29",
+  "source_url": "https://blog.google/innovation-and-ai/products/gemini-app/edit-files-directly/",
+  "editorial_record": "posts/2026-10-30/daily-ai-scout-editorial.json",
+  "publication_date_local": "2026-10-30T12:00:00",
+  "publication_timezone": "Asia/Bangkok",
+  "outer_schedule": "2026-10-30T12:00:00+07:00",
+  "creation_date_local": "2026-10-30T08:12:00",
+  "verified_brand": {
+    "blog_id": "7611512",
+    "brand": "AreaZero",
+    "instagram": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "facebook_page_id": "853075507891515",
+    "timezone": "Asia/Bangkok"
+  },
+  "metricool": {
+    "post_id": 410717608,
+    "stable_uuid": "8250209833562032851",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=8250209833562032851",
+    "autoPublish": true,
+    "draft": false,
+    "media_ingest_url": "https://static.metricool.com/planner/202610/7611512-file-17835785965376873117.jpeg",
+    "instagram_data": {
+      "type": "POST",
+      "isAiGenerated": true
+    },
+    "facebook_data": {
+      "type": "POST"
+    },
+    "per_provider": [
+      {
+        "network": "facebook",
+        "idempotency_key": "2026-10-30:areazero-daily-ai-scout:facebook",
+        "status": "PENDING",
+        "detailedStatus": "Pending",
+        "publicUrl": null
+      },
+      {
+        "network": "instagram",
+        "idempotency_key": "2026-10-30:areazero-daily-ai-scout:instagram",
+        "status": "PENDING",
+        "detailedStatus": "Pending",
+        "publicUrl": null
+      }
+    ],
+    "last_verify": "2026-10-30T08:12:00+07:00: read-back UUID 8250209833562032851, exactly one scheduled post, PENDING for Instagram/Facebook, exactly noon Asia/Bangkok"
+  },
+  "artwork": {
+    "mode": "ONE_PASS_FINAL_IMAGE_NO_LOGO",
+    "dimensions_px": [
+      1080,
+      1350
+    ],
+    "format": "image/jpeg",
+    "image_path": "posts/2026-10-30/daily-ai-scout-gemini-files-4x5.jpg",
+    "image_bytes": 276164,
+    "sha256": "7a36f51384854f6c0e57b23f921a8913b04cafcde2197d75eaf53941c542ae55",
+    "github_blob_sha": "2069f61158b2b3e42585ef4fac36eb46eb1d6b1f",
+    "image_pinned_commit": "6f2ff952a661469ffa7d8720be10b5908a4b7e0b",
+    "image_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/6f2ff952a661469ffa7d8720be10b5908a4b7e0b/posts/2026-10-30/daily-ai-scout-gemini-files-4x5.jpg",
+    "original_png_sha256": "0e5f26a5b62d40fbeff5833fe03bb914aa6ee8b241034f669faeeecdb7e8f88a",
+    "original_png_bytes": 1572078,
+    "source_archive_library": "/Areazero/Daily AI Scout/2026-10-30/source-artwork.zip",
+    "source_archive_zip_bytes": 1659129,
+    "source_archive_zip_sha256": "c50f1bc35235da07038c459a83cf1579c167f97fe2ee9289be07ba290be5bc68",
+    "original_generation_id": "1448072c-1bc9-465f-8327-b6f1f0b9cc54"
+  },
+  "qa": {
+    "primary_sources_considered": 7,
+    "source_date_and_claims_verified": true,
+    "visual_qa": "PASS: inspected displayed pixels; Thai legible and date/terms correct; exactly 3 short takeaways; no AreaZero brand logo/wordmark; one image-generation pass; only resized to final 4:5 JPEG.",
+    "media_integrity": "Nine complete Library UTF-8 Base64 parts reassembled; locally independently calculated Git blob SHA matched GitHub create_blob; committed media tree SHA/path/size and read-back via GitHub fetch_file(base64) matched, Metricool returned hosted media URL.",
+    "metricool_identity": "getBrandSettings confirms blog 7611512, IG areazero.ai, Facebook AreaZero page ID 853075507891515, timezone Asia/Bangkok",
+    "queue_preflight": "Prior to single createScheduledPost, both today Github record and Metricool queue were empty; checked no noon conflicts.",
+    "post_qa": "Read back getScheduledPosts exactly one 2026-10-30 post at 12:00 Asia/Bangkok, both providers PENDING, autoPublish=true, draft=false.",
+    "idempotency_barrier": true,
+    "published_public_urls_confirmed": false,
+    "no_google_drive": true,
+    "skill_lab_social_publishing_remains_disabled": true
+  },
+  "note": "SCHEDULED is NOT PUBLISHED. Do not retry createScheduledPost; both agent/date/platform keys are hard duplicate barriers. Noon QA/Health Watch must confirm PUBLISHED/publicUrl per provider. Never treat absence from getScheduledPosts as publication proof."
+}
