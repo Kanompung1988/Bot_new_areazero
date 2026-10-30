@@ -50,6 +50,16 @@
       "slug": "k8s-netpol-scope-audit",
       "source_path": "skills/k8s-netpol-scope-audit",
       "source_ref": "skill-lab/ep05-2026-10-29-staging"
+    },
+    {
+      "slug": "codeowners-review-gap-audit",
+      "source_path": "skills/codeowners-review-gap-audit",
+      "source_ref": "skill-lab/ep06-2026-10-30-staging"
+    },
+    {
+      "slug": "k8s-image-pin-audit",
+      "source_path": "skills/k8s-image-pin-audit",
+      "source_ref": "skill-lab/ep06-2026-10-30-staging"
     }
   ],
   "purpose": "Idempotency verification and baseline for independent AREAZERO Skill repositories"
