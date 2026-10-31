@@ -1,0 +1,138 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-10-31",
+  "timezone": "Asia/Bangkok",
+  "preparation_only": true,
+  "selection_criteria": "At least five independent primary-source announcements checked for source date, event date, confirmed claims, freshness/usefulness/relevance to Thai AI and software audience; exclude prior Scout duplicates and Skill Lab releases.",
+  "candidates": [
+    {
+      "rank": 1,
+      "topic": "Google Project Suncatcher: first TPU-in-orbit AI response",
+      "source_publication_date": "2026-10-30",
+      "event_date": "2026-10-26..2026-10-30 (Google: 'this week'; exact milestone day not provided)",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+      "score": 96,
+      "selected": true,
+      "why": "Two-day fresh announcement, extraordinary technology milestone; strong Thai general-tech and AI relevance, official original Google Research statement. Avoid claiming public space datacenter."
+    },
+    {
+      "rank": 2,
+      "topic": "OpenAI backs common robots.txt preference signal for AI foundation-model training",
+      "source_publication_date": "2026-10-30",
+      "event_date": "2026-10-30 announcement, implementation future months",
+      "url": "https://openai.com/index/helping-websites-express-ai-training-preferences/",
+      "score": 90,
+      "selected": false,
+      "why": "Very timely and useful for web operators; standards implementation not yet live."
+    },
+    {
+      "rank": 3,
+      "topic": "GitHub webhook IP ranges added to Meta API",
+      "source_publication_date": "2026-10-29",
+      "event_date": "2026-10-29",
+      "url": "https://github.blog/changelog/2026-10-29-webhook-ip-ranges-added-to-the-meta-api/",
+      "score": 80,
+      "selected": false,
+      "why": "Official recent practical network firewall improvement but niche."
+    },
+    {
+      "rank": 4,
+      "topic": "GitHub Copilot Fusion model routing generally available",
+      "source_publication_date": "2026-10-28",
+      "event_date": "2026-10-28",
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/",
+      "score": 78,
+      "selected": false,
+      "why": "Strong dev tool announcement but repeated GitHub theme after Oct29 Scout; less fresh."
+    },
+    {
+      "rank": 5,
+      "topic": "Google DeepMind Genie 4 real-time world model research announced",
+      "source_publication_date": "2026-10-27",
+      "event_date": "2026-10-27",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/google-deepmind/introducing-genie-4/",
+      "score": 73,
+      "selected": false,
+      "why": "Important research but limited trusted tester availability and older than Oct30 candidates."
+    },
+    {
+      "rank": 6,
+      "topic": "AWS Nemotron 3.5 Super VL architecture and EKS/HyperPod deployment guide",
+      "source_publication_date": "2026-10-29",
+      "event_date": "2026-10-15 (underlying model earlier)",
+      "url": "https://aws.amazon.com/blogs/machine-learning/accelerate-agentic-ai-with-nvidia-nemotron-models-on-amazon-eks-and-sagemaker-hyperpod-eks/",
+      "score": 62,
+      "selected": false,
+      "why": "New tutorial, not a new model release on Oct29; avoid misleading launch date."
+    }
+  ],
+  "selected_story": {
+    "title_en": "Project Suncatcher's first AI response from a data-center-class TPU in orbit",
+    "headline_th": "Google รัน AI บนดาวเทียมสำเร็จ",
+    "subheadline_th": "Project Suncatcher ส่งคำตอบจากวงโคจร",
+    "source_publication_date": "2026-10-30",
+    "event_date_precision": "The response occurred this week before the Oct30 announcement; exact day unspecified",
+    "satellite_launch_date": "2026-10-01",
+    "content_date": "2026-10-31",
+    "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+    "claim_notes": [
+      "Google said the first response came from a data-center-class TPU in orbit.",
+      "Gemma 4 ran on the onboard TPU; a haiku was returned via ground-station pass.",
+      "Satellite launched Oct1; milestone announced Oct30 with precise milestone day unspecified.",
+      "Next tests: orbital thermal stress and radiation; two connected satellites targeted for 2027.",
+      "This is a prototype research experiment, not an operational cloud AI datacenter."
+    ],
+    "takeaways_th": [
+      "ดาวเทียมต้นแบบปล่อยขึ้น 1 ต.ค.",
+      "ชิป TPU รัน Gemma 4 และตอบกลับโลก",
+      "เตรียมทดสอบความร้อนและรังสีในวงโคจร"
+    ]
+  },
+  "caption_th": "Google ส่งคำตอบจาก AI บนดาวเทียมกลับโลกได้แล้ว 🛰️🌍\n\nGoogle Research ประกาศเมื่อวันที่ 30 ตุลาคม 2026 ว่า Project Suncatcher ทำการทดสอบครั้งสำคัญสำเร็จ: ชิป TPU ระดับที่ใช้ในดาต้าเซ็นเตอร์บนดาวเทียมต้นแบบสามารถรันโมเดล Gemma 4 และส่งคำตอบกลับมายังสถานีภาคพื้นดินได้\n\n🔹 ดาวเทียมต้นแบบถูกส่งขึ้นสู่อวกาศเมื่อ 1 ต.ค. 2026\n🔹 ทีมงานส่งคำสั่งให้ Gemma 4 เขียนบทไฮกุ และรับคำตอบจาก TPU ในวงโคจรกลับโลกได้สำเร็จ\n🔹 ขั้นถัดไปคือทดสอบความทนต่อความร้อนและรังสี ก่อนเป้าหมายดาวเทียมเชื่อมต่อกันสองดวงในปี 2027\n\nยังเป็นเพียงโครงการวิจัยและการทดสอบบนต้นแบบ ไม่ใช่การเปิดบริการ AI Data Center ในอวกาศแล้ว แต่เป็นก้าวสำคัญสู่การศึกษาว่าการประมวลผล AI นอกโลกจะเป็นไปได้แค่ไหน\n\nอ่านประกาศ Google Research (30 ต.ค. 2026): https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/\n\n#AreaZero #DailyAIScout #AINews #GoogleResearch #ProjectSuncatcher #Gemma4 #TPU #SpaceTech #AIInfrastructure",
+  "alt_text_th": "ภาพประกอบข่าว Project Suncatcher วันที่ 31 ต.ค. 2026 ไม่ใช่ภาพถ่ายจริงของดาวเทียม แสดงดาวเทียมแนวคิดลอยเหนือโลกและส่งสัญญาณกลับมา พร้อม 3 ประเด็น: ดาวเทียมต้นแบบปล่อย 1 ต.ค.; ชิป TPU รัน Gemma 4 และตอบกลับโลก; ขั้นต่อไปทดสอบความร้อนและรังสี อ้างอิง Google Research ประกาศ 30 ต.ค. 2026",
+  "hashtags": [
+    "#AreaZero",
+    "#DailyAIScout",
+    "#AINews",
+    "#GoogleResearch",
+    "#ProjectSuncatcher",
+    "#Gemma4",
+    "#TPU",
+    "#SpaceTech",
+    "#AIInfrastructure"
+  ],
+  "recent_topic_duplicate_check": {
+    "2026-10-27": "Google Docs native Markdown",
+    "2026-10-28": "OpenAI GPT-6.1 Terra",
+    "2026-10-29": "GitHub Agentic Workflows",
+    "2026-10-30": "Gemini in-app file editing"
+  },
+  "artwork": {
+    "single_pass": true,
+    "no_area_zero_logo": true,
+    "concept_illustration_not_real_satellite": true,
+    "source_path": "original-single-pass-2026-10-31.png",
+    "source_png_sha256": "a5ba67f1b22c285722be01f7a987c2505ed73bc1a8b559493c8a0de0f788777b",
+    "source_bytes": 1998691,
+    "original_generation_id": "3bd6039d-5f06-44e1-be96-0afa23083cfb",
+    "archive_library": "/Areazero/Daily AI Scout/2026-10-31/source-artwork.zip",
+    "archive_zip_sha256": "e5997be743d9214dd89fe99649c9a507bbe1f3307317c8ceb09802656aaf1188",
+    "archive_zip_bytes": 2184229,
+    "final_image_path": "posts/2026-10-31/daily-ai-scout-project-suncatcher-4x5.jpg",
+    "dimensions_px": [
+      1080,
+      1350
+    ],
+    "final_bytes": 305040,
+    "final_sha256": "bb8d3920a2bbb37aeb83f8dda774d5ef758cae8c13897aacbea9411c800b38fe",
+    "final_git_blob_sha1": "2ac9fdae2d2e5b72d3e2e6c14987c9f34fc20f82",
+    "visual_qa": "PASS: verified actual 1080x1350 rendered JPEG. All Thai headline and exactly three numbered takeaways legible, no tofu, date matches primary source, no AREAZERO logo/wordmark, original single-pass artwork, concept illustration not product UI."
+  },
+  "idempotency_keys": [
+    "2026-10-31:areazero-daily-ai-scout:instagram",
+    "2026-10-31:areazero-daily-ai-scout:facebook"
+  ],
+  "skill_lab_social_publishing": "DISABLED_SEPARATE_SERIES",
+  "note": "Editorial + image commit is preparation only; not Metricool scheduled or published. Source announcement date Oct30 distinct from Oct31 content date and Oct1 spacecraft launch."
+}
