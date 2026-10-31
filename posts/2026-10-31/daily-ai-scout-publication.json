@@ -1,0 +1,91 @@
+{
+  "content_date": "2026-10-31",
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "selected_story": "Project Suncatcher's first AI response from data-center-class TPU in orbit",
+  "headline_th": "Google รัน AI บนดาวเทียมสำเร็จ",
+  "event_date": "2026-10-26..2026-10-30; milestone 'this week' per Google, exact event day not given",
+  "satellite_launch_date": "2026-10-01",
+  "source_publication_date": "2026-10-30",
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-satellite-response/",
+  "editorial_record": "posts/2026-10-31/daily-ai-scout-editorial.json",
+  "publication_date_local": "2026-10-31T12:00:00",
+  "publication_timezone": "Asia/Bangkok",
+  "outer_schedule": "2026-10-31T12:00:00+07:00",
+  "creation_date_local": "2026-10-31T08:08:00",
+  "verified_brand": {
+    "blog_id": "7611512",
+    "brand": "AreaZero",
+    "instagram": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "facebook_page_id": "853075507891515",
+    "timezone": "Asia/Bangkok"
+  },
+  "metricool": {
+    "post_id": 411828329,
+    "stable_uuid": "9041546868125156589",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=9041546868125156589",
+    "autoPublish": true,
+    "draft": false,
+    "media_ingest_url": "https://static.metricool.com/planner/202610/7611512-file-15654916579654498863.jpeg",
+    "instagram_data": {
+      "type": "POST",
+      "isAiGenerated": true
+    },
+    "facebook_data": {
+      "type": "POST"
+    },
+    "per_provider": [
+      {
+        "network": "instagram",
+        "idempotency_key": "2026-10-31:areazero-daily-ai-scout:instagram",
+        "status": "PENDING",
+        "detailedStatus": "Pending",
+        "publicUrl": null
+      },
+      {
+        "network": "facebook",
+        "idempotency_key": "2026-10-31:areazero-daily-ai-scout:facebook",
+        "status": "PENDING",
+        "detailedStatus": "Pending",
+        "publicUrl": null
+      }
+    ],
+    "last_verify": "2026-10-31T08:08:00+07:00 (Metricool creationDate; readback afterwards showed one post, two PENDING, exact noon)"
+  },
+  "artwork": {
+    "mode": "ONE_PASS_FINAL_IMAGE_NO_LOGO",
+    "dimensions_px": [
+      1080,
+      1350
+    ],
+    "format": "image/jpeg",
+    "image_path": "posts/2026-10-31/daily-ai-scout-project-suncatcher-4x5.jpg",
+    "image_bytes": 305040,
+    "sha256": "bb8d3920a2bbb37aeb83f8dda774d5ef758cae8c13897aacbea9411c800b38fe",
+    "github_blob_sha": "2ac9fdae2d2e5b72d3e2e6c14987c9f34fc20f82",
+    "image_pinned_commit": "c1ce35ce37560fd3e58d562b0727560654cb3e13",
+    "image_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/c1ce35ce37560fd3e58d562b0727560654cb3e13/posts/2026-10-31/daily-ai-scout-project-suncatcher-4x5.jpg",
+    "original_png_sha256": "a5ba67f1b22c285722be01f7a987c2505ed73bc1a8b559493c8a0de0f788777b",
+    "original_png_bytes": 1998691,
+    "original_generation_id": "3bd6039d-5f06-44e1-be96-0afa23083cfb",
+    "source_archive_library": "/Areazero/Daily AI Scout/2026-10-31/source-artwork.zip",
+    "source_archive_zip_bytes": 2184229,
+    "source_archive_zip_sha256": "e5997be743d9214dd89fe99649c9a507bbe1f3307317c8ceb09802656aaf1188"
+  },
+  "qa": {
+    "primary_sources_considered": 6,
+    "source_date_and_claims_verified": true,
+    "visual_qa": "PASS: single-pass image, 1080x1350 JPEG pixels inspected, Thai words readable, exactly three takeaway lines, no logo/brand wordmark, image is conceptual representation (not exact satellite/photo), source date is Oct30 and digest date Oct31.",
+    "media_integrity": "Nine exact Library UTF8 Base64 chunks reassembled in strict order; decoded byte count 305040 and GitHub create_blob SHA matched local Git blob SHA. GitHub commit-pinned fetch_file Base64 whitespace stripped and decoded length / SHA verified. GitHub fetch on public raw URL recognized binary, so text fetch rejected as expected. Metricool received and hosted media.",
+    "metricool_identity": "getBrandSettings verified 7611512, Instagram areazero.ai, Facebook AreaZero page 853075507891515, Asia/Bangkok",
+    "queue_preflight": "Before one createScheduledPost call, getScheduledPosts showed zero Oct31/noon posts and GitHub folder contained only editorial/media, no publication record.",
+    "post_qa": "Read back exactly one Oct31 post (id/UUID) at 12:00 Asia/Bangkok, autoPublish true, draft false, both providers PENDING, hosted image URL populated.",
+    "idempotency_barrier": true,
+    "published_public_urls_confirmed": false,
+    "no_google_drive": true,
+    "skill_lab_social_publishing_remains_disabled": true
+  },
+  "note": "SCHEDULED is not PUBLISHED. Two keys are hard no-duplicate barriers. Noon QA/Health Watch later must check each provider's actual status and publicUrl. Do not interpret missing scheduled list entry as published. Never reschedule/retry ambiguous writes."
+}
