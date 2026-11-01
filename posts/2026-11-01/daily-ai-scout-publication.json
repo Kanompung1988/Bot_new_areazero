@@ -1,0 +1,90 @@
+{
+  "content_date": "2026-11-01",
+  "agent": "areazero-daily-ai-scout",
+  "series": "NEWS_AND_TRENDS_NOT_SKILL_LAB",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "selected_story": "Google Gemini 4 Carbon frontier model focusing on coding and cybersecurity",
+  "headline_th": "Google เปิดตัว Gemini 4 Carbon เน้นโค้ดและไซเบอร์",
+  "event_date": "2026-10-28 (announcement; initial limited cyber-defender rollout begins that week)",
+  "source_publication_date": "2026-10-28",
+  "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+  "editorial_record": "posts/2026-11-01/daily-ai-scout-editorial.json",
+  "publication_date_local": "2026-11-01T12:00:00",
+  "publication_timezone": "Asia/Bangkok",
+  "outer_schedule": "2026-11-01T12:00:00+07:00",
+  "creation_date_local": "2026-11-01T08:08:00",
+  "verified_brand": {
+    "blog_id": "7611512",
+    "brand": "AreaZero",
+    "instagram": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "facebook_page_id": "853075507891515",
+    "timezone": "Asia/Bangkok"
+  },
+  "metricool": {
+    "post_id": 412590287,
+    "stable_uuid": "1997774270091247644",
+    "planner_url": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=1997774270091247644",
+    "autoPublish": true,
+    "draft": false,
+    "media_ingest_url": "https://static.metricool.com/planner/202611/7611512-file-5090110864678559467.jpeg",
+    "instagram_data": {
+      "type": "POST",
+      "isAiGenerated": true
+    },
+    "facebook_data": {
+      "type": "POST"
+    },
+    "per_provider": [
+      {
+        "network": "instagram",
+        "idempotency_key": "2026-11-01:areazero-daily-ai-scout:instagram",
+        "status": "PENDING",
+        "detailedStatus": "Pending",
+        "publicUrl": null
+      },
+      {
+        "network": "facebook",
+        "idempotency_key": "2026-11-01:areazero-daily-ai-scout:facebook",
+        "status": "PENDING",
+        "detailedStatus": "Pending",
+        "publicUrl": null
+      }
+    ],
+    "readback": "Single exact UUID after createScheduledPost, 12:00 Asia/Bangkok, both PENDING; status not proof of published"
+  },
+  "artwork": {
+    "mode": "ONE_PASS_FINAL_IMAGE_NO_LOGO",
+    "dimensions_px": [
+      1080,
+      1350
+    ],
+    "format": "image/jpeg",
+    "image_path": "posts/2026-11-01/daily-ai-scout-gemini-4-carbon-4x5.jpg",
+    "image_bytes": 342415,
+    "sha256": "741e38785238758aecbb86bb1139e73a8f89182ecb738ffd9a81cdb184d2ef7b",
+    "github_blob_sha": "03582f3b942cb54783551cd8a6d8d7aa3c77113c",
+    "image_pinned_commit": "8ca94301924245ee13ca64e34d1e80e1aae0ee8b",
+    "image_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/8ca94301924245ee13ca64e34d1e80e1aae0ee8b/posts/2026-11-01/daily-ai-scout-gemini-4-carbon-4x5.jpg",
+    "original_png_sha256": "79c473f5cd7179ac57333c282e66813923f20f9e682bb86f0b7fc1df67daaac5",
+    "original_png_bytes": 1837348,
+    "original_generation_id": "b975a6f7-d2a6-4218-bb2e-035459a73574",
+    "source_archive_library": "/Areazero/Daily AI Scout/2026-11-01/source-artwork.zip",
+    "source_archive_zip_bytes": 2020966,
+    "source_archive_zip_sha256": "73612effe65dedb42764f7ef6a70a33d9ac84b9a59601e379f546422b6aefec5"
+  },
+  "qa": {
+    "primary_sources_considered": 8,
+    "source_date_and_claims_verified": true,
+    "visual_qa": "PASS: 1 image generation pass, actual pixels inspected, clean legible Thai and exactly 3 takeaways, conceptual hero, no logo, no UI, source announcement date accurate",
+    "media_integrity": "13 exact Library UTF-8 Base64 parts, 342415 decoded bytes; GitHub create_blob SHA matched local Git SHA and committed fetch_file SHA and decoded byte count matched",
+    "metricool_identity": "getBrandSettings verified brand 7611512 and intended IG/FB names/timezone",
+    "queue_preflight": "Before one createScheduledPost, getScheduledPosts returned zero 2026-11-01 records; folder contained only image and editorial",
+    "post_qa": "After one schedule write, read back one stable UUID, 12:00 Asia/Bangkok, hosted media, two PENDING statuses",
+    "idempotency_barrier": true,
+    "published_public_urls_confirmed": false,
+    "no_google_drive": true,
+    "skill_lab_social_publishing_remains_disabled": true
+  },
+  "note": "PENDING is SCHEDULED, not PUBLISHED. Do not retry or duplicate these keys. Noon QA / Health Watch verify separately with per-provider publicUrl; scheduled absence is not publication proof."
+}
