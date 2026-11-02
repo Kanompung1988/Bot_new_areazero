@@ -1,0 +1,16 @@
+{
+  "owner": "Kanompung1988",
+  "repositories": [
+    {
+      "slug": "aws-github-oidc-trust-audit",
+      "source_path": "skills/aws-github-oidc-trust-audit",
+      "source_ref": "skill-lab/ep08-2026-11-01-staging"
+    },
+    {
+      "slug": "npm-export-map-audit",
+      "source_path": "skills/npm-export-map-audit",
+      "source_ref": "skill-lab/ep08-2026-11-01-staging"
+    }
+  ],
+  "purpose": "EP.08 current provisioning batch; previous request history preserved in .github/skill-lab/history/2026-10-31-requests.json; published repo/CI history remains in agent-skills docs/EPISODES.md."
+}
