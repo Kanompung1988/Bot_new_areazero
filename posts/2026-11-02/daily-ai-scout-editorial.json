@@ -1,7 +1,7 @@
 {
   "agent": "areazero-daily-ai-scout",
   "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
-  "status": "ASSET_PREPARED_NOT_SCHEDULED",
+  "status": "SCHEDULED_NOT_PUBLISHED",
   "content_date": "2026-11-02",
   "timezone": "Asia/Bangkok",
   "scheduled_publication_date": "2026-11-02T12:00:00+07:00",
@@ -118,8 +118,28 @@
     "final_path": "posts/2026-11-02/daily-ai-scout-mistral-large-4-open-weights-4x5.jpg",
     "final_bytes": 285604,
     "final_sha256": "fd0351b19450da781926e5f251971a1622aead7931a04d225a860448af542fb6",
-    "git_blob_sha": "c0317ae825043db39b8109880604caafab0372d3"
+    "git_blob_sha": "c0317ae825043db39b8109880604caafab0372d3",
+    "immutable_commit": "74030dd15a9d4e96ef773ce9b6c185b506e9a9a2",
+    "immutable_media_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/74030dd15a9d4e96ef773ce9b6c185b506e9a9a2/posts/2026-11-02/daily-ai-scout-mistral-large-4-open-weights-4x5.jpg"
   },
   "social_publishing_unauthorized_for": "AREAZERO Skill Lab",
-  "notes": "Morning preparation only; will schedule via Metricool only after verified immutable commit/media URL and account/date/key gates."
+  "notes": "Morning preparation only; will schedule via Metricool only after verified immutable commit/media URL and account/date/key gates.",
+  "metricool_publication_record": "posts/2026-11-02/daily-ai-scout-publication.json",
+  "metricool": {
+    "post_id": 413435514,
+    "uuid": "-5695609240660328340",
+    "scheduled_at": "2026-11-02T12:00:00+07:00",
+    "providers": [
+      {
+        "network": "facebook",
+        "status": "PENDING",
+        "publicUrl": null
+      },
+      {
+        "network": "instagram",
+        "status": "PENDING",
+        "publicUrl": null
+      }
+    ]
+  }
 }

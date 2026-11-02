@@ -1,0 +1,91 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-11-02",
+  "source_publication_date": "2026-10-29",
+  "source_event_date": "2026-10-29",
+  "model_original_announcement_date": "2026-10-06",
+  "publication_date": "2026-11-02T12:00:00+07:00",
+  "timezone": "Asia/Bangkok",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "provenance": "Metricool getScheduledPosts read-back after createScheduledPost; statuses are not public posting proof",
+  "brand": {
+    "blogId": 7611512,
+    "label": "AreaZero",
+    "instagram": "areazero.ai",
+    "facebookPageName": "AreaZero",
+    "facebookPageId": "853075507891515"
+  },
+  "metricool": {
+    "post_id": 413435514,
+    "uuid": "-5695609240660328340",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=-5695609240660328340",
+    "created_at": "2026-11-02T08:04:00+07:00",
+    "schedule": {
+      "dateTime": "2026-11-02T12:00:00",
+      "timezone": "Asia/Bangkok"
+    },
+    "autoPublish": true,
+    "draft": false,
+    "media": [
+      "https://static.metricool.com/planner/202611/7611512-file-3613685635938868098.jpeg"
+    ],
+    "hosted_media_ingested": true
+  },
+  "networks": {
+    "instagram": {
+      "network": "instagram",
+      "status": "PENDING",
+      "detailedStatus": "Pending",
+      "publicUrl": null,
+      "idempotency_key": "2026-11-02:areazero-daily-ai-scout:instagram",
+      "barrier_state": "SCHEDULED"
+    },
+    "facebook": {
+      "network": "facebook",
+      "status": "PENDING",
+      "detailedStatus": "Pending",
+      "publicUrl": null,
+      "idempotency_key": "2026-11-02:areazero-daily-ai-scout:facebook",
+      "barrier_state": "SCHEDULED"
+    }
+  },
+  "idempotency_keys": [
+    "2026-11-02:areazero-daily-ai-scout:instagram",
+    "2026-11-02:areazero-daily-ai-scout:facebook"
+  ],
+  "story": {
+    "title": "Mistral Large 4 open weights released",
+    "headline_th": "Mistral Large 4 เปิดให้ดาวน์โหลดน้ำหนักโมเดลแล้ว",
+    "source_url": "https://mistral.ai/news/mistral-large-4-oss/",
+    "source_date_corrob": "https://huggingface.co/blog/mistral-large4"
+  },
+  "asset": {
+    "image_path": "posts/2026-11-02/daily-ai-scout-mistral-large-4-open-weights-4x5.jpg",
+    "image_sha256": "fd0351b19450da781926e5f251971a1622aead7931a04d225a860448af542fb6",
+    "image_git_blob_sha": "c0317ae825043db39b8109880604caafab0372d3",
+    "image_bytes": 285604,
+    "image_pixels": "1080x1350",
+    "image_format": "JPEG",
+    "immutable_commit": "74030dd15a9d4e96ef773ce9b6c185b506e9a9a2",
+    "immutable_media_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/74030dd15a9d4e96ef773ce9b6c185b506e9a9a2/posts/2026-11-02/daily-ai-scout-mistral-large-4-open-weights-4x5.jpg",
+    "original_archive_library": "/Areazero/Daily AI Scout/2026-11-02/source-artwork.zip",
+    "original_archive_sha256": "9124a866fee23b2eead6de1753a9d8135a485df15b96f85f460b64c02493b6ea",
+    "original_artwork_sha256": "a0089967731e6460e7702422f735a4d224b118782e6b31eb2811ff9e2853e7db",
+    "final_visual_check": "PASS",
+    "no_areazero_logo": true,
+    "single_generation_pass": true
+  },
+  "verification": {
+    "before_write_metricool_brand_settings": true,
+    "before_write_get_scheduled_posts": true,
+    "before_write_today_publication_absent": true,
+    "readback_metricool_current_schedule": true,
+    "verified_github_blob_sha": true,
+    "verified_tree_size": true,
+    "hosted_media_url_returned_by_metricool": true,
+    "independent_meta_public_url": false,
+    "skill_lab_social_untouched": true
+  },
+  "notes": "PENDING is scheduled, not published. No platform publicUrl yet; Noon QA and Health Watch must confirm after noon. Existing keys/UUID are absolute no-duplicate barriers."
+}
