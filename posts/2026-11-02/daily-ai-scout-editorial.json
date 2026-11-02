@@ -1,0 +1,125 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
+  "status": "ASSET_PREPARED_NOT_SCHEDULED",
+  "content_date": "2026-11-02",
+  "timezone": "Asia/Bangkok",
+  "scheduled_publication_date": "2026-11-02T12:00:00+07:00",
+  "source_event_date": "2026-10-29",
+  "source_publication_date": "2026-10-29",
+  "model_original_announcement_date": "2026-10-06",
+  "story_slug": "mistral-large-4-open-weights-release",
+  "selected_story": "Mistral Large 4 (Le Chonk) open weights released for download",
+  "headline_th": "Mistral Large 4 เปิดให้ดาวน์โหลดน้ำหนักโมเดลแล้ว",
+  "takeaways_th": [
+    "ดาวน์โหลดโมเดลไปรันเองได้",
+    "เด่นด้าน Coding Agent และความปลอดภัยไซเบอร์",
+    "บริการ Model-as-a-Service ต้องขอไลเซนส์"
+  ],
+  "source_url": "https://mistral.ai/news/mistral-large-4-oss/",
+  "source_release_date_evidence": "https://huggingface.co/blog/mistral-large4",
+  "fact_notes": [
+    "The MODEL was first announced in preview on 2026-10-06; the OPEN WEIGHTS were released 2026-10-29. Do not claim a newly announced model on 2026-11-02.",
+    "Mistral says the model is natively multimodal, roughly one trillion total parameters, intended for coding/agents and defensive cybersecurity.",
+    "Weights can be downloaded from Hugging Face and self-hosted with sufficient resources. Open-weight is not unconditional open-source licensing.",
+    "Mistral Ecosystem Open-Weight license allows broad use but operating a model-as-a-service business requires separate Mistral commercial license.",
+    "Published model performance benchmarks are provider-reported, not a universal quality guarantee."
+  ],
+  "research": {
+    "criterion": "At least five distinct recent official primary-source releases considered; weigh timeliness, practical usefulness, Thai AI/developer interest; reject past duplicate subjects and Skill Lab launches.",
+    "candidates": [
+      {
+        "rank": 1,
+        "score": 94,
+        "topic": "Mistral Large 4 public open-weights availability",
+        "publication_date": "2026-10-29",
+        "event_date": "2026-10-29",
+        "initial_model_announcement_date": "2026-10-06",
+        "primary_source": "https://mistral.ai/news/mistral-large-4-oss/",
+        "date_corroboration": "https://huggingface.co/blog/mistral-large4",
+        "selected": true,
+        "rationale": "Actual new open-weight distribution available, practical self-hosting/cyber AI relevance; previous Oct30 Scout considered but did not publish it."
+      },
+      {
+        "rank": 2,
+        "score": 89,
+        "topic": "AWS Bedrock AgentCore session endpoints for live preview of coding-agent web apps",
+        "publication_date": "2026-10-30",
+        "event_date": "2026-10-30",
+        "primary_source": "https://aws.amazon.com/blogs/machine-learning/preview-web-apps-live-as-your-coding-agent-builds-them-with-amazon-bedrock-agentcore-runtime/",
+        "selected": false,
+        "rationale": "New technical AWS feature, useful but narrower vendor-specific coding workflow."
+      },
+      {
+        "rank": 3,
+        "score": 86,
+        "topic": "GitHub Copilot Fusion generally available",
+        "publication_date": "2026-10-28",
+        "event_date": "2026-10-28",
+        "primary_source": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/",
+        "selected": false,
+        "rationale": "Major model routing change; neighboring Scout posts already covered GitHub automation."
+      },
+      {
+        "rank": 4,
+        "score": 82,
+        "topic": "OpenAI GPT-6 Rosalind Research restricted launch",
+        "publication_date": "2026-10-30",
+        "event_date": "2026-10-30",
+        "primary_source": "https://help.openai.com/en/articles/9624314-model-release-notes",
+        "selected": false,
+        "rationale": "Fresh but life-sciences-specific, requires restricted Research approval."
+      },
+      {
+        "rank": 5,
+        "score": 81,
+        "topic": "Microsoft Copilot harness in Foundry",
+        "publication_date": "2026-10-28",
+        "event_date": "2026-10-28",
+        "primary_source": "https://blogs.microsoft.com/blog/2026/10/28/introducing-the-microsoft-copilot-harness-unlocking-the-potential-of-truly-multi-model-agentic-work/",
+        "selected": false,
+        "rationale": "Strong enterprise agent engineering relevance; three to five days older and overlaps with Copilot coverage."
+      },
+      {
+        "rank": 6,
+        "score": 78,
+        "topic": "Copilot Fusion experimental local-model routing",
+        "publication_date": "2026-10-28",
+        "event_date": "2026-10-28",
+        "primary_source": "https://github.blog/changelog/2026-10-28-github-copilot-fusion-now-supports-selection-of-local-models/",
+        "selected": false,
+        "rationale": "Interesting limited preview; caveat that cloud routing still used."
+      }
+    ],
+    "rejected_prior_story_dates": [
+      "2026-10-25 Zoom/Onyx",
+      "2026-10-26 Copilot Teams",
+      "2026-10-27 Google Docs Markdown",
+      "2026-10-28 GPT-6.1 Terra",
+      "2026-10-29 GitHub Agentic Workflows",
+      "2026-10-30 Gemini file editing",
+      "2026-10-31 Project Suncatcher",
+      "2026-11-01 Gemini 4 Carbon"
+    ]
+  },
+  "image": {
+    "generation": "single_pass_complete_design",
+    "quality_gate": "PASS_VISUAL_REVIEW",
+    "no_logo": true,
+    "thai_glyphs": "legible without tofu",
+    "image_format": "image/jpeg",
+    "pixel_size": [
+      1080,
+      1350
+    ],
+    "original_sha256": "a0089967731e6460e7702422f735a4d224b118782e6b31eb2811ff9e2853e7db",
+    "original_archive_library_path": "/Areazero/Daily AI Scout/2026-11-02/source-artwork.zip",
+    "original_archive_sha256": "9124a866fee23b2eead6de1753a9d8135a485df15b96f85f460b64c02493b6ea",
+    "final_path": "posts/2026-11-02/daily-ai-scout-mistral-large-4-open-weights-4x5.jpg",
+    "final_bytes": 285604,
+    "final_sha256": "fd0351b19450da781926e5f251971a1622aead7931a04d225a860448af542fb6",
+    "git_blob_sha": "c0317ae825043db39b8109880604caafab0372d3"
+  },
+  "social_publishing_unauthorized_for": "AREAZERO Skill Lab",
+  "notes": "Morning preparation only; will schedule via Metricool only after verified immutable commit/media URL and account/date/key gates."
+}
