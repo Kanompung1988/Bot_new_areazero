@@ -2,15 +2,15 @@
   "owner": "Kanompung1988",
   "repositories": [
     {
-      "slug": "aws-github-oidc-trust-audit",
-      "source_path": "skills/aws-github-oidc-trust-audit",
-      "source_ref": "skill-lab/ep08-2026-11-01-staging"
+      "slug": "compose-startup-readiness-audit",
+      "source_path": "skills/compose-startup-readiness-audit",
+      "source_ref": "skill-lab/ep09-2026-11-02-staging"
     },
     {
-      "slug": "npm-export-map-audit",
-      "source_path": "skills/npm-export-map-audit",
-      "source_ref": "skill-lab/ep08-2026-11-01-staging"
+      "slug": "python-entrypoint-contract-audit",
+      "source_path": "skills/python-entrypoint-contract-audit",
+      "source_ref": "skill-lab/ep09-2026-11-02-staging"
     }
   ],
-  "purpose": "EP.08 current provisioning batch; previous request history preserved in .github/skill-lab/history/2026-10-31-requests.json; published repo/CI history remains in agent-skills docs/EPISODES.md."
+  "purpose": "EP.09 — offline tested skill sources staged on nondefault branch. GitHub provisioning is not a release. Skill Lab social distribution remains OFF."
 }
