@@ -1,0 +1,27 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-11-03",
+  "status": "BLOCKED_MEDIA_BYTE_BRIDGE",
+  "intended_publication_date": "2026-11-03T12:00:00+07:00",
+  "source_publication_date": "2026-11-02",
+  "story": "OpenAI Engineering reveals Pando scalable Git backend",
+  "reason": "Source art generated in one pass and visually checked, but image export runtime (container.exec, python, python_user_visible) repeatedly failed with redis ConnectionError. Files Library image upload returned 403 Library LPE indexing requires a trusted producer. Therefore no byte-level SHA256, resize to 1080x1350, immutable public GitHub image blob, or verified public URL exists. Fail closed: never submit placeholder or prior media to Metricool.",
+  "no_metricool_createScheduledPost": true,
+  "instagram": {
+    "status": "NOT_SCHEDULED",
+    "publicUrl": null,
+    "idempotency_key": "2026-11-03:areazero-daily-ai-scout:instagram",
+    "barrier_state": null
+  },
+  "facebook": {
+    "status": "NOT_SCHEDULED",
+    "publicUrl": null,
+    "idempotency_key": "2026-11-03:areazero-daily-ai-scout:facebook",
+    "barrier_state": null
+  },
+  "followup": "When container runtime recovers, export exact PNG/JPEG bytes and hash them, archive original, commit verified image on areazero-social-assets, check fresh queue+brand+keys, and schedule only if before noon and slot empty; otherwise record MISSED_NOON, NEVER post late.",
+  "source_art_file_id": "file_000000002c9081f5b3687d220bc90afd",
+  "source_url": "https://openai.com/index/scaling-git-at-openai/",
+  "skill_lab_social_publishing": "DISABLED"
+}
