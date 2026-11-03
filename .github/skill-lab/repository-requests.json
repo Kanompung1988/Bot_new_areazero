@@ -2,15 +2,15 @@
   "owner": "Kanompung1988",
   "repositories": [
     {
-      "slug": "compose-startup-readiness-audit",
-      "source_path": "skills/compose-startup-readiness-audit",
-      "source_ref": "skill-lab/ep09-2026-11-02-staging"
+      "slug": "k8s-pdb-scope-audit",
+      "source_path": "skills/k8s-pdb-scope-audit",
+      "source_ref": "skill-lab/ep10-2026-11-03-pdb-pip"
     },
     {
-      "slug": "python-entrypoint-contract-audit",
-      "source_path": "skills/python-entrypoint-contract-audit",
-      "source_ref": "skill-lab/ep09-2026-11-02-staging"
+      "slug": "pip-index-boundary-audit",
+      "source_path": "skills/pip-index-boundary-audit",
+      "source_ref": "skill-lab/ep10-2026-11-03-pdb-pip"
     }
   ],
-  "purpose": "EP.09 — offline tested skill sources staged on nondefault branch. GitHub provisioning is not a release. Skill Lab social distribution remains OFF."
+  "purpose": "EP.10 2026-11-03 — staged complete tested open-source code. Code GitHub publication only; Skill Lab Instagram and Facebook SOCIAL OFF indefinitely."
 }
