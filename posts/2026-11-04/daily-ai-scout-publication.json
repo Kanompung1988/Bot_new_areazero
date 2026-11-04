@@ -1,0 +1,92 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-11-04",
+  "source_publication_date": "2026-11-03",
+  "source_event_date": "2026-11-03",
+  "publication_date": "2026-11-04T12:00:00+07:00",
+  "timezone": "Asia/Bangkok",
+  "status": "SCHEDULED_NOT_PUBLISHED",
+  "provenance": "Metricool createScheduledPost success and getScheduledPosts read-back show both providers PENDING, NOT publication",
+  "brand": {
+    "blogId": 7611512,
+    "label": "AreaZero",
+    "instagram": "areazero.ai",
+    "facebookPageName": "AreaZero",
+    "facebookPageId": "853075507891515"
+  },
+  "metricool": {
+    "post_id": 415982853,
+    "uuid": "4152357100018155525",
+    "plannerUrl": "https://app.metricool.com/planner/calendar?blogId=7611512&openWithPostUuid=4152357100018155525",
+    "created_at": "2026-11-04T08:09:00+07:00",
+    "schedule": {
+      "dateTime": "2026-11-04T12:00:00",
+      "timezone": "Asia/Bangkok"
+    },
+    "autoPublish": true,
+    "draft": false,
+    "media": [
+      "https://static.metricool.com/planner/202611/7611512-file-12023416982379159571.jpeg"
+    ],
+    "hosted_media_ingested": true,
+    "mediaAltText": [
+      "ภาพข่าวเทคโนโลยีพื้นกรมท่าเข้ม หัวข้อ GitHub Copilot × JetBrains Air มีกราฟิกนามธรรมของ Agent สามชุดเชื่อมกับศูนย์กลาง และข้อมูลสามข้อเรื่อง ACP การจัดการหลาย Agent และเงื่อนไขงาน Cloud; ที่มา GitHub 3 พฤศจิกายน 2026"
+    ]
+  },
+  "networks": {
+    "instagram": {
+      "network": "instagram",
+      "status": "PENDING",
+      "detailedStatus": "Pending",
+      "publicUrl": null,
+      "idempotency_key": "2026-11-04:areazero-daily-ai-scout:instagram",
+      "barrier_state": "SCHEDULED"
+    },
+    "facebook": {
+      "network": "facebook",
+      "status": "PENDING",
+      "detailedStatus": "Pending",
+      "publicUrl": null,
+      "idempotency_key": "2026-11-04:areazero-daily-ai-scout:facebook",
+      "barrier_state": "SCHEDULED"
+    }
+  },
+  "idempotency_keys": [
+    "2026-11-04:areazero-daily-ai-scout:instagram",
+    "2026-11-04:areazero-daily-ai-scout:facebook"
+  ],
+  "story": {
+    "title": "GitHub Copilot is now available in JetBrains Air",
+    "headline_th": "GitHub Copilot ใช้งานใน JetBrains Air ได้แล้ว",
+    "source_url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/"
+  },
+  "asset": {
+    "image_path": "posts/2026-11-04/daily-ai-scout-github-copilot-jetbrains-air-4x5.jpg",
+    "image_sha256": "51a9e2486c29f06af669befb2fad65e4fb408b13cc7ce82139f47e2ae2da0e1f",
+    "image_git_blob_sha": "67d9c77b6ddb4484e8267abced6dea361f1cc13e",
+    "image_bytes": 252085,
+    "image_pixels": "1080x1350",
+    "image_format": "JPEG",
+    "immutable_commit": "4a1bbbf373bce4f2195e003e0efb1e1838d0c172",
+    "immutable_media_url": "https://raw.githubusercontent.com/Kanompung1988/Bot_new_areazero/4a1bbbf373bce4f2195e003e0efb1e1838d0c172/posts/2026-11-04/daily-ai-scout-github-copilot-jetbrains-air-4x5.jpg",
+    "original_archive_library": "/Areazero/Daily AI Scout/2026-11-04/source-artwork.zip",
+    "original_archive_sha256": "e7e0b35be93ea6030dc611817689e627fbc35851fce2370cfb0f5dcac2e2cf62",
+    "original_artwork_sha256": "b299c1a0c0f229d88af57af041238219194559d35a368691f3b5c9d50fa180fa",
+    "final_visual_check": "PASS",
+    "no_areazero_logo": true,
+    "single_generation_pass": true
+  },
+  "verification": {
+    "before_write_metricool_brand_settings": true,
+    "before_write_get_scheduled_posts": true,
+    "before_write_today_publication_absent": true,
+    "readback_metricool_current_schedule": true,
+    "verified_github_blob_sha": true,
+    "verified_tree_size": true,
+    "hosted_media_url_returned_by_metricool": true,
+    "independent_meta_public_url": false,
+    "skill_lab_social_untouched": true
+  },
+  "notes": "PENDING means SCHEDULED, not PUBLISHED. Stable post UUID + both keys are no-duplicate barriers. Noon QA / Health Watch to confirm per-provider status and real public URLs. No Google Drive."
+}
