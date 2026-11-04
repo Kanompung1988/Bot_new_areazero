@@ -2,15 +2,15 @@
   "owner": "Kanompung1988",
   "repositories": [
     {
-      "slug": "k8s-pdb-scope-audit",
-      "source_path": "skills/k8s-pdb-scope-audit",
-      "source_ref": "skill-lab/ep10-2026-11-03-pdb-pip"
+      "slug": "py-dependency-group-audit",
+      "source_path": "skills/py-dependency-group-audit",
+      "source_ref": "skill-lab/ep11-2026-11-04-rls-dependency-groups"
     },
     {
-      "slug": "pip-index-boundary-audit",
-      "source_path": "skills/pip-index-boundary-audit",
-      "source_ref": "skill-lab/ep10-2026-11-03-pdb-pip"
+      "slug": "pg-rls-policy-audit",
+      "source_path": "skills/pg-rls-policy-audit",
+      "source_ref": "skill-lab/ep11-2026-11-04-rls-dependency-groups"
     }
   ],
-  "purpose": "EP.10 2026-11-03 — staged complete tested open-source code. Code GitHub publication only; Skill Lab Instagram and Facebook SOCIAL OFF indefinitely."
+  "purpose": "EP.11 2026-11-04 — two independently tested Agent Skills staged on portfolio nondefault branch for public repository provisioning. Skill Lab IG/FB social OFF indefinitely."
 }
