@@ -1,0 +1,119 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-11-04",
+  "timezone": "Asia/Bangkok",
+  "status": "MEDIA_PREPARED_UNSCHEDULED",
+  "intended_publication_date": "2026-11-04T12:00:00+07:00",
+  "source_publication_date": "2026-11-03",
+  "source_event_date": "2026-11-03",
+  "story_slug": "github-copilot-jetbrains-air-integration",
+  "selected_story": "GitHub Copilot is now available in JetBrains Air",
+  "headline_th": "GitHub Copilot ใช้กับ JetBrains Air ได้แล้ว — จัดการ Coding Agent หลายงานพร้อมกัน",
+  "takeaways_th": [
+    "ใช้ Copilot ใน Air ผ่านมาตรฐาน ACP",
+    "จัดการหลาย Agent และรีวิวโค้ดในที่เดียว",
+    "งาน Cloud ต้องใช้ Air Teams และสิทธิ์ที่กำหนด"
+  ],
+  "source_url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/",
+  "facts": [
+    "GitHub published integration announcement on Nov 3, 2026, not a first-time launch of GitHub Copilot.",
+    "Uses Agent Client Protocol (ACP), and enables delegation, parallel tracking and in-context review in JetBrains Air.",
+    "Local tasks: install Air in JetBrains IDE, select GitHub Copilot and connect GitHub Copilot account.",
+    "Cloud tasks: JetBrains account in an Air Teams-enabled business organization, GitHub Copilot subscription, and Copilot enabled by Air administrator.",
+    "Cloud tasks execute in isolated Docker container on fresh VM; not on local machine."
+  ],
+  "research": {
+    "min_primary_sources": 5,
+    "actual_sources_reviewed": 6,
+    "prior_posts_checked_through": "2026-11-03",
+    "prior_duplicate_found": false,
+    "candidates": [
+      {
+        "rank": 1,
+        "score": 94,
+        "title": "GitHub Copilot now available in JetBrains Air",
+        "source_publication_date": "2026-11-03",
+        "source_event_date": "2026-11-03",
+        "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/",
+        "selected": true
+      },
+      {
+        "rank": 2,
+        "score": 90,
+        "title": "BYOK and enterprise custom models in Copilot usage API",
+        "source_publication_date": "2026-11-03",
+        "source_event_date": "2026-11-03",
+        "url": "https://github.blog/changelog/2026-11-03-byok-and-enterprise-custom-models-in-the-copilot-usage-api/",
+        "selected": false
+      },
+      {
+        "rank": 3,
+        "score": 88,
+        "title": "CodeQL 2.27.3 adds Python 3.15 and JSON data extensions",
+        "source_publication_date": "2026-11-03",
+        "source_event_date": "2026-11-03",
+        "url": "https://github.blog/changelog/2026-11-03-codeql-2-27-3-adds-python-3-15-features-and-json-data-extensions/",
+        "selected": false
+      },
+      {
+        "rank": 4,
+        "score": 86,
+        "title": "Dependabot version updates support Agent Package Manager",
+        "source_publication_date": "2026-11-03",
+        "source_event_date": "2026-11-03",
+        "url": "https://github.blog/changelog/2026-11-03-dependabot-version-updates-support-agent-package-manager/",
+        "selected": false
+      },
+      {
+        "rank": 5,
+        "score": 80,
+        "title": "Dependabot now supports Python 3.15",
+        "source_publication_date": "2026-11-03",
+        "source_event_date": "2026-11-03",
+        "url": "https://github.blog/changelog/2026-11-03-dependabot-now-supports-python-3-15/",
+        "selected": false
+      },
+      {
+        "rank": 6,
+        "score": 72,
+        "title": "Kimi K3 India in-country Bedrock inference",
+        "source_publication_date": "2026-11-03",
+        "source_event_date": "2026-11-03",
+        "url": "https://aws.amazon.com/blogs/machine-learning/",
+        "selected": false
+      }
+    ]
+  },
+  "caption_th": "GitHub Copilot ใช้งานใน JetBrains Air ได้แล้ว! 🤝\n\nGitHub ประกาศเมื่อ 3 พ.ย. 2026 ว่า JetBrains Air รองรับ GitHub Copilot ผ่าน Agent Client Protocol (ACP) เพื่อให้ทีมพัฒนาซอฟต์แวร์มอบหมายงานเขียนโค้ดและติดตามหลาย Agent session ได้จากที่เดียว\n\n3 ประเด็นสำคัญ\n① เลือก GitHub Copilot ใน JetBrains Air เพื่อมอบหมายงาน Coding Agent\n② ติดตามหลาย session พร้อมรีวิวผลและดูการเปลี่ยนแปลงโค้ดในบริบทโปรเจกต์\n③ งาน Cloud ต้องมี Air Teams ในองค์กรที่เปิดใช้, บัญชี Copilot ที่มีสิทธิ์ และผู้ดูแลอนุญาต; งานรันบนเครื่องแยก ไม่กระทบสภาพแวดล้อมในเครื่อง\n\nเหมาะกับทีมที่กำลังทดลอง Parallel Coding Agents — อย่าลืมตรวจสิทธิ์และข้อจำกัดของ Cloud ก่อนใช้งาน\n\n📅 ประกาศ: 3 พ.ย. 2026\n🔗 https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/\n\n#AINews #GitHubCopilot #JetBrainsAir #CodingAgent #ACP #AIAgents #DevTools #SoftwareEngineering #AreaZero",
+  "alt_text_th": "ภาพข่าวเทคโนโลยีพื้นกรมท่าเข้ม มีหัวข้อ GitHub Copilot × JetBrains Air และภาพสัญลักษณ์นามธรรมของงาน Agent สามชุดเชื่อมกับศูนย์กลาง พร้อมสาระสามข้อเกี่ยวกับ ACP การจัดการหลาย Agent และเงื่อนไขงาน Cloud; ข้อมูลจาก GitHub วันที่ 3 พฤศจิกายน 2026",
+  "artwork": {
+    "generated_single_pass": true,
+    "no_logo": true,
+    "source_archive_library_path": "/Areazero/Daily AI Scout/2026-11-04/source-artwork.zip",
+    "source_original_sha256": "b299c1a0c0f229d88af57af041238219194559d35a368691f3b5c9d50fa180fa",
+    "source_original_file_bytes": 1714658,
+    "final_image_path": "posts/2026-11-04/daily-ai-scout-github-copilot-jetbrains-air-4x5.jpg",
+    "final_image_sha256": "51a9e2486c29f06af669befb2fad65e4fb408b13cc7ce82139f47e2ae2da0e1f",
+    "final_image_bytes": 252085,
+    "final_dimensions": [
+      1080,
+      1350
+    ],
+    "final_git_blob_sha": "67d9c77b6ddb4484e8267abced6dea361f1cc13e",
+    "visual_check": "PASS: Thai glyphs legible, 3 short takeaways, logo-free, no product UI recreation, correct date"
+  },
+  "preflight": {
+    "metricool_brand_id": "7611512",
+    "metricool_timezone": "Asia/Bangkok",
+    "instagram_account": "areazero.ai",
+    "facebook_page": "AreaZero",
+    "scheduled_list_checked": "2026-11-03 through 2026-11-05",
+    "scheduled_list_found": 0,
+    "github_existing_content_date_directory": false,
+    "idem_keys": [
+      "2026-11-04:areazero-daily-ai-scout:instagram",
+      "2026-11-04:areazero-daily-ai-scout:facebook"
+    ]
+  }
+}
