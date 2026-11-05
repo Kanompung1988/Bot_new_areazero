@@ -2,15 +2,15 @@
   "owner": "Kanompung1988",
   "repositories": [
     {
-      "slug": "py-dependency-group-audit",
-      "source_path": "skills/py-dependency-group-audit",
-      "source_ref": "skill-lab/ep11-2026-11-04-rls-dependency-groups"
+      "slug": "nginx-header-inheritance-audit",
+      "source_path": "skills/nginx-header-inheritance-audit",
+      "source_ref": "skill-lab/ep12-2026-11-05-header-npm"
     },
     {
-      "slug": "pg-rls-policy-audit",
-      "source_path": "skills/pg-rls-policy-audit",
-      "source_ref": "skill-lab/ep11-2026-11-04-rls-dependency-groups"
+      "slug": "npm-lifecycle-policy-audit",
+      "source_path": "skills/npm-lifecycle-policy-audit",
+      "source_ref": "skill-lab/ep12-2026-11-05-header-npm"
     }
   ],
-  "purpose": "EP.11 2026-11-04 — two independently tested Agent Skills staged on portfolio nondefault branch for public repository provisioning. Skill Lab IG/FB social OFF indefinitely."
+  "purpose": "EP.12 2026-11-05 two nondefault-branch staged, candidate-quality Agent Skills, for idempotent standalone PUBLIC repository provisioning only. Social publishing of Skill Lab is OFF indefinitely. No Metricool or posts."
 }
