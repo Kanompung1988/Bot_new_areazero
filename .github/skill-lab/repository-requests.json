@@ -2,15 +2,15 @@
   "owner": "Kanompung1988",
   "repositories": [
     {
-      "slug": "nginx-header-inheritance-audit",
-      "source_path": "skills/nginx-header-inheritance-audit",
-      "source_ref": "skill-lab/ep12-2026-11-05-header-npm"
+      "slug": "compose-mount-write-audit",
+      "source_path": "skills/compose-mount-write-audit",
+      "source_ref": "skill-lab/ep13-2026-11-06-mount-reusable"
     },
     {
-      "slug": "npm-lifecycle-policy-audit",
-      "source_path": "skills/npm-lifecycle-policy-audit",
-      "source_ref": "skill-lab/ep12-2026-11-05-header-npm"
+      "slug": "gha-reusable-permission-audit",
+      "source_path": "skills/gha-reusable-permission-audit",
+      "source_ref": "skill-lab/ep13-2026-11-06-mount-reusable"
     }
   ],
-  "purpose": "EP.12 2026-11-05 two nondefault-branch staged, candidate-quality Agent Skills, for idempotent standalone PUBLIC repository provisioning only. Social publishing of Skill Lab is OFF indefinitely. No Metricool or posts."
+  "purpose": "EP.13 2026-11-06 staged standalone source for idempotent PUBLIC repository provisioning; Skill Lab social publishing OFF indefinitely. GitHub code only; Daily AI Scout unchanged."
 }
