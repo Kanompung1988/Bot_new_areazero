@@ -1,0 +1,128 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "series": "AI_NEWS_TRENDS_NOT_SKILL_LAB",
+  "content_date": "2026-11-06",
+  "publication_date_intended": "2026-11-06T12:00:00+07:00",
+  "timezone": "Asia/Bangkok",
+  "story": {
+    "headline_th": "207,000 เซสชัน: Anthropic เผยนักวิจัยใช้ Claude ทำอะไร",
+    "title": "AI for scientific discovery: How researchers use Claude",
+    "source_url": "https://www.anthropic.com/research/how-researchers-use-claude",
+    "source_publication_date": "2026-11-05",
+    "source_event_date": "2026-11-05",
+    "takeaways": [
+      "วิเคราะห์การใช้ Claude ในงานวิจัย",
+      "Claude Code เกือบครึ่งใช้วิเคราะห์ข้อมูล",
+      "สาขาคอมพิวเตอร์และสถิติมีการใช้ AI สูง"
+    ],
+    "caveat": "Claude-specific research sessions; usage and scenario modeling are not representative of all scientists or a causal productivity effect"
+  },
+  "research": {
+    "verified_primary_sources_count": 7,
+    "scoring": "0–100 editorial relevance score; ranked by freshness, factuality, Thai AI/software audience value, distinctiveness",
+    "ranked": [
+      {
+        "rank": 1,
+        "score": 94,
+        "date": "2026-11-05",
+        "publisher": "Anthropic",
+        "title": "AI for scientific discovery: How researchers use Claude",
+        "url": "https://www.anthropic.com/research/how-researchers-use-claude",
+        "decision": "SELECTED",
+        "facts": "207,000 research sessions. Data analysis about a third of Claude sessions and nearly half of Claude Code; high relative uptake in formal sciences."
+      },
+      {
+        "rank": 2,
+        "score": 91,
+        "date": "2026-11-05",
+        "publisher": "Cloudflare",
+        "title": "Agents aren't humans (but they kinda are)",
+        "url": "https://blog.cloudflare.com/trusted-agent-delegation",
+        "decision": "NOT_SELECTED",
+        "reason": "Important technical agent-identity essay, but mostly argument/architecture framing rather than empirical quantified study."
+      },
+      {
+        "rank": 3,
+        "score": 86,
+        "date": "2026-11-05",
+        "publisher": "GitHub",
+        "title": "New pull request overview page in public preview",
+        "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/",
+        "decision": "NOT_SELECTED",
+        "reason": "Useful opt-in UI preview, smaller overall AI audience significance."
+      },
+      {
+        "rank": 4,
+        "score": 80,
+        "date": "2026-11-05",
+        "publisher": "GitHub",
+        "title": "Secret scanning upgrades detectors, adds SpaceX as partner",
+        "url": "https://github.blog/changelog/2026-11-05-secret-scanning-upgrades-detectors-adds-spacex-as-partner/",
+        "decision": "NOT_SELECTED",
+        "reason": "Security maintenance improvement, limited general interest."
+      },
+      {
+        "rank": 5,
+        "score": 77,
+        "date": "2026-11-04",
+        "publisher": "GitHub",
+        "title": "GitHub Copilot is now available in Xcode’s coding assistant",
+        "url": "https://github.blog/changelog/2026-11-04-github-copilot-is-now-available-in-xcodes-coding-assistant/",
+        "decision": "NOT_SELECTED",
+        "reason": "Public preview, somewhat overlaps with 2026-11-04 Scout JetBrains Air/Copilot integration."
+      },
+      {
+        "rank": 6,
+        "score": 72,
+        "date": "2026-11-04",
+        "publisher": "GitHub",
+        "title": "CodeQL 2.27.4 improves accuracy and query metadata",
+        "url": "https://github.blog/changelog/2026-11-04-codeql-2-27-4-improves-accuracy-and-query-metadata/",
+        "decision": "NOT_SELECTED",
+        "reason": "Routine scanner quality update."
+      },
+      {
+        "rank": 7,
+        "score": 0,
+        "date": "2026-11-04",
+        "publisher": "OpenAI",
+        "title": "OpenAI to acquire Pierre Computer Company, Inc.",
+        "url": "https://openai.com/index/openai-to-acquire-pierre/",
+        "decision": "REJECTED_DUPLICATE",
+        "reason": "2026-11-05 Scout already posted this story."
+      }
+    ]
+  },
+  "copy": {
+    "caption": "นักวิจัยใช้ AI ทำงานอะไรกันจริง ๆ? 🔬\n\nAnthropic เผยแพร่งานวิจัยวันที่ 5 พ.ย. 2026 วิเคราะห์เซสชัน Claude และ Claude Code ที่เกี่ยวข้องกับงานวิจัย 207,000 เซสชัน โดยใช้วิธีวิเคราะห์ที่คำนึงถึงความเป็นส่วนตัว\n\n3 สิ่งที่น่าสนใจ\n① แหล่งข้อมูลคือการใช้งาน Claude ในงานวิจัย ไม่ใช่การสำรวจนักวิจัยทั้งโลก\n② บน Claude Code งานวิเคราะห์ข้อมูลคิดเป็นเกือบครึ่งหนึ่งของเซสชันที่ศึกษาวิจัย\n③ เมื่อเทียบกับจำนวนผู้วิจัยในแต่ละสาขา วิทยาการคอมพิวเตอร์ คณิตศาสตร์ และสถิติ มีการใช้ Claude สูงกว่าสาขาห้องแล็บจำนวนมาก\n\nนี่ชี้ให้เห็นว่า AI ช่วยงานวิเคราะห์ข้อมูลและการเขียนได้มาก แต่การใช้งานจริงยังไม่เท่ากันในแต่ละสาขา และไม่ได้หมายความว่า AI ทำวิจัยแทนมนุษย์ได้ทั้งหมด\n\n📅 เผยแพร่งานวิจัย: 5 พฤศจิกายน 2026\n🔗 https://www.anthropic.com/research/how-researchers-use-claude\n\n#AINews #Anthropic #Claude #ClaudeCode #AIResearch #DataAnalysis #ScientificDiscovery #ArtificialIntelligence #AreaZero",
+    "alt_text": "การ์ดข่าว AI NEWS วันที่ 6 พฤศจิกายน 2026 บนพื้นกรมท่าเข้ม ไม่มีโลโก้ใด ๆ หัวข้อ 207,000 เซสชัน Anthropic เผยนักวิจัยใช้ Claude ทำอะไร มีภาพนามธรรมลูกแก้วใสและวงโคจรสี cyan-mint พร้อมสามข้อสรุปเรื่องการใช้ Claude ในงานวิจัย การวิเคราะห์ข้อมูลบน Claude Code และการใช้ AI ในสาขาคอมพิวเตอร์กับสถิติ ที่มา Anthropic Research 5 พฤศจิกายน 2026",
+    "hashtags": [
+      "#AINews",
+      "#Anthropic",
+      "#Claude",
+      "#ClaudeCode",
+      "#AIResearch",
+      "#DataAnalysis",
+      "#ScientificDiscovery",
+      "#ArtificialIntelligence",
+      "#AreaZero"
+    ]
+  },
+  "image": {
+    "generation_passes": 1,
+    "visual_check": "PASS - verified visible Thai typography and three takeaways, no logos, no simulated UI",
+    "original_format": "PNG",
+    "original_dimensions": "1092x1440",
+    "original_sha256": "27812284ebdb2c7fc62f147dda58395e124dab7a408f96060bbf601a561bd3bb",
+    "original_bytes": 1706004,
+    "final_format": "JPEG",
+    "final_dimensions": "1080x1350",
+    "final_bytes": 261352,
+    "final_sha256": "12d631a649464cc8a53df91cb26880fd6acef08f65a13d29b4edbf2722a8c967",
+    "final_git_blob_sha_computed": "fc50478b6da77692edb71a1eae600602955d81e1",
+    "archive_sha256": "8fa6380003e82f95682c59be55a56ee916a2d9361235dc4fa3be28725961e4f5",
+    "archive_status": "LOCAL_ONLY_NOT_PERSISTENT",
+    "local_final_path": "/mnt/data/areazero-scout-2026-11-06/daily-ai-scout-anthropic-research-4x5.jpg",
+    "local_archive_path": "/mnt/data/areazero-scout-2026-11-06/source-artwork.zip"
+  }
+}

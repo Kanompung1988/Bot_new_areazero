@@ -1,0 +1,74 @@
+{
+  "agent": "areazero-daily-ai-scout",
+  "content_date": "2026-11-06",
+  "source_publication_date": "2026-11-05",
+  "publication_date_intended": "2026-11-06T12:00:00+07:00",
+  "timezone": "Asia/Bangkok",
+  "status": "BLOCKED_MEDIA_TRANSPORT_PERMISSION",
+  "stage": "BEFORE_ANY_SOCIAL_WRITE",
+  "brand": {
+    "blogId": 7611512,
+    "instagram": "areazero.ai",
+    "facebook": "AreaZero",
+    "timezone": "Asia/Bangkok",
+    "verified": "getBrandSettings"
+  },
+  "idempotency_keys": [
+    "2026-11-06:areazero-daily-ai-scout:instagram",
+    "2026-11-06:areazero-daily-ai-scout:facebook"
+  ],
+  "idempotency_state": "NOT_RESERVED_NOT_SCHEDULED",
+  "metricool": {
+    "createScheduledPost_called": false,
+    "post_id": null,
+    "uuid": null,
+    "network_status": {
+      "instagram": "NOT_SCHEDULED",
+      "facebook": "NOT_SCHEDULED"
+    },
+    "publicUrls": {
+      "instagram": null,
+      "facebook": null
+    }
+  },
+  "checks": {
+    "today_record_absent": true,
+    "getScheduledPosts_checked": true,
+    "prior_2026_11_05_post_found": true,
+    "prior_post_status": "PUBLISHED",
+    "five_plus_primary_sources_verified": true,
+    "original_and_final_images_exist_in_local_runtime": true,
+    "final_image_visual_check": "PASS",
+    "image_byte_bridge_to_github": "FAILED",
+    "library_upload": "FAILED_ACCESS_DENY",
+    "github_image_blob_uploaded": false,
+    "immutable_media_url_verified": false,
+    "skill_lab_social_untouched": true
+  },
+  "failure": "Files Library files__manage_library create_folder and upload operations returned AccessDeny id=FileDrive_f0bc9a663b888191801699d787123abd for both /Areazero path and root; source_file_ref upload also AccessDeny. No approved way to move verified binary image bytes from runtime to GitHub create_blob. Do not substitute pointers or reuse media.",
+  "next_safe_step": "Restore authorized Library file write/export transport or trusted direct image-byte bridge to GitHub; then re-check duplicate barriers, time window and media SHA before any social write. If noon missed mark MISSED_NOON and do not send late.",
+  "asset": {
+    "final_sha256": "12d631a649464cc8a53df91cb26880fd6acef08f65a13d29b4edbf2722a8c967",
+    "final_git_blob_sha_computed": "fc50478b6da77692edb71a1eae600602955d81e1",
+    "final_bytes": 261352,
+    "final_dimensions": "1080x1350",
+    "original_sha256": "27812284ebdb2c7fc62f147dda58395e124dab7a408f96060bbf601a561bd3bb",
+    "original_archive_sha256": "8fa6380003e82f95682c59be55a56ee916a2d9361235dc4fa3be28725961e4f5",
+    "persistent_archive": false,
+    "github_media_commit": null
+  },
+  "editorial_path": "posts/2026-11-06/daily-ai-scout-editorial.json",
+  "story": {
+    "headline_th": "207,000 เซสชัน: Anthropic เผยนักวิจัยใช้ Claude ทำอะไร",
+    "title": "AI for scientific discovery: How researchers use Claude",
+    "source_url": "https://www.anthropic.com/research/how-researchers-use-claude",
+    "source_publication_date": "2026-11-05",
+    "source_event_date": "2026-11-05",
+    "takeaways": [
+      "วิเคราะห์การใช้ Claude ในงานวิจัย",
+      "Claude Code เกือบครึ่งใช้วิเคราะห์ข้อมูล",
+      "สาขาคอมพิวเตอร์และสถิติมีการใช้ AI สูง"
+    ],
+    "caveat": "Claude-specific research sessions; usage and scenario modeling are not representative of all scientists or a causal productivity effect"
+  }
+}
