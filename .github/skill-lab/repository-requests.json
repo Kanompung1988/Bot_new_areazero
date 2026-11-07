@@ -2,15 +2,15 @@
   "owner": "Kanompung1988",
   "repositories": [
     {
-      "slug": "compose-mount-write-audit",
-      "source_path": "skills/compose-mount-write-audit",
-      "source_ref": "skill-lab/ep13-2026-11-06-mount-reusable"
+      "slug": "k8s-securitycontext-audit",
+      "source_path": "skills/k8s-securitycontext-audit",
+      "source_ref": "skill-lab/ep14-2026-11-07-securitycontext-submodules"
     },
     {
-      "slug": "gha-reusable-permission-audit",
-      "source_path": "skills/gha-reusable-permission-audit",
-      "source_ref": "skill-lab/ep13-2026-11-06-mount-reusable"
+      "slug": "git-submodule-boundary-audit",
+      "source_path": "skills/git-submodule-boundary-audit",
+      "source_ref": "skill-lab/ep14-2026-11-07-securitycontext-submodules"
     }
   ],
-  "purpose": "EP.13 2026-11-06 staged standalone source for idempotent PUBLIC repository provisioning; Skill Lab social publishing OFF indefinitely. GitHub code only; Daily AI Scout unchanged."
+  "purpose": "EP.14 2026-11-07: public repository creation for staged tested-code candidates only. Skill Lab social publishing OFF indefinitely; Daily AI Scout untouched."
 }
