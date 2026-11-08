@@ -10,7 +10,17 @@
       "slug": "git-submodule-boundary-audit",
       "source_path": "skills/git-submodule-boundary-audit",
       "source_ref": "skill-lab/ep14-2026-11-07-securitycontext-submodules"
+    },
+    {
+      "slug": "gha-attestation-gate-audit",
+      "source_path": "skills/gha-attestation-gate-audit",
+      "source_ref": "skill-lab/ep15-2026-11-08-attestation-vap"
+    },
+    {
+      "slug": "k8s-vap-binding-audit",
+      "source_path": "skills/k8s-vap-binding-audit",
+      "source_ref": "skill-lab/ep15-2026-11-08-attestation-vap"
     }
   ],
-  "purpose": "EP.14 2026-11-07: public repository creation for staged tested-code candidates only. Skill Lab social publishing OFF indefinitely; Daily AI Scout untouched."
+  "purpose": "Idempotent EP14 + EP15 2026-11-08 provisioning. Skill Lab social OFF indefinitely; do not modify Daily AI Scout."
 }
