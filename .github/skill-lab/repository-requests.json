@@ -20,7 +20,17 @@
       "slug": "k8s-vap-binding-audit",
       "source_path": "skills/k8s-vap-binding-audit",
       "source_ref": "skill-lab/ep15-2026-11-08-attestation-vap"
+    },
+    {
+      "slug": "k8s-hpa-request-contract-audit",
+      "source_path": "skills/k8s-hpa-request-contract-audit",
+      "source_ref": "skill-lab/ep16-2026-11-09-hpa-service"
+    },
+    {
+      "slug": "k8s-service-backend-audit",
+      "source_path": "skills/k8s-service-backend-audit",
+      "source_ref": "skill-lab/ep16-2026-11-09-hpa-service"
     }
   ],
-  "purpose": "Idempotent EP14 + EP15 2026-11-08 provisioning. Skill Lab social OFF indefinitely; do not modify Daily AI Scout."
+  "purpose": "Idempotent EP14–EP16 repository requests (2026-11-09). Skill Lab social OFF indefinitely. Preserve Daily AI Scout."
 }
