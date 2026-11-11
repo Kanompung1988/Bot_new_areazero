@@ -40,7 +40,17 @@
       "slug": "buildkit-secret-boundary-audit",
       "source_path": "skills/buildkit-secret-boundary-audit",
       "source_ref": "skill-lab/ep17-2026-11-10-buildkit"
+    },
+    {
+      "slug": "k8s-cronjob-timezone-audit",
+      "source_path": "skills/k8s-cronjob-timezone-audit",
+      "source_ref": "skill-lab/ep18-2026-11-11-cronjob-argocd"
+    },
+    {
+      "slug": "argocd-sync-option-audit",
+      "source_path": "skills/argocd-sync-option-audit",
+      "source_ref": "skill-lab/ep18-2026-11-11-cronjob-argocd"
     }
   ],
-  "purpose": "Idempotent EP14–EP17 standalone repository requests (2026-11-10). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
+  "purpose": "Idempotent EP14–EP18 public skill repository requests (2026-11-11). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
 }
