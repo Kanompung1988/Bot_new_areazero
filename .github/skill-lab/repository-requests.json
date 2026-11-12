@@ -50,7 +50,17 @@
       "slug": "argocd-sync-option-audit",
       "source_path": "skills/argocd-sync-option-audit",
       "source_ref": "skill-lab/ep18-2026-11-11-cronjob-argocd"
+    },
+    {
+      "slug": "gha-environment-gate-audit",
+      "source_path": "skills/gha-environment-gate-audit",
+      "source_ref": "skill-lab/ep19-2026-11-12-env-terraform"
+    },
+    {
+      "slug": "terraform-state-transition-audit",
+      "source_path": "skills/terraform-state-transition-audit",
+      "source_ref": "skill-lab/ep19-2026-11-12-env-terraform"
     }
   ],
-  "purpose": "Idempotent EP14–EP18 public skill repository requests (2026-11-11). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
+  "purpose": "Idempotent public skill repository requests through EP.19 (2026-11-12). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
 }
