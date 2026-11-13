@@ -60,7 +60,17 @@
       "slug": "terraform-state-transition-audit",
       "source_path": "skills/terraform-state-transition-audit",
       "source_ref": "skill-lab/ep19-2026-11-12-env-terraform"
+    },
+    {
+      "slug": "gha-cache-mode-boundary-audit",
+      "source_path": "skills/gha-cache-mode-boundary-audit",
+      "source_ref": "skill-lab/ep20-2026-11-13-pvc-cache"
+    },
+    {
+      "slug": "k8s-statefulset-pvc-audit",
+      "source_path": "skills/k8s-statefulset-pvc-audit",
+      "source_ref": "skill-lab/ep20-2026-11-13-pvc-cache"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.19 (2026-11-12). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
+  "purpose": "Idempotent public skill repository requests through EP.20 (2026-11-13). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
 }
