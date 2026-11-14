@@ -34,7 +34,7 @@ jobs:
           data = json.loads(path.read_text(encoding='utf-8'))
           assert data.get('owner') == 'Kanompung1988', 'owner must be Kanompung1988'
           entries = data.get('repositories')
-          assert isinstance(entries, list) and 1 <= len(entries) <= 15, 'expected 1-15 repository requests'
+          assert isinstance(entries, list) and 1 <= len(entries) <= 100, 'expected 1-100 repository requests'
           names = []
           for item in entries:
               assert isinstance(item, dict), 'entry must be an object'
