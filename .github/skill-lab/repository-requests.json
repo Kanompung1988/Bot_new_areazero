@@ -70,7 +70,17 @@
       "slug": "k8s-statefulset-pvc-audit",
       "source_path": "skills/k8s-statefulset-pvc-audit",
       "source_ref": "skill-lab/ep20-2026-11-13-pvc-cache"
+    },
+    {
+      "slug": "npm-trusted-publisher-audit",
+      "source_path": "skills/npm-trusted-publisher-audit",
+      "source_ref": "skill-lab/ep21-2026-11-14-npm-otel"
+    },
+    {
+      "slug": "otel-http-semconv-audit",
+      "source_path": "skills/otel-http-semconv-audit",
+      "source_ref": "skill-lab/ep21-2026-11-14-npm-otel"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.20 (2026-11-13). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
+  "purpose": "Idempotent public skill repository requests through EP.21 (2026-11-14). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
 }
