@@ -80,7 +80,17 @@
       "slug": "otel-http-semconv-audit",
       "source_path": "skills/otel-http-semconv-audit",
       "source_ref": "skill-lab/ep21-2026-11-14-npm-otel"
+    },
+    {
+      "slug": "gateway-referencegrant-audit",
+      "source_path": "skills/gateway-referencegrant-audit",
+      "source_ref": "skill-lab/ep22-2026-11-15-gateway"
+    },
+    {
+      "slug": "argo-rollouts-analysis-audit",
+      "source_path": "skills/argo-rollouts-analysis-audit",
+      "source_ref": "skill-lab/ep22-2026-11-15-rollouts"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.21 (2026-11-14). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
+  "purpose": "Idempotent public skill repository requests through EP.22 (2026-11-15). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
 }
