@@ -90,7 +90,17 @@
       "slug": "argo-rollouts-analysis-audit",
       "source_path": "skills/argo-rollouts-analysis-audit",
       "source_ref": "skill-lab/ep22-2026-11-15-rollouts"
+    },
+    {
+      "slug": "k8s-topology-spread-audit",
+      "source_path": "skills/k8s-topology-spread-audit",
+      "source_ref": "skill-lab/ep23-2026-11-16-topology-helm"
+    },
+    {
+      "slug": "helm-dependency-lock-audit",
+      "source_path": "skills/helm-dependency-lock-audit",
+      "source_ref": "skill-lab/ep23-2026-11-16-topology-helm"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.22 (2026-11-15). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
+  "purpose": "Idempotent public skill repository requests through EP.23 (2026-11-16). Skill Lab social OFF indefinitely. Daily AI Scout unchanged."
 }
