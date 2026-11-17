@@ -105,7 +105,12 @@
       "slug": "py-editable-wheel-parity-audit",
       "source_path": "skills/py-editable-wheel-parity-audit",
       "source_ref": "skill-lab/ep24-2026-11-17-snapshot-wheel"
+    },
+    {
+      "slug": "k8s-volume-snapshot-contract-audit",
+      "source_path": "skills/k8s-volume-snapshot-contract-audit",
+      "source_ref": "skill-lab/ep24-2026-11-17-snapshot-wheel"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.24 (2026-11-17); Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
+  "purpose": "Idempotent public skill repository requests through EP.24 (2026-11-17); Social Skill Lab OFF indefinitely; Daily AI Scout unaffected."
 }
