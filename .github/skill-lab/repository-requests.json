@@ -120,7 +120,17 @@
       "slug": "k8s-ingress-tls-contract-audit",
       "source_path": "skills/k8s-ingress-tls-contract-audit",
       "source_ref": "skill-lab/ep25-2026-11-18-reusable-ingress"
+    },
+    {
+      "slug": "pg-security-definer-path-audit",
+      "source_path": "skills/pg-security-definer-path-audit",
+      "source_ref": "skill-lab/ep26-2026-11-19-pg-compose"
+    },
+    {
+      "slug": "compose-published-port-audit",
+      "source_path": "skills/compose-published-port-audit",
+      "source_ref": "skill-lab/ep26-2026-11-19-pg-compose"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.25 (2026-11-18); Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
+  "purpose": "Idempotent public skill repository requests through EP.26 (2026-11-19); Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
 }
