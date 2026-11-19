@@ -130,7 +130,12 @@
       "slug": "compose-published-port-audit",
       "source_path": "skills/compose-published-port-audit",
       "source_ref": "skill-lab/ep26-2026-11-19-pg-compose"
+    },
+    {
+      "slug": "gha-artifact-retention-audit",
+      "source_path": "skills/gha-artifact-retention-audit",
+      "source_ref": "skill-lab/ep26-2026-11-19-retention"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.26 (2026-11-19); Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
+  "purpose": "Idempotent public skill repository requests through EP.26 (2026-11-19): 27 requests, including preserved overlapping experimental repo; Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
 }
