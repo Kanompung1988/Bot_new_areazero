@@ -135,7 +135,17 @@
       "slug": "gha-artifact-retention-audit",
       "source_path": "skills/gha-artifact-retention-audit",
       "source_ref": "skill-lab/ep26-2026-11-19-retention"
+    },
+    {
+      "slug": "compose-profile-dependency-audit",
+      "source_path": "skills/compose-profile-dependency-audit",
+      "source_ref": "skill-lab/ep27-2026-11-20-profiles-psa"
+    },
+    {
+      "slug": "k8s-psa-namespace-audit",
+      "source_path": "skills/k8s-psa-namespace-audit",
+      "source_ref": "skill-lab/ep27-2026-11-20-profiles-psa"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.26 (2026-11-19): 27 requests, including preserved overlapping experimental repo; Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
+  "purpose": "Idempotent public skill repository requests through EP.27 (2026-11-20): existing 27 requests preserved plus 2 new requests; Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
 }
