@@ -145,7 +145,17 @@
       "slug": "k8s-psa-namespace-audit",
       "source_path": "skills/k8s-psa-namespace-audit",
       "source_ref": "skill-lab/ep27-2026-11-20-profiles-psa"
+    },
+    {
+      "slug": "k8s-runtimeclass-contract-audit",
+      "source_path": "skills/k8s-runtimeclass-contract-audit",
+      "source_ref": "skill-lab/ep28-2026-11-21-runtimeclass-job-policy"
+    },
+    {
+      "slug": "k8s-job-failure-policy-audit",
+      "source_path": "skills/k8s-job-failure-policy-audit",
+      "source_ref": "skill-lab/ep28-2026-11-21-runtimeclass-job-policy"
     }
   ],
-  "purpose": "Idempotent public skill repository requests through EP.27 (2026-11-20): existing 27 requests preserved plus 2 new requests; Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
+  "purpose": "Idempotent public skill repository requests through EP.28 (2026-11-21): all prior requests preserved; two new standalone skills staged on a non-default agent-skills branch. Skill Lab social OFF indefinitely; Daily AI Scout unaffected."
 }
